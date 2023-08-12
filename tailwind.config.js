@@ -75,6 +75,7 @@ module.exports = {
       "bp-sm": "50% 40%",
       "bp-ss": "55% 32%",
       "bp-xs": "58% 32%",
+      center: "center",
     },
     textColor: {
       default: {

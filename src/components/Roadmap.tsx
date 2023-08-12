@@ -4,7 +4,6 @@ const Roadmap = () => {
   return (
     <section
       id="roadmap"
-      // className={`bg-mobile-roadmap md:bg-linear-gradient bg-center bg-auto bg-no-repeat relative flex flex-col items-center h-[850px] md:h-[674px]`}
       className={`bg-mroadmap md:bg-droadmap bg-center bg-auto md:bg-100% bg-no-repeat relative flex flex-col items-center h-[850px] md:h-[674px]`}
     >
       <div className="flex flex-col justify-center items-center h-full w-full">
@@ -18,14 +17,14 @@ const Roadmap = () => {
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} alt="step1" className="animate-pulse" />
+              <img src={roadmapIcon} />
             </div>
           </div>
           <div className="grid grid-rows-2 items-center justify-center gap-14 ml-[6vw]">
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} alt="step2" />
+              <img src={roadmapIcon} />
               <div className="flex flex-col"></div>
             </div>
           </div>
@@ -35,14 +34,14 @@ const Roadmap = () => {
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} alt="step3" />
+              <img src={roadmapIcon} />
             </div>
           </div>
           <div className="grid grid-rows-2 items-center justify-center gap-14 ml-[6vw]">
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} alt="step4" />
+              <img src={roadmapIcon} />
             </div>
             <div className="flex flex-col"></div>
           </div>
@@ -52,14 +51,14 @@ const Roadmap = () => {
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} alt="step5" />
+              <img src={roadmapIcon} />
             </div>
           </div>
           <div className="grid grid-rows-2 items-center justify-center gap-14  ml-[6vw]">
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} alt="step6" />
+              <img src={roadmapIcon} />
             </div>
             <div className="flex flex-col"></div>
           </div>
@@ -72,14 +71,14 @@ const Roadmap = () => {
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} alt="step1" />
+              <img src={roadmapIcon} />
             </div>
           </div>
           <div className="grid grid-cols-2 items-center justify-center gap-14 mb-4 -mt-4">
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} alt="step2" />
+              <img src={roadmapIcon} />
             </div>
             <div className="flex flex-col"></div>
           </div>
@@ -88,14 +87,14 @@ const Roadmap = () => {
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} alt="step3" />
+              <img src={roadmapIcon} />
             </div>
           </div>
           <div className="grid grid-cols-2 items-center justify-center gap-14 -mb-4 mt-4">
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} alt="step4" />
+              <img src={roadmapIcon} />
             </div>
             <div className="flex flex-col"></div>
           </div>
@@ -104,14 +103,14 @@ const Roadmap = () => {
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} alt="step5" />
+              <img src={roadmapIcon} />
             </div>
           </div>
           <div className="grid grid-cols-2 items-center justify-center gap-14 -mb-10 mt-10">
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} alt="step6" />
+              <img src={roadmapIcon} />
             </div>
             <div className="flex flex-col"></div>
           </div>
