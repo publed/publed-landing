@@ -9,8 +9,8 @@ const ProbSol = () => {
       <div
         className={`bg-secondary-blue60 flex flex-col justify-between items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[618px]`}
       >
-        <h2 className="font-notosans text-typo-white text-[28px] sm:text-[56px] font-normal leading-[56px] mr-auto">
-          Mohamed
+        <h2 className="font-notosans text-typo-white text-[28px] sm:text-[56px] font-normal leading-[56px] drop-shadow-[0_0.5px_2px_rgba(255,255,255,255)] ">
+          Traditional Scientific Publishing
         </h2>
 
         <div className="md:hidden flex flex-col justify-center items-center w-full h-full gap-[28px] py-8 sm:px-10">
@@ -104,10 +104,10 @@ const ProbSol = () => {
       </div>
 
       <div
-        className={`bg-blue-1 flex flex-col justify-between items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[618px]`}
+        className={`bg-blue-1 flex flex-col justify-end items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[618px]`}
       >
-        <h2 className="font-notosans text-typo-dark-blue text-[28px] sm:text-[56px] font-normal leading-[56px] mr-auto">
-          Solutions
+        <h2 className="font-notosans text-typo-dark-blue text-[28px] sm:text-[56px] font-normal leading-[56px] drop-shadow-[0_2px_2px_rgb(0,74,172)]">
+          Publed
         </h2>
         <div className="md:hidden flex flex-col justify-center items-center w-full h-full gap-[28px] py-8 sm:px-10">
           <div className="flex flex-row w-full justify-between items-center gap-4">
