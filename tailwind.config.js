@@ -71,6 +71,11 @@ module.exports = {
       "50%": "50%",
       "100%": "100%",
     },
+    backgroundPosition: {
+      "bp-sm": "50% 40%",
+      "bp-ss": "55% 32%",
+      "bp-xs": "58% 32%",
+    },
     textColor: {
       default: {
         80: "#2E2E35",
