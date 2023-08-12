@@ -189,3 +189,59 @@
     --about-card-orientation: 270deg;
   }
 }
+
+/* Scroll to top style */
+.scrollToTop {
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 999;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.9;
+}
+
+.scrollToTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.podiumItem {
+  text-align: center;
+}
+
+.bars {
+  height: 80px;
+}
+
+.bar {
+  position: relative;
+  animation-name: grow;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.bar span {
+  font-size: 0.95rem;
+}
+
+@keyframes grow {
+  0% {
+    height: 0%;
+  }
+  100% {
+    /* No height value specified here */
+  }
+}

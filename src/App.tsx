@@ -4,18 +4,24 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import NoMatch from "./pages/NoMatch";
 import Layout from "./pages/Layout";
+import ScrollToTop from "./components/ScrollToTop";
+import UseScrollToTop from "./hooks/useScrollToTop";
 
 function App() {
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<NoMatch />} />
-        </Routes>
-      </Layout>
-    </Router>
+    <>
+      <Router>
+        <ScrollToTop />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<NoMatch />} />
+          </Routes>
+        </Layout>
+      </Router>
+      <UseScrollToTop />
+    </>
   );
 }
 

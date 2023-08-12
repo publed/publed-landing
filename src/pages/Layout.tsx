@@ -11,7 +11,7 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <div
-        className={`bg-secondary-blue-60 backdrop-blur-[6px] ${styles.paddingX} ${styles.flexCenter} md:fixed w-full`}
+        className={`bg-secondary-blue-60 backdrop-blur-[6px] ${styles.paddingX} flex justify-center items-center absolute w-full`}
       >
         <div className={`${styles.boxWidth}`}>
           <Navbar />
