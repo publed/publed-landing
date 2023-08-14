@@ -7,17 +7,33 @@ const ProbSol = () => {
       className={`relative flex flex-col items-start self-stretch`}
     >
       <div
+<<<<<<< HEAD
         className={`bg-secondary-blue60 flex flex-col justify-between items-center sm:px-10 px-5 py-20 sm:py-10 gap-2.5 w-full h-[618px]`}
       >
         <h2 className="font-notosans text-typo-white text-[28px] sm:text-[56px] leading-[normal] drop-shadow-[0_0.1px_1px_rgba(255,255,255,255)] text-center">
           Traditional System <br />
           Pain Points
+=======
+        className={`bg-secondary-blue60 flex flex-col justify-between items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[580px] sm:h-[678px]`}
+      >
+        <h2 className="font-notosans text-typo-white text-[28px] sm:text-[56px] leading-tight drop-shadow-[0_0.5px_2px_rgba(255,255,255,255)] text-center">
+          Traditional Scientific Publishing
+>>>>>>> eda0807120f0bef46cce9d11a2dacd91692a2011
         </h2>
       </div>
 
       <div
+<<<<<<< HEAD
         className={`bg-blue-1 flex flex-col justify-end items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[618px]`}
       ></div>
+=======
+        className={`bg-blue-1 flex flex-col justify-end items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[580px] sm:h-[678px]`}
+      >
+        <h2 className="font-notosans text-typo-dark-blue text-[28px] sm:text-[56px] leading-tight drop-shadow-[0_2px_2px_rgb(0,74,172)]">
+          Solutions
+        </h2>
+      </div>
+>>>>>>> eda0807120f0bef46cce9d11a2dacd91692a2011
 
       {/* Setas LG */}
       <div className="flex flex-col absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-screen">
@@ -227,7 +243,7 @@ const ProblemItem = ({ title, desc, accent, accentColor, reversed }: any) => {
           reversed && "flex-row-reverse"
         }`}
       >
-        <h2 className="text-default-20 text-xs sm:text-[20px] leading-tight font-medium uppercase w-24">
+        <h2 className="text-default-20 text-xs sm:text-[20px] leading-tight font-medium uppercase">
           {title}
         </h2>
         <rect className={`h-3 w-3 ${bgColor}`}></rect>
