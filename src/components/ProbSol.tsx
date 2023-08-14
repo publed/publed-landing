@@ -7,17 +7,17 @@ const ProbSol = () => {
       className={`relative flex flex-col items-start self-stretch`}
     >
       <div
-        className={`bg-secondary-blue60 flex flex-col justify-between items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[618px]`}
+        className={`bg-secondary-blue60 flex flex-col justify-between items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[580px] sm:h-[678px]`}
       >
-        <h2 className="font-notosans text-typo-white text-[28px] sm:text-[56px] leading-normal drop-shadow-[0_0.5px_2px_rgba(255,255,255,255)] text-center">
+        <h2 className="font-notosans text-typo-white text-[28px] sm:text-[56px] leading-tight drop-shadow-[0_0.5px_2px_rgba(255,255,255,255)] text-center">
           Traditional Scientific Publishing
         </h2>
       </div>
 
       <div
-        className={`bg-blue-1 flex flex-col justify-end items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[618px]`}
+        className={`bg-blue-1 flex flex-col justify-end items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[580px] sm:h-[678px]`}
       >
-        <h2 className="font-notosans text-typo-dark-blue text-[28px] sm:text-[56px] leading-[1rem] drop-shadow-[0_2px_2px_rgb(0,74,172)]">
+        <h2 className="font-notosans text-typo-dark-blue text-[28px] sm:text-[56px] leading-tight drop-shadow-[0_2px_2px_rgb(0,74,172)]">
           Solutions
         </h2>
       </div>
@@ -230,7 +230,7 @@ const ProblemItem = ({ title, desc, accent, accentColor, reversed }: any) => {
           reversed && "flex-row-reverse"
         }`}
       >
-        <h2 className="text-default-20 text-xs sm:text-[20px] leading-tight font-medium uppercase w-24">
+        <h2 className="text-default-20 text-xs sm:text-[20px] leading-tight font-medium uppercase">
           {title}
         </h2>
         <rect className={`h-3 w-3 ${bgColor}`}></rect>
