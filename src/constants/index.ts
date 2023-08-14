@@ -2,10 +2,11 @@
 export const navLinks = [
   { id: "home", title: "Home" },
   { id: "probsol", title: "Publed" },
-  { id: "about", title: "About" },
   { id: "howitworks", title: "How it Works" },
   { id: "roadmap", title: "Roadmap" },
+  { id: "partners", title: "Partners" },
   { id: "contactus", title: "Contact Us" },
+  { id: "about", title: "About" },
 ];
 
 export const slogans = [

@@ -12,8 +12,10 @@ import soluni from "./logo 2.png";
 import solanaLogo from "./svg/solanaLogo.svg";
 import solanaUni from "./svg/logo2.svg";
 import twitter from "./svg/twitter.svg";
+import { ReactComponent as TwitterLogo } from "./svg/twitter.svg";
 import discord from "./svg/discord.svg";
 import github from "./svg/github.svg";
+import { ReactComponent as LinkedinLogo } from "./svg/linkedin.svg";
 import frame from "./svg/Frame (1).svg";
 import svgmarado from "./content.svg";
 import roadmapIcon from "./svg/roadmap_icon.svg";
@@ -60,4 +62,6 @@ export {
   diogo,
   arrowsMd,
   arrowsSm,
+  LinkedinLogo,
+  TwitterLogo,
 };

@@ -1,4 +1,11 @@
-import { discord, github, h2logo, twitter } from "../assets";
+import {
+  LinkedinLogo,
+  TwitterLogo,
+  discord,
+  github,
+  h2logo,
+  twitter,
+} from "../assets";
 
 const Footer = () => {
   return (
@@ -13,24 +20,33 @@ const Footer = () => {
             <img src={h2logo} alt="publed" className="h-[30px]" />
             {/* social media */}
             <div className="flex flex-row gap-4">
-              <img src={twitter} alt="twitter" />
-              <img src={github} alt="github" />
+              <a href="https://twitter.com/publed_official" target="__blank">
+                <TwitterLogo fill="#586EBA" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/publ3d/"
+                target="__blank"
+              >
+                <LinkedinLogo fill="#586EBA" />
+              </a>
               <img src={discord} alt="discord" />
             </div>
           </div>
           {/* navlinks */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-20 font-notosans text-[16px] font-light text-typo-black">
-            <a href="#">About Us</a>
-            <a href="#">Team</a>
+            <a href="/about">About Us</a>
+            <a href="#team">Team</a>
             <a href="#">Docs</a>
-            <a href="#">Whitepaper</a>
+            <a href="https://publed.gitbook.io/introduction/" target="__blank">
+              Whitepaper
+            </a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
           </div>
         </div>
         {/* © */}
         <div className="flex justify-start">
-          © 2023 Publed.All Rights Reserved.
+          © 2023 Publed. All Rights Reserved.
         </div>
       </div>
     </section>

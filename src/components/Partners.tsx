@@ -3,7 +3,7 @@ import { solanaLogo, solanaUni } from "../assets";
 const Partners = () => {
   return (
     <section
-      id="Partners"
+      id="partners"
       className={`bg-secondary-blue60 flex flex-col justify-center items-center gap-[80px]`}
     >
       <h2 className="font-notosans text-typo-white text-[56px] font-normal leading-[72px] mt-[80px]">

@@ -4,6 +4,7 @@ import ProbSol from "../components/ProbSol";
 import HowItWorks from "../components/HowItWorks";
 import Roadmap from "../components/Roadmap";
 import Partners from "../components/Partners";
+import ContactUs from "../components/ContactUs";
 // import HowItWorks from "../../components/HowItWorks";
 // import Roadmap from "../../components/Roadmap";
 // import Partners from "../../components/Partners";
@@ -69,9 +70,7 @@ const Home = () => {
           <HowItWorks />
           <Roadmap />
           <Partners />
-
-          {/*
-          <ContactUs /> */}
+          <ContactUs />
         </div>
       </div>
     </>

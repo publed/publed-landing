@@ -1,5 +1,6 @@
 import {
-  twitter as twitterIcon,
+  twitter,
+  LinkedinLogo,
   nftCard,
   blockchainCard,
   aiCard,
@@ -7,7 +8,10 @@ import {
   sandro,
   vitor,
   mohamed,
+  TwitterLogo,
 } from "../assets";
+
+import "../index.css";
 
 const About = () => {
   return (
@@ -20,7 +24,7 @@ const About = () => {
           <h1 className="text-header whitespace-nowrap text-typo-white mb-6">
             Our Vision
           </h1>
-          <p className="text-typo-white text-sm md:text-base md:max-w-2xl">
+          <p className="text-typo-white text-sm md:text-base md:max-w-2xl xl:col-start-4">
             Our vision is to create a decentralized scientific publishing
             platform that fosters open access, transparent peer review, and
             global collaboration. By leveraging technologies like blockchain and
@@ -53,7 +57,10 @@ const About = () => {
         </div>
       </section>
 
-      <section className="font-notosans w-full bg-white p-about flex flex-col gap-6 md:gap-12 text-typo-black">
+      <section
+        id="team"
+        className="font-notosans w-full bg-white p-about flex flex-col gap-6 md:gap-12 text-typo-black"
+      >
         <h1 className="text-header text-center font-medium">Meet Our Team</h1>
         <div className="flex flex-col gap-10 items-center sm:flex-row sm:flex-wrap sm:justify-center md:gap-x-20">
           {teamData.map((team) => (
@@ -192,18 +199,10 @@ const TeamCard = (props: any) => {
       </p>
       <div className="flex gap-5 justify-center">
         <a href={twitter}>
-          <img
-            src={twitterIcon}
-            alt="twitter"
-            className="w-7 h-7 text-typo-black"
-          />
+          <TwitterLogo fill="#202668" />
         </a>
         <a href={linkedin}>
-          <img
-            src={twitterIcon}
-            alt="twitter"
-            className="w-7 h-7 text-typo-black"
-          />
+          <LinkedinLogo fill="#202668" />
         </a>
       </div>
     </div>

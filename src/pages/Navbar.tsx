@@ -7,7 +7,7 @@ const Navbar = () => {
   const [active, setActive] = useState<string>("Home");
   return (
     <div>
-      <nav className="w-full flex flex-col py-4 items-center navbar">
+      <nav className="w-full flex flex-col py-4 items-center">
         <div className="w-full flex flex-row items-center justify-between">
           <a href="/">
             <img
