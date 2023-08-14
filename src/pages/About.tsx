@@ -24,7 +24,7 @@ const About = () => {
           <h1 className="text-header whitespace-nowrap text-typo-white mb-6">
             Our Vision
           </h1>
-          <p className="text-typo-white text-sm md:text-base md:max-w-2xl xl:col-start-4">
+          <p className="text-typo-white text-sm md:text-base md:max-w-2xl">
             Our vision is to create a decentralized scientific publishing
             platform that fosters open access, transparent peer review, and
             global collaboration. By leveraging technologies like blockchain and

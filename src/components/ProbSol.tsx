@@ -7,20 +7,17 @@ const ProbSol = () => {
       className={`relative flex flex-col items-start self-stretch`}
     >
       <div
-        className={`bg-secondary-blue60 flex flex-col justify-between items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[618px]`}
+        className={`bg-secondary-blue60 flex flex-col justify-between items-center sm:px-10 px-5 py-20 sm:py-10 gap-2.5 w-full h-[618px]`}
       >
-        <h2 className="font-notosans text-typo-white text-[28px] sm:text-[56px] leading-normal drop-shadow-[0_0.5px_2px_rgba(255,255,255,255)] text-center">
-          Traditional Scientific Publishing
+        <h2 className="font-notosans text-typo-white text-[28px] sm:text-[56px] leading-[normal] drop-shadow-[0_0.1px_1px_rgba(255,255,255,255)] text-center">
+          Traditional System <br />
+          Pain Points
         </h2>
       </div>
 
       <div
         className={`bg-blue-1 flex flex-col justify-end items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[618px]`}
-      >
-        <h2 className="font-notosans text-typo-dark-blue text-[28px] sm:text-[56px] leading-[1rem] drop-shadow-[0_2px_2px_rgb(0,74,172)]">
-          Solutions
-        </h2>
-      </div>
+      ></div>
 
       {/* Setas LG */}
       <div className="flex flex-col absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-screen">
