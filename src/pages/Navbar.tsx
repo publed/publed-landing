@@ -8,15 +8,15 @@ const Navbar = () => {
   return (
     <div>
       <nav className="w-full flex flex-col py-4 items-center">
-        <div className="w-full flex flex-row items-center justify-between">
+        <div className="w-full flex flex-row items-center justify-between mr-10">
           <a href="/">
             <img
               src={hlogo}
               alt="publed"
-              className="md:w-[170px] md:h-[40px] xs:w-[130px] sm:h-[36px]"
+              className="md:w-[170px] md:h-[40px] xs:w-[110px] xs:h-[30px] sm:h-[36px] ml-2"
             />
           </a>
-          <div className="flex flex-row space-x-4">
+          <div className="flex flex-row space-x-2">
             <ul className="list-none md:flex hidden justify-end items-center text-center">
               {navLinks.map((nav) => (
                 <li
@@ -35,12 +35,12 @@ const Navbar = () => {
             </ul>
 
             <a href="https://publed.io" target="__blank">
-              <button className="px-7 py-3 rounded-full button-main text-typo-dark-blue font-medium transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-3 duration-300">
+              <button className=" px-4 py-2 ss:px-7 ss:py-3 rounded-full button-main text-typo-dark-blue font-medium transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-3 duration-300">
                 Join Now
               </button>
             </a>
 
-            <div className="md:hidden flex justify-end items-center gap-5">
+            <div className="md:hidden flex justify-end items-center">
               <img
                 src={toggle ? close : menu}
                 alt="menu"
