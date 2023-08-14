@@ -38,7 +38,7 @@ const ProbSol = () => {
         {/* Problems */}
         <div className="flex flex-col items-center h-full w-full font-notosans text-typo-white">
           {/* 1st Row */}
-          <div className="flex justify-center mt-[138px] mb-6 md:mb-20 md:mt-16 xlg:mb-8 xlg:mt-28">
+          <div className="flex justify-center mt-[160px] mb-6 sm:mt-[115px] md:mb-16 md:mt-16 xlg:mb-2 xlg:mt-24">
             {/* Monopoly */}
             <ProblemItemCenter
               title={"Centralized Monopoly"}
@@ -49,7 +49,7 @@ const ProbSol = () => {
             />
           </div>
           {/* 2nd Row */}
-          <div className="flex justify-center gap-11 mb-8 md:gap-52 md:mb-20 xlg:gap-[365px]">
+          <div className="flex justify-center gap-11 mb-4 md:gap-52 md:mb-20 xlg:gap-[365px]">
             {/* Centralization */}
             <ProblemItem
               title={"Silos"}
@@ -87,11 +87,11 @@ const ProbSol = () => {
             />
           </div>
         </div>
-        <div className="h-[178px] md:h-[270px] xlg:h-[345px]"></div>
+        <div className="h-[170px] sm:h-[170px] md:h-[275px] xlg:h-[345px]"></div>
         {/* Solutions */}
         <div className="flex flex-col items-center justify-end h-full w-full font-notosans text-typo-white">
           {/* 1st Row */}
-          <div className="flex justify-center gap-16 mb-7 md:gap-60 md:mb-8 xlg:gap-[625px]">
+          <div className="grid grid-cols-2 justify-center gap-16 mb-10 sm:mb-16 md:gap-60 md:mb-12 xlg:gap-[625px]">
             {/* Ownership */}
             <SolutionItem
               title={"Democratization"}
@@ -111,7 +111,7 @@ const ProbSol = () => {
             />
           </div>
           {/* 2nd Row */}
-          <div className="flex justify-center gap-11 mb-8 md:gap-52 md:mb-4 xlg:gap-[365px]">
+          <div className="grid grid-cols-2 justify-center gap-11 mb-2 sm:mb-12 md:gap-52 md:mb-12 xlg:gap-[365px]">
             {/* Democratization */}
             <SolutionItem
               title={"Socializing Science"}
@@ -155,7 +155,7 @@ const colorMap = {
   blue: ["text-primary-blue-3", "bg-blue-3"],
 };
 
-const descStyle = "text-[9px] leading-tight sm:text-xs md:text-[14px]";
+const descStyle = "text-[9px] leading-tight md:text-[14px]";
 
 const SolutionItemCenter = ({ title, desc, accentColor }: any) => {
   //@ts-ignore
@@ -165,7 +165,7 @@ const SolutionItemCenter = ({ title, desc, accentColor }: any) => {
     <div
       className={`flex flex-col md:flex-row justify-end items-center md:items-baseline gap-1 md:gap-4`}
     >
-      <rect className={`h-3 w-3 ${bgColor}`} />
+      <div className={`h-3 w-3 ${bgColor}`} />
       <div className={"text-center md:text-left"}>
         <h2 className="text-default-80 text-xs sm:text-[20px] leading-6 font-medium uppercase md:mb-2">
           {title}
@@ -178,19 +178,30 @@ const SolutionItemCenter = ({ title, desc, accentColor }: any) => {
 };
 const ProblemItemCenter = ({ title, desc, accent, accentColor }: any) => {
   //@ts-ignore
-  const [_, bgColor] = colorMap[accentColor];
+  const [textColor, bgColor] = colorMap[accentColor];
 
   return (
     <div
       className={`flex flex-col-reverse md:flex-row justify-end items-center md:items-baseline gap-2 md:gap-4`}
     >
-      <rect className={`h-3 w-3 ${bgColor}`} />
-      <div className={"text-center md:text-left md:flex md:gap-4"}>
+      <div className={`h-3 w-3 ${bgColor}`} />
+      <div
+        className={
+          "flex flex-col items-center text-center md:text-left md:flex-row md:gap-4"
+        }
+      >
         <h2 className="text-default-20 text-xs sm:text-[20px] leading-6 font-medium uppercase md:mb-2">
           {title}
         </h2>
 
-        <p className={`${descStyle} text-default-40 w-44`}>{desc}</p>
+        <p className={`${descStyle} text-default-40 w-56`}>
+          <span
+            className={`text-xs sm:text-base md:text-[24px] leading-none ${textColor}`}
+          >
+            {accent}
+          </span>{" "}
+          {desc}
+        </p>
       </div>
     </div>
   );
@@ -202,15 +213,15 @@ const ProblemItem = ({ title, desc, accent, accentColor, reversed }: any) => {
 
   return (
     <div
-      className={`flex flex-col-reverse sm:w-56 gap-2 md:items-center md:gap-4 md:w-96 ${
+      className={`flex flex-col-reverse flex-wrap sm:w-56 gap-2 md:items-center md:gap-4 md:w-96 ${
         reversed
           ? "md:flex-row-reverse justify-start items-start"
           : "md:flex-row justify-end items-end"
       }`}
     >
       <p
-        className={`${descStyle} text-default-40 w-30 sm:w-auto ${
-          reversed ? "text-left ml-6" : "text-right mr-6"
+        className={`${descStyle} text-default-40 w-30 sm:w-auto flex-1 ${
+          reversed ? "text-left ml-6 md:ml-0" : "text-right mr-6 md:mr-0"
         }`}
       >
         <span
@@ -229,7 +240,7 @@ const ProblemItem = ({ title, desc, accent, accentColor, reversed }: any) => {
         <h2 className="text-default-20 text-xs sm:text-[20px] leading-tight font-medium uppercase">
           {title}
         </h2>
-        <rect className={`h-3 w-3 ${bgColor}`}></rect>
+        <div className={`h-3 w-3 ${bgColor}`} />
       </div>
     </div>
   );
@@ -241,11 +252,11 @@ const SolutionItem = ({ title, desc, accentColor, reversed }: any) => {
 
   return (
     <div
-      className={`flex justify-end items-baseline gap-2 md:gap-4 ${
+      className={`flex justify-start items-baseline gap-2 md:gap-4 ${
         reversed && "flex-row-reverse"
       }`}
     >
-      <rect className={`h-3 w-3 ${bgColor}`} />
+      <div className={`h-3 w-3 ${bgColor}`} />
       <div className={reversed && "text-right"}>
         <h2 className="text-default-80 text-xs sm:text-[20px] leading-6 font-medium uppercase sm:mb-2">
           {title}
