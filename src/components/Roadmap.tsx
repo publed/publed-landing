@@ -17,14 +17,14 @@ const Roadmap = () => {
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} />
+              <img src={roadmapIcon} alt="step" />
             </div>
           </div>
           <div className="grid grid-rows-2 items-center justify-center gap-14 ml-[6vw]">
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} />
+              <img src={roadmapIcon} alt="step" />
               <div className="flex flex-col"></div>
             </div>
           </div>
@@ -34,14 +34,14 @@ const Roadmap = () => {
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} />
+              <img src={roadmapIcon} alt="step" />
             </div>
           </div>
           <div className="grid grid-rows-2 items-center justify-center gap-14 ml-[6vw]">
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} />
+              <img src={roadmapIcon} alt="step" />
             </div>
             <div className="flex flex-col"></div>
           </div>
@@ -51,14 +51,14 @@ const Roadmap = () => {
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} />
+              <img src={roadmapIcon} alt="step" />
             </div>
           </div>
           <div className="grid grid-rows-2 items-center justify-center gap-14  ml-[6vw]">
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} />
+              <img src={roadmapIcon} alt="step" />
             </div>
             <div className="flex flex-col"></div>
           </div>
@@ -71,14 +71,14 @@ const Roadmap = () => {
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} />
+              <img src={roadmapIcon} alt="step" />
             </div>
           </div>
           <div className="grid grid-cols-2 items-center justify-center gap-14 mb-4 -mt-4">
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} />
+              <img src={roadmapIcon} alt="step" />
             </div>
             <div className="flex flex-col"></div>
           </div>
@@ -87,14 +87,14 @@ const Roadmap = () => {
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} />
+              <img src={roadmapIcon} alt="step" />
             </div>
           </div>
           <div className="grid grid-cols-2 items-center justify-center gap-14 -mb-4 mt-4">
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} />
+              <img src={roadmapIcon} alt="step" />
             </div>
             <div className="flex flex-col"></div>
           </div>
@@ -103,14 +103,14 @@ const Roadmap = () => {
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} />
+              <img src={roadmapIcon} alt="step" />
             </div>
           </div>
           <div className="grid grid-cols-2 items-center justify-center gap-14 -mb-10 mt-10">
             <div className="flex flex-col items-center">
               <div>Q1 2022</div>
               <div>Start</div>
-              <img src={roadmapIcon} />
+              <img src={roadmapIcon} alt="step" />
             </div>
             <div className="flex flex-col"></div>
           </div>

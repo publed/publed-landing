@@ -63,9 +63,9 @@ const ProbSol = () => {
             />
             {/* Blindness */}
             <ProblemItem
-              title={"Blindness"}
-              desc={"of content creators retaining ownership rights"}
-              accent={"15%"}
+              title={"Opacity Culture"}
+              desc={"of non-reproduceable research - Replication Crisis"}
+              accent={"70%"}
               accentColor={"red"}
               reversed
             />
@@ -81,9 +81,9 @@ const ProbSol = () => {
             />
             {/* Copyrights */}
             <ProblemItem
-              title={"Copyrights"}
-              desc={"of content creators retaining ownership rights"}
-              accent={"15%"}
+              title={"Pre-Web format"}
+              desc={"paper static format is obsolete"}
+              accent={"1600s"}
               accentColor={"yellow"}
               reversed
             />
