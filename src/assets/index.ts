@@ -26,6 +26,8 @@ import vitor from "./vitor.png";
 import sandro from "./sandro.jpeg";
 import mohamed from "./mohamed.png";
 import diogo from "./diogo.png";
+import arrowsMd from "./svg/arrows-md.svg";
+import arrowsSm from "./svg/arrows-sm.svg";
 
 export {
   close,
@@ -56,4 +58,6 @@ export {
   sandro,
   mohamed,
   diogo,
+  arrowsMd,
+  arrowsSm,
 };

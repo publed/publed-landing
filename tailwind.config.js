@@ -71,6 +71,7 @@ module.exports = {
       md: "1060px",
       lg: "1200px",
       xl: "1700px",
+      xlg: "1400px",
     },
     backgroundImage: {
       hero: "url('/src/assets/herobg.png')",
@@ -82,7 +83,10 @@ module.exports = {
         80: "#2E2E35",
         40: "#A0A0A8",
         20: "#C8C8CE",
+        60: "#5A5A65",
       },
+      "secondary-red": "#FF8080",
+      "secondary-yellow": "#FFB119",
       "typo-dark-blue": "#202668",
       "typo-white": "#f3f3f3",
       "typo-grey": "#8a8a8a",
