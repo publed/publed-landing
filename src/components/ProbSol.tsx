@@ -118,7 +118,7 @@ const ProbSol = () => {
             <SolutionItem
               title={"Democratization"}
               desc={
-                "Blockchain-based digital rights management (DRM) systems and smart contracts can enforce licensing agreements "
+                "Publed enables a democratic access to sciencitific knowledge by cutting down the middleman costs"
               }
               accentColor={"red"}
               reversed
