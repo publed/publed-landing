@@ -20,7 +20,7 @@ const About = () => {
         id="about"
         className="font-notosans w-full bg-blue-7 px-about py-40 sm:py-45 md:py-60"
       >
-        <div className="max-w-[1280px] grid grid-cols-1 md:grid-cols-2">
+        <div className="mx-auto max-w-[1280px] grid grid-cols-1 md:grid-cols-2">
           <h1 className="text-header whitespace-nowrap text-typo-white mb-6">
             Our Vision
           </h1>
@@ -38,7 +38,7 @@ const About = () => {
       </section>
 
       <section className="w-full bg-white p-about text-typo-dark-grey">
-        <div className="max-w-[1280px] grid grid-cols-1 md:grid-cols-2">
+        <div className="mx-auto max-w-[1280px] grid grid-cols-1 md:grid-cols-2">
           <h1 className="text-header whitespace-nowrap mb-6">Why Join Us</h1>
           <div className="flex flex-col gap-10 md:max-w-2xl">
             {joinUsData.map((join) => (
@@ -198,11 +198,11 @@ const TeamCard = (props: any) => {
         {description}
       </p>
       <div className="flex gap-5 justify-center">
-        <a href={twitter}>
-          <TwitterLogo fill="#202668" />
+        <a target="_blank" href={twitter}>
+          <TwitterLogo fill="#131317" />
         </a>
-        <a href={linkedin}>
-          <LinkedinLogo fill="#202668" />
+        <a target="_blank" href={linkedin}>
+          <LinkedinLogo fill="#131317" />
         </a>
       </div>
     </div>
