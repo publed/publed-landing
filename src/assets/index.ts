@@ -25,7 +25,7 @@ import aiCard from "./ai.jpeg";
 import decstorageCard from "./decentralizedStorage.jpeg";
 import hiw from "./how_it_works.json";
 import vitor from "./vitor.png";
-import sandro from "./sandro.jpeg";
+import sandro from "./sandro.png";
 import mohamed from "./mohamed.png";
 import diogo from "./diogo.png";
 import arrowsMd from "./svg/arrows-md.svg";
