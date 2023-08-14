@@ -75,8 +75,11 @@ module.exports = {
     },
     backgroundImage: {
       hero: "url('/src/assets/herobg.png')",
-      droadmap: "url('/src/assets/roadmap_desktop_1.svg')",
-      mroadmap: "url('/src/assets/roadmap_mobile_1.svg')",
+      // droadmap: "url('/src/assets/roadmap_desktop_1.svg')",
+      // mroadmap: "url('/src/assets/roadmap_mobile_1.svg')",
+      droadmap: "url('/src/assets/svg/droadmap.svg')",
+      mroadmap: "url('/src/assets/svg/mroadmap.svg')",
+      troadmap: "url('/src/assets/svg/troadmap.svg')",
     },
     textColor: {
       default: {

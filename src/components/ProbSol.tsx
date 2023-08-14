@@ -64,7 +64,8 @@ const ProbSol = () => {
             {/* Blindness */}
             <ProblemItem
               title={"Opacity Culture"}
-              desc={"of non-reproduceable research - Replication Crisis"}
+              desc={"of non-reproduceable"}
+              // desc={"of non-reproduceable research - Replication Crisis"}
               accent={"70%"}
               accentColor={"red"}
               reversed
@@ -82,7 +83,8 @@ const ProbSol = () => {
             {/* Copyrights */}
             <ProblemItem
               title={"Pre-Web format"}
-              desc={"paper static format is obsolete"}
+              desc={"paper static format"}
+              // desc={"paper static format is obsolete"}
               accent={"1600s"}
               accentColor={"yellow"}
               reversed

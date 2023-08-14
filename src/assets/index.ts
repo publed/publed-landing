@@ -30,6 +30,9 @@ import mohamed from "./mohamed.png";
 import diogo from "./diogo.png";
 import arrowsMd from "./svg/arrows-md.svg";
 import arrowsSm from "./svg/arrows-sm.svg";
+import mroadmap from "./svg/mroadmap.svg";
+import troadmap from "./svg/troadmap.svg";
+import droadmap from "./svg/droadmap.svg";
 
 export {
   close,
@@ -64,4 +67,7 @@ export {
   arrowsSm,
   LinkedinLogo,
   TwitterLogo,
+  droadmap,
+  mroadmap,
+  troadmap,
 };

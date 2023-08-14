@@ -25,8 +25,10 @@ const Navbar = () => {
                 >
                   {nav.id === "about" ? (
                     <a href={`${nav.id}`}>{nav.title}</a>
+                  ) : nav.id === "home" ? (
+                    <a href="/">{nav.title}</a>
                   ) : (
-                    <a href={`#${nav.id}`}>{nav.title}</a>
+                    <a href={`/#${nav.id}`}>{nav.title}</a>
                   )}
                 </li>
               ))}
