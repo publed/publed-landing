@@ -6,7 +6,7 @@ const Partners = () => {
       id="partners"
       className={`bg-secondary-blue60 flex flex-col justify-center items-center gap-[80px]`}
     >
-      <h2 className="font-notosans text-typo-white text-[56px] font-normal leading-[72px] mt-[80px]">
+      <h2 className="font-notosans text-typo-white text-[28px] sm:text-[56px] leading-normal font-semibold mt-[80px]">
         Our Partners
       </h2>
       <div className="flex flex-row mb-[120px] justify-center gap-10 flex-wrap">
