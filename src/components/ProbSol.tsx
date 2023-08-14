@@ -204,7 +204,7 @@ const ProblemItem = ({ title, desc, accent, accentColor, reversed }: any) => {
 
   return (
     <div
-      className={`flex flex-col-reverse sm:w-56 sm:gap-2 md:items-center md:gap-4 md:w-96 ${
+      className={`flex flex-col-reverse sm:w-56 gap-2 md:items-center md:gap-4 md:w-96 ${
         reversed
           ? "md:flex-row-reverse justify-start items-start"
           : "md:flex-row justify-end items-end"
@@ -228,7 +228,7 @@ const ProblemItem = ({ title, desc, accent, accentColor, reversed }: any) => {
           reversed && "flex-row-reverse"
         }`}
       >
-        <h2 className="text-default-20 text-xs sm:text-[20px] leading-6 font-medium uppercase w-min">
+        <h2 className="text-default-20 text-xs sm:text-[20px] leading-tight font-medium uppercase w-24">
           {title}
         </h2>
         <rect className={`h-3 w-3 ${bgColor}`}></rect>
