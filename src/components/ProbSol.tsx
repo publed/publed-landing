@@ -7,33 +7,16 @@ const ProbSol = () => {
       className={`relative flex flex-col items-start self-stretch`}
     >
       <div
-<<<<<<< HEAD
-        className={`bg-secondary-blue60 flex flex-col justify-between items-center sm:px-10 px-5 py-20 sm:py-10 gap-2.5 w-full h-[618px]`}
-      >
-        <h2 className="font-notosans text-typo-white text-[28px] sm:text-[56px] leading-[normal] drop-shadow-[0_0.1px_1px_rgba(255,255,255,255)] text-center">
-          Traditional System <br />
-          Pain Points
-=======
         className={`bg-secondary-blue60 flex flex-col justify-between items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[580px] sm:h-[678px]`}
       >
         <h2 className="font-notosans text-typo-white text-[28px] sm:text-[56px] leading-tight drop-shadow-[0_0.5px_2px_rgba(255,255,255,255)] text-center">
-          Traditional Scientific Publishing
->>>>>>> eda0807120f0bef46cce9d11a2dacd91692a2011
+          Traditional System <br /> - Paint Points
         </h2>
       </div>
 
       <div
-<<<<<<< HEAD
-        className={`bg-blue-1 flex flex-col justify-end items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[618px]`}
-      ></div>
-=======
         className={`bg-blue-1 flex flex-col justify-end items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[580px] sm:h-[678px]`}
-      >
-        <h2 className="font-notosans text-typo-dark-blue text-[28px] sm:text-[56px] leading-tight drop-shadow-[0_2px_2px_rgb(0,74,172)]">
-          Solutions
-        </h2>
-      </div>
->>>>>>> eda0807120f0bef46cce9d11a2dacd91692a2011
+      ></div>
 
       {/* Setas LG */}
       <div className="flex flex-col absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-screen">
@@ -58,8 +41,8 @@ const ProbSol = () => {
           <div className="flex justify-center mt-[138px] mb-6 md:mb-20 md:mt-16 xlg:mb-8 xlg:mt-28">
             {/* Monopoly */}
             <ProblemItemCenter
-              title={"Monopoly"}
-              desc={"scientific publishing market"}
+              title={"Centralized Monopoly"}
+              desc={"Scientific Publishing Market"}
               accent={"$26B"}
               accentColor={"pink"}
               reversed
@@ -69,17 +52,18 @@ const ProbSol = () => {
           <div className="flex justify-center gap-11 mb-8 md:gap-52 md:mb-20 xlg:gap-[365px]">
             {/* Centralization */}
             <ProblemItem
-              title={"Centralization"}
-              desc={"belongs to the top 5 publishers"}
+              title={"Silos"}
+              desc={"of papers are not read by anyone else other than authors"}
               accent={"50%"}
               accentColor={"purple"}
             />
             {/* Blindness */}
             <ProblemItem
               title={"Opacity Culture"}
-              desc={"of non-reproduceable"}
-              // desc={"of non-reproduceable research - Replication Crisis"}
-              accent={"70%"}
+              desc={
+                "main entities (Reviewers, Authors and the middleman) undergo opaque processes "
+              }
+              accent={"3"}
               accentColor={"red"}
               reversed
             />
@@ -89,16 +73,15 @@ const ProbSol = () => {
             {/* Paywalls */}
             <ProblemItem
               title={"Paywalls"}
-              desc={"of academic docs have limited access"}
+              desc={"of scholarly docs have limited access"}
               accent={"75%"}
               accentColor={"blue"}
             />
             {/* Copyrights */}
             <ProblemItem
               title={"Pre-Web format"}
-              desc={"paper static format"}
-              // desc={"paper static format is obsolete"}
-              accent={"1600s"}
+              desc={"paper static format is obsolete"}
+              accent={"1600's"}
               accentColor={"yellow"}
               reversed
             />
@@ -111,18 +94,18 @@ const ProbSol = () => {
           <div className="flex justify-center gap-16 mb-7 md:gap-60 md:mb-8 xlg:gap-[625px]">
             {/* Ownership */}
             <SolutionItem
-              title={"Ownership"}
+              title={"Democratization"}
               desc={
-                "Leveraging Web3 technologies, Publed ensures that authors retain ownership of their research objects"
+                "Publed enables a democratic access to sciencitific knowledge by cutting down the middleman costs"
               }
               accentColor={"yellow"}
               reversed
             />
             {/* Transparency */}
             <SolutionItem
-              title={"Transparency"}
+              title={"Dynamic Research Objects"}
               desc={
-                "Publed enables transparency and traceability within the scientific publishing process, since all actions can be publicly accessed and audited"
+                "Publed combines all artifacts of research including datasets, code, figures, slides, videos, etc..., in a Dynamic Multi-modal Research Object"
               }
               accentColor={"blue"}
             />
@@ -131,29 +114,29 @@ const ProbSol = () => {
           <div className="flex justify-center gap-11 mb-8 md:gap-52 md:mb-4 xlg:gap-[365px]">
             {/* Democratization */}
             <SolutionItem
-              title={"Democratization"}
+              title={"Socializing Science"}
               desc={
-                "Publed enables a democratic access to sciencitific knowledge by cutting down the middleman costs"
+                "In Publed anyone can comment on Research Objects and interact with authors"
               }
               accentColor={"red"}
               reversed
             />
             {/* Decentralization */}
             <SolutionItem
-              title={"Decentralization"}
+              title={"Transparency"}
               desc={
-                "Blockchain technology to distribute content across a network of nodes"
+                "Publed enables transparency and traceability within the scientific publishing process, since all actions can be publicly accessed and audited"
               }
               accentColor={"purple"}
             />
           </div>
           {/* 3rd Row */}
           <div className="flex justify-center">
-            {/* Incentivization */}
+            {/* Monetization and Ownership */}
             <SolutionItemCenter
-              title={"Incentivization"}
+              title={"Monetization and Ownership"}
               desc={
-                "Publed empowers researchers enabling the monetization of their genuine work through crypto-economic incentives"
+                "Publed empowers researchers enabling the monetization of their genuine work through crypto-economic incentives while retaining their intellectual property ownership"
               }
               accentColor={"pink"}
             />
