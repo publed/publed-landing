@@ -8,12 +8,12 @@ const Navbar = () => {
   return (
     <div>
       <nav className="w-full flex flex-col py-4 items-center">
-        <div className="w-full flex flex-row items-center justify-between mr-10">
+        <div className="w-full flex flex-row items-center justify-between">
           <a href="/">
             <img
               src={hlogo}
               alt="publed"
-              className="md:w-[170px] md:h-[40px] xs:w-[110px] xs:h-[30px] sm:h-[36px] ml-2"
+              className="md:w-[170px] md:h-[40px] xs:w-[110px] xs:h-[30px] sm:h-[36px]"
             />
           </a>
           <div className="flex flex-row space-x-2">

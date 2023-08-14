@@ -26,20 +26,20 @@ const Home = () => {
         >
           {/* Text */}
           <div
-            className={`${styles.flexStart} flex-col items-center sm:px-5 px-4 gap-16`}
+            className={`${styles.flexStart} flex-col items-center sm:px-5 px-1 gap-16`}
           >
             {/* Heading */}
             <div className={`${styles.flexStart} flex-col gap-16`}>
               <div className="flex flex-col items-start gap-2">
                 <p>
-                  <span className="font-notosans sm:text-[24px] text-[18px] font-normal leading-[1em] text-typo-white">
+                  <span className="font-notosans sm:text-[24px] text-[16px] font-normal leading-[1em] text-typo-white">
                     Bringing Science from Web0 to{" "}
                     <span className=" font-notosans sm:text-[24px] text-[18px] font-normal leading-[1em] text-primary-blue-3">
                       Web3
                     </span>
                   </span>
                 </p>
-                <span className="font-notosans xs:text-[50px] ss:text-[52px] sm:text-[52px] md:text-[76px] lg:text-[88px] xl:text-[88px] font-normal leading-[1em]  text-typo-white capitalize">
+                <span className="font-notosans xs:text-[47px] ss:text-[52px] sm:text-[52px] md:text-[76px] lg:text-[88px] xl:text-[88px] font-normal leading-[1em]  text-typo-white capitalize">
                   Democratizing
                   <br /> Scientific Publishing
                 </span>
