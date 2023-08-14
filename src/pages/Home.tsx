@@ -39,15 +39,15 @@ const Home = () => {
                     </span>
                   </span>
                 </p>
-                <span className="font-notosans xxs:text-[42px] xs:text-[52px] ss:text-[52px] sm:text-[52px] md:text-[76px] lg:text-[88px] xl:text-[88px] font-normal leading-[1em]  text-typo-white capitalize">
-                  Decentralizing
+                <span className="font-notosans xs:text-[50px] ss:text-[52px] sm:text-[52px] md:text-[76px] lg:text-[88px] xl:text-[88px] font-normal leading-[1em]  text-typo-white capitalize">
+                  Democratizing
                   <br /> Scientific Publishing
                 </span>
               </div>
 
               <div className="flex items-baseline flex-row gap-2">
                 <rect className="w-3 h-3 bg-blue-3"></rect>
-                <span className="flex-1 font-notosans md:text-[16px] text-[14px] font-normal sm:leading-6 leading-5 text-typo-white sm:w-[710px] w-[336px]">
+                <span className="flex-1 font-notosans md:text-[16px] text-[12px] font-normal sm:leading-6 leading-5 text-typo-white sm:w-[710px] w-[336px]">
                   Take control of your scientific contributions! Unlock the
                   potential of your research with our decentralized,
                   transparent, and collaborative platform

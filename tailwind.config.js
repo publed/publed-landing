@@ -61,11 +61,12 @@ module.exports = {
         contain: "contain",
         "50%": "50%",
         "100%": "100%",
+        "150%": "150%",
         "345%": "345%",
       },
     },
     screens: {
-      xs: "375px",
+      xs: "360px",
       ss: "620px",
       sm: "768px",
       md: "1020px",
