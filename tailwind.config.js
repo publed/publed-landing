@@ -50,6 +50,19 @@ module.exports = {
       fontFamily: {
         notosans: ["Noto Sans", "sans-serif"],
       },
+      backgroundPosition: {
+        "bp-sm": "50% 40%",
+        "bp-ss": "55% 32%",
+        "bp-xs": "58% 10%",
+      },
+      backgroundSize: {
+        auto: "auto",
+        cover: "cover",
+        contain: "contain",
+        "50%": "50%",
+        "100%": "100%",
+        "345%": "345%",
+      },
     },
     screens: {
       xs: "375px",
@@ -63,19 +76,6 @@ module.exports = {
       hero: "url('/src/assets/herobg.png')",
       droadmap: "url('/src/assets/roadmap_desktop_1.svg')",
       mroadmap: "url('/src/assets/roadmap_mobile_1.svg')",
-    },
-    backgroundSize: {
-      auto: "auto",
-      cover: "cover",
-      contain: "contain",
-      "50%": "50%",
-      "100%": "100%",
-    },
-    backgroundPosition: {
-      "bp-sm": "50% 40%",
-      "bp-ss": "55% 32%",
-      "bp-xs": "58% 32%",
-      center: "center",
     },
     textColor: {
       default: {

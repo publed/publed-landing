@@ -48,7 +48,7 @@ const Hero = () => {
       </section>
 
       <a href="#probsol" className="mt-auto">
-        <div className="flex flex-row justify-center mb-1">
+        <div className="flex flex-row justify-center">
           <img src={arrow} alt="arrow" />
           <div className="font-notosans text-typo-white">Scroll Down</div>
         </div>

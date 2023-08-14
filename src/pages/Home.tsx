@@ -18,7 +18,7 @@ import Partners from "../components/Partners";
 const Home = () => {
   return (
     <>
-      <div className="bg-hero bg-no-repeat bg-cover xs:bg-bp-xs ss:bg-bp-ss sm:bg-bp-sm md:bg-[45%] lg:bg-[35%] flex flex-col justify-center h-screen w-full">
+      <div className="bg-hero bg-no-repeat bg-345% md:bg-cover xs:bg-bp-xs ss:bg-bp-ss sm:bg-bp-sm md:bg-[45%] lg:bg-[35%] flex flex-col justify-center h-screen w-full">
         <section
           id="Hero"
           className={` flex flex-col items-start w-full h-screen justify-center`}
@@ -57,7 +57,7 @@ const Home = () => {
         </section>
 
         <a href="#probsol" className="mt-auto">
-          <div className="flex flex-row justify-center mb-1">
+          <div className="flex flex-row justify-center">
             <img src={arrow} alt="arrow" />
             <div className="font-notosans text-typo-white">Scroll Down</div>
           </div>
