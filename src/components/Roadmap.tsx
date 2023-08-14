@@ -2,7 +2,7 @@ const Roadmap = () => {
   return (
     <section
       id="roadmap"
-      className={`bg-mroadmap sm:bg-troadmap lg:bg-droadmap bg-cover bg-center  bg-no-repeat relative flex flex-col items-center h-[850px] md:h-screen`}
+      className={`bg-mroadmap sm:bg-troadmap lg:bg-droadmap bg-200% ss:bg-cover bg-center  bg-no-repeat relative flex flex-col items-center h-screen`}
     >
       <div className="flex flex-col justify-center items-center h-full w-full">
         {/* <h2 className="font-notosans text-typo-dark-blue xl:text-[72px] md:text-[64px] xs:text-[42px] font-normal leading-[72px] mt-6">

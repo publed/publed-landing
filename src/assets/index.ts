@@ -33,6 +33,7 @@ import arrowsSm from "./svg/arrows-sm.svg";
 import mroadmap from "./svg/mroadmap.svg";
 import troadmap from "./svg/troadmap.svg";
 import droadmap from "./svg/droadmap.svg";
+import howItWorksStatic from "./how_it_works_7.png";
 
 export {
   close,
@@ -70,4 +71,5 @@ export {
   droadmap,
   mroadmap,
   troadmap,
+  howItWorksStatic,
 };
