@@ -3,7 +3,7 @@ import { hiw, hiwfm, hiwpm, teeny, teenyBlue } from "../assets";
 import { useState } from "react";
 
 const HowItWorks = () => {
-  const [premiumSelected, setPremiumSelected] = useState(false);
+  const [premiumSelected, setPremiumSelected] = useState(true);
   const [freeSelected, setFreeSelected] = useState(false);
   return (
     <section
@@ -41,13 +41,13 @@ const HowItWorks = () => {
       </div>
       <div className="flex justify-center items-center lg:w-[800px] h-full">
         <div className="flex flex-col justify-center">
-          <div className="group h-96 w-96 [perspective:1000px] p-4">
+          <div className="group h-96 w-96 [perspective:1000px] p-2">
             <div
               className={`flex h-full w-full rounded-xl shadow-xl transition-all duration-500 transform-style:preserve-3d ${
                 premiumSelected ? "[transform:rotateY(180deg)]" : ""
               }`}
             >
-              <div className="flex  justify-center items center rounded-xl">
+              <div className="flex justify-center items center rounded-xl">
                 {premiumSelected ? (
                   <Lottie animationData={hiw} loop={true} />
                 ) : null}
