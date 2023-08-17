@@ -64,7 +64,10 @@ const Navbar = () => {
                 className={`font-notosans font-normal text-typo-white cursor-pointer text-[16px] leading-8 ${
                   active === nav.title ? "font-semibold" : "font-normal"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
+                onClick={() => {
+                  setActive(nav.title);
+                  setToggle(false);
+                }}
               >
                 {nav.id === "about" ? (
                   <a href={`${nav.id}`}>{nav.title}</a>
