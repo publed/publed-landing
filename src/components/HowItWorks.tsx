@@ -41,10 +41,10 @@ const HowItWorks = () => {
       </div>
       <div className="flex justify-center items-center lg:w-[800px] h-full">
         <div className="flex flex-col justify-center">
-          <div className="group h-96 w-96 ss:h-[500px] sm:w-[500px] [perspective:1000px] p-2">
+          <div className="group h-96 w-96 ss:h-[600px] ss:w-[600px] md:w-[800px] md:h-[800px] [perspective:1000px] p-2">
             <div
               className={`flex h-full w-full rounded-xl shadow-xl transition-all duration-500 transform-style:preserve-3d ${
-                freeSelected ? "[transform:rotateY(360deg)]" : ""
+                !premiumSelected ? "[transform:rotateY(360deg)]" : ""
               }`}
             >
               <div className="flex justify-center items center rounded-xl">
@@ -54,7 +54,18 @@ const HowItWorks = () => {
               </div>
               <div className="flex justify-center items center rounded-xl mb-8 ">
                 {freeSelected ? (
-                  <Lottie animationData={hiwfm} loop={true} />
+                  <>
+                    <Lottie
+                      animationData={hiwfm}
+                      loop={true}
+                      className="md:hidden"
+                    />
+                    <Lottie
+                      animationData={hiwpm}
+                      loop={true}
+                      className="xs:hidden md:flex"
+                    />
+                  </>
                 ) : null}
               </div>
             </div>
