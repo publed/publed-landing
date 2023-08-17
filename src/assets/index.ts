@@ -1,6 +1,6 @@
 import close from "./close.svg";
 import menu from "./menu.svg";
-import hlogo from "./horizontal-logo.png";
+import hlogo from "./logoh.png";
 import h2logo from "./secondary-hlogo.png";
 import arrow from "./arrow.svg";
 import arrows from "./svg/arrows.svg";
@@ -18,12 +18,13 @@ import github from "./svg/github.svg";
 import { ReactComponent as LinkedinLogo } from "./svg/linkedin.svg";
 import frame from "./svg/Frame (1).svg";
 import svgmarado from "./content.svg";
-import roadmapIcon from "./svg/roadmap_icon.svg";
 import nftCard from "./nft.jpeg";
 import blockchainCard from "./blockchain.png";
 import aiCard from "./ai.jpeg";
 import decstorageCard from "./decentralizedStorage.jpeg";
-import hiw from "./how_it_works.json";
+import hiw from "./how_it_works_premium.json";
+import hiwfm from "./how_it_works_free_vertical_mobile.json";
+import hiwpm from "./how_it_works_free_horizontal_desktop.json";
 import vitor from "./vitor.png";
 import sandro from "./sandro.png";
 import mohamed from "./mohamed.png";
@@ -33,7 +34,8 @@ import arrowsSm from "./svg/arrows-sm.svg";
 import mroadmap from "./svg/mroadmap.svg";
 import troadmap from "./svg/troadmap.svg";
 import droadmap from "./svg/droadmap.svg";
-import howItWorksStatic from "./how_it_works_7.png";
+import teeny from "./svg/teenyicons_play-solid.svg";
+import teenyBlue from "./svg/teenyicons_blue.svg";
 
 export {
   close,
@@ -58,7 +60,8 @@ export {
   nftCard,
   blockchainCard,
   hiw,
-  roadmapIcon,
+  hiwfm,
+  hiwpm,
   decstorageCard,
   vitor,
   sandro,
@@ -71,5 +74,6 @@ export {
   droadmap,
   mroadmap,
   troadmap,
-  howItWorksStatic,
+  teeny,
+  teenyBlue,
 };

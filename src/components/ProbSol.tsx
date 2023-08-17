@@ -15,7 +15,7 @@ const ProbSol = () => {
       </div>
 
       <div
-        className={`bg-blue-1 flex flex-col justify-end items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[580px] sm:h-[678px]`}
+        className={`bg-blue-20 flex flex-col justify-end items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[580px] sm:h-[678px]`}
       ></div>
 
       {/* Setas LG */}

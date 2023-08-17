@@ -13,7 +13,7 @@ const Navbar = () => {
             <img
               src={hlogo}
               alt="publed"
-              className="md:w-[170px] md:h-[40px] xs:w-[110px] xs:h-[30px] sm:h-[36px]"
+              className="md:w-[177px] xs:w-[110px] xs:h-[30px] sm:h-[36px] md:h-[50px]"
             />
           </a>
           <div className="flex flex-row space-x-2">
