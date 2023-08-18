@@ -49,7 +49,7 @@ const About = () => {
       </section>
 
       <section className="w-full bg-[#001225] p-about flex flex-col gap-15 md:gap-20 text-typo-white">
-        <h1 className="text-header md:text-center">Technologies We Use</h1>
+        <h1 className="text-header md:text-center">Innovative Solutions</h1>
         <div className="flex flex-col gap-12 items-center">
           {technologiesData.map((technology, index) => (
             <TechnologyCard {...technology} isLeft={index % 2 == 0} />
@@ -102,9 +102,10 @@ const JoinUs = ({ title, content }: any) => {
 const technologiesData = [
   {
     imageUrl: blockchainCard,
-    title: "Blockchain",
+    title: "Publed 🤝🏻 Web3",
     description:
-      "Blockchain is a decentralized, distributed ledger technology that securely records and verifies transactions across multiple computers or nodes in a network. It consists of a chain of blocks, where each block contains a list of transactions. Once a block is added to the chain, it becomes permanent and cannot be altered without consensus from the network participants. This immutability and transparency make blockchain suitable for various applications, including cryptocurrency transactions, supply chain management, voting systems, and more.",
+      " At the backbone of Publed lies a disruptive technology, blockchain - a decentralized and distributed ledger that securely operates accross an interconnected network of nodes.",
+    // Blockchain is a decentralized and distributed ledger that securely records and verifies transactions accross multiple computers or nodes in a network. This revolutionary technology forms the backbone of Publed to transform the lanscape of Scientific Publishing. Leveraging this technology Publed enables transparency and decentralization in the Publishing process. Authors can now publish their research objects ensuring authenticity and ownership. ",
   },
   {
     imageUrl: nftCard,
