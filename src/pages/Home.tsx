@@ -34,7 +34,7 @@ const Home = () => {
                 <p>
                   <span className="font-notosans sm:text-[24px] text-[16px] font-normal leading-[1em] text-typo-white">
                     Bringing Science from Web0 to{" "}
-                    <span className=" font-notosans sm:text-[24px] text-[18px] font-normal leading-[1em] text-primary-blue-3">
+                    <span className=" font-notosans sm:text-[24px] text-[18px] font-normal leading-[1em] text-regular-blue-40">
                       Web3
                     </span>
                   </span>
@@ -46,7 +46,7 @@ const Home = () => {
               </div>
 
               <div className="flex items-baseline flex-row gap-2">
-                <rect className="w-3 h-3 bg-blue-3"></rect>
+                <rect className="w-3 h-3 bg-regular-blue-60"></rect>
                 <span className="flex-1 font-notosans md:text-[16px] text-[12px] font-normal sm:leading-6 leading-5 text-typo-white sm:w-[710px] w-[336px]">
                   Take control of your scientific contributions! Unlock the
                   potential of your research with our decentralized,
