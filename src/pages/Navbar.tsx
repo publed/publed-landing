@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { navLinks } from "../constants";
 import { close, hlogo, menu } from "../assets";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
@@ -24,11 +25,11 @@ const Navbar = () => {
                   className={`font-notosans font-light cursor-pointer text-[16px] mr-[32px] text-typo-white active:font-bold`}
                 >
                   {nav.id === "about" ? (
-                    <a href={`${nav.id}`}>{nav.title}</a>
+                    <Link to={`/${nav.id}`}>{nav.title}</Link>
                   ) : nav.id === "home" ? (
-                    <a href="/">{nav.title}</a>
+                    <Link to={`/`}>{nav.title}</Link>
                   ) : (
-                    <a href={`/#${nav.id}`}>{nav.title}</a>
+                    <a href={`#${nav.id}`}>{nav.title}</a>
                   )}
                 </li>
               ))}

@@ -8,12 +8,12 @@ const HowItWorks = () => {
   return (
     <section
       id="howitworks"
-      className={`flex flex-col justify-center items-center gap-[80px] p-10`}
+      className={`flex flex-col justify-center items-center px-10 py-20`}
     >
       <h2 className="font-notosans text-typo-dark-blue text-[28px] sm:text-[56px] leading-normal font-semibold ">
         How It Works
       </h2>
-      <div className="flex flex-row justify-start w-[296px] gap-0">
+      <div className="flex flex-row justify-start w-[296px] gap-0 mt-[40px]">
         <button
           className="bg-dark-blue-60 w-full py-4 px-5 rounded-s flex flex-row gap-1 items-center"
           onClick={() => {
@@ -43,7 +43,7 @@ const HowItWorks = () => {
         <div className="flex flex-col justify-center">
           <div className="group h-96 w-96 ss:h-[600px] ss:w-[600px] md:w-[800px] md:h-[800px] [perspective:1000px] p-2">
             <div
-              className={`flex h-full w-full rounded-xl shadow-xl transition-all duration-500 transform-style:preserve-3d ${
+              className={`flex h-full w-full rounded-xl  transition-all duration-500 md:p-10 transform-style:preserve-3d ${
                 !premiumSelected ? "[transform:rotateY(360deg)]" : ""
               }`}
             >
@@ -52,7 +52,7 @@ const HowItWorks = () => {
                   <Lottie animationData={hiw} loop={true} />
                 ) : null}
               </div>
-              <div className="flex justify-center items center rounded-xl mb-8 ">
+              <div className="flex justify-center items center rounded-xl mt-4">
                 {freeSelected ? (
                   <>
                     <Lottie

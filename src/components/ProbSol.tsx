@@ -1,4 +1,4 @@
-import { arrows, arrowsMd, arrowsSm, hlogo } from "../assets";
+import { arrows, arrowsMd, arrowsSm, circlelogo, hlogo } from "../assets";
 
 const ProbSol = () => {
   return (
@@ -10,7 +10,7 @@ const ProbSol = () => {
         className={`bg-secondary-blue60 flex flex-col justify-between items-center sm:px-10 px-5 py-20 gap-2.5 w-full h-[580px] sm:h-[678px]`}
       >
         <h2 className="font-notosans text-typo-white text-[28px] sm:text-[56px] leading-tight drop-shadow-[0_0.5px_2px_rgba(255,255,255,255)] text-center">
-          Traditional System <br /> - Paint Points
+          Traditional System <br /> - Pain Points
         </h2>
       </div>
 
@@ -30,8 +30,8 @@ const ProbSol = () => {
           />
         </div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <circle className="flex bg-blue-4 bolinha justify-center items-center rounded-full h-20 w-20 md:w-40 md:h-40">
-            <img src={hlogo} alt="logo" />
+          <circle className="flex bg-dark-blue-60 bolinha justify-center items-center rounded-full h-20 w-20 md:w-40 md:h-40">
+            <img src={circlelogo} alt="logo" className="h-[48px] md:h-[96px]" />
           </circle>
         </div>
 

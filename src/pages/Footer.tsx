@@ -1,41 +1,39 @@
-import {
-  LinkedinLogo,
-  TwitterLogo,
-  discord,
-  github,
-  h2logo,
-  twitter,
-} from "../assets";
+import { Link } from "react-router-dom";
+import { DiscordLogo, LinkedinLogo, TwitterLogo, h2logo } from "../assets";
 
 const Footer = () => {
   return (
-    <section id="Footer" className={`bg-blue-1 flex flex-row justify-between`}>
+    <section id="Footer" className={`bg-blue-20 flex flex-row justify-between`}>
       {/* Content */}
       <div className="flex flex-col px-10 py-10 gap-20 w-full">
         {/* Nav */}
         <div className="flex flex-row flex-wrap justify-between gap-y-10 gap-x-20 sm:pr-20 md:pr-30">
           {/* links */}
-          <div className="flex flex-col gap-4 items-center">
+          <div className="flex flex-col gap-4 items-start">
             {/* logo */}
-            <img src={h2logo} alt="publed" className="h-[30px]" />
+            <img
+              src={h2logo}
+              alt="publed"
+              className="h-[38.2px] md:h-[45px] md:w-[170px]"
+            />
             {/* social media */}
             <div className="flex flex-row gap-4">
               <a href="https://twitter.com/publed_official" target="__blank">
-                <TwitterLogo fill="#586EBA" />
+                <TwitterLogo fill="#4d6983" />
               </a>
               <a
                 href="https://www.linkedin.com/company/publ3d/"
                 target="__blank"
               >
-                <LinkedinLogo fill="#586EBA" />
+                <LinkedinLogo fill="#4d6983" />
               </a>
-              <img src={discord} alt="discord" />
+              <DiscordLogo fill="#4d6983" />
             </div>
           </div>
           {/* navlinks */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-20 font-notosans text-[16px] font-light text-typo-black">
-            <a href="/about">About Us</a>
-            <a href="#team">Team</a>
+            <Link to="/about">About Us</Link>
+            <Link to="/#team">Team</Link>
             <a href="#">Docs</a>
             <a href="https://publed.gitbook.io/introduction/" target="__blank">
               Whitepaper

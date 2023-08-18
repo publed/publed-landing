@@ -8,7 +8,7 @@ const ContactUs = () => {
         <div className="flex flex-col items-start py-12 gap-[48px] w-full">
           <div className="flex flex-col gap-4">
             <div className="flex flex-row items-center gap-3">
-              <rect className="h-3 w-3 bg-blue-3"></rect>
+              <rect className="h-3 w-3 bg-regular-blue-60"></rect>
               <div className="uppercase leading-[1em] font-semibold text-[20px] text-typo-grey">
                 Contact Us
               </div>
@@ -64,7 +64,7 @@ const ContactUs = () => {
             </div>
           </form>
           <div className="flex justify-end">
-            <button className="px-9 py-3 bg-blue-6 rounded-[100px] font-notosans text-typo-white text-[16px] font-medium leading-[20px]">
+            <button className="px-9 py-3 bg-dark-blue-60 rounded-[100px] font-notosans text-typo-white text-[16px] font-medium leading-[20px]">
               Submit
             </button>{" "}
           </div>

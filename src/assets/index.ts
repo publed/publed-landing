@@ -1,19 +1,19 @@
 import close from "./close.svg";
 import menu from "./menu.svg";
 import hlogo from "./logoh.png";
-import h2logo from "./secondary-hlogo.png";
+import circlelogo from "./svg/circle-logo.svg";
+import h2logo from "./logo uma cor.png";
 import arrow from "./arrow.svg";
 import arrows from "./svg/arrows.svg";
 import scheme from "./scheme.png";
 import linear_gradient from "./svg/linear-gradient.svg";
-import shadow from "./svg/shadow.svg";
 import line from "./svg/line.svg";
 import soluni from "./logo 2.png";
 import solanaLogo from "./svg/solanaLogo.svg";
 import solanaUni from "./svg/logo2.svg";
 import twitter from "./svg/twitter.svg";
 import { ReactComponent as TwitterLogo } from "./svg/twitter.svg";
-import discord from "./svg/discord.svg";
+import { ReactComponent as DiscordLogo } from "./svg/discord.svg";
 import github from "./svg/github.svg";
 import { ReactComponent as LinkedinLogo } from "./svg/linkedin.svg";
 import frame from "./svg/Frame (1).svg";
@@ -42,17 +42,17 @@ export {
   menu,
   hlogo,
   h2logo,
+  circlelogo,
   arrow,
   arrows,
   scheme,
   linear_gradient,
-  shadow,
   line,
   soluni,
   solanaLogo,
   solanaUni,
   twitter,
-  discord,
+  DiscordLogo,
   github,
   frame,
   aiCard,
