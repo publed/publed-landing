@@ -29,7 +29,7 @@ const Navbar = () => {
                         nav.id === "about" ? "font-extrabold" : "font-light"
                       }`}
                       onClick={() => {
-                        setActive(nav.title);
+                        setActive("Home");
                       }}
                     >
                       {nav.id === "about" ? (
@@ -48,7 +48,7 @@ const Navbar = () => {
                         active === nav.title ? "font-bold" : "font-normal"
                       }`}
                       onClick={() => {
-                        setActive(nav.title);
+                        setActive("About");
                       }}
                     >
                       {nav.id === "about" ? (
