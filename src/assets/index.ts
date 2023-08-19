@@ -29,6 +29,8 @@ import vitor from "./vitor.png";
 import sandro from "./sandro.png";
 import mohamed from "./mohamed.png";
 import diogo from "./diogo.png";
+import derek from "./derek.png";
+import ali from "./ali.png";
 import arrowsMd from "./svg/arrows-md.svg";
 import arrowsSm from "./svg/arrows-sm.svg";
 import mroadmap from "./svg/mroadmap.svg";
@@ -36,6 +38,10 @@ import troadmap from "./svg/troadmap.svg";
 import droadmap from "./svg/droadmap.svg";
 import teeny from "./svg/teenyicons_play-solid.svg";
 import teenyBlue from "./svg/teenyicons_blue.svg";
+import handshake from "./handshake.svg";
+import surprise from "./surprise.svg";
+import storage from "./storage.svg";
+import ai from "./ai.svg";
 
 export {
   close,
@@ -76,4 +82,10 @@ export {
   troadmap,
   teeny,
   teenyBlue,
+  derek,
+  ali,
+  handshake,
+  surprise,
+  storage,
+  ai,
 };

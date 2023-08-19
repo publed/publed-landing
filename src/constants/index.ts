@@ -1,5 +1,9 @@
 // Static Text
-export const navLinks = [
+export const defaultLinks = [
+  { id: "home", title: "Home" },
+  { id: "about", title: "About" },
+];
+export const homeLinks = [
   { id: "home", title: "Home" },
   { id: "probsol", title: "Publed" },
   { id: "howitworks", title: "How it Works" },
@@ -7,6 +11,14 @@ export const navLinks = [
   { id: "partners", title: "Partners" },
   { id: "contactus", title: "Contact Us" },
   { id: "about", title: "About" },
+];
+export const aboutLinks = [
+  { id: "home", title: "Home" },
+  { id: "about", title: "About" },
+  { id: "vision", title: "Vision" },
+  { id: "why", title: "Why Us" },
+  { id: "tech", title: "Tech" },
+  { id: "team", title: "Team" },
 ];
 
 export const slogans = [

@@ -9,6 +9,13 @@ import {
   vitor,
   mohamed,
   TwitterLogo,
+  derek,
+  diogo,
+  ali,
+  handshake,
+  surprise,
+  storage,
+  ai,
 } from "../assets";
 
 import "../index.css";
@@ -17,7 +24,7 @@ const About = () => {
   return (
     <>
       <section
-        id="about"
+        id="vision"
         className="font-notosans w-full bg-blue-7 px-about py-40 sm:py-45 md:py-60"
       >
         <div className="mx-auto max-w-[1280px] grid grid-cols-1 md:grid-cols-2">
@@ -37,7 +44,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="w-full bg-white p-about text-typo-dark-grey">
+      <section id="why" className="w-full bg-white p-about text-typo-dark-grey">
         <div className="mx-auto max-w-[1280px] grid grid-cols-1 md:grid-cols-2">
           <h1 className="text-header whitespace-nowrap mb-6">Why Join Us</h1>
           <div className="flex flex-col gap-10 md:max-w-2xl">
@@ -46,10 +53,12 @@ const About = () => {
             ))}
           </div>
         </div>
-        4
       </section>
 
-      <section className="w-full bg-[#001225] p-about flex flex-col gap-15 md:gap-20 text-typo-white">
+      <section
+        id="tech"
+        className="w-full bg-[#001225] p-about flex flex-col gap-15 md:gap-20 text-typo-white"
+      >
         <h1 className="text-header md:text-center">
           Decentralized Scientific Publishing
         </h1>
@@ -65,6 +74,12 @@ const About = () => {
         className="font-notosans w-full bg-white p-about flex flex-col gap-6 md:gap-12 text-typo-black"
       >
         <h1 className="text-header text-center font-medium">Meet Our Team</h1>
+        <div className="flex flex-col gap-10 items-center sm:flex-row sm:flex-wrap sm:justify-center md:gap-x-20">
+          {cofoundersData.map((team) => (
+            <CoFoundersCard {...team} />
+          ))}
+        </div>
+        <br />
         <div className="flex flex-col gap-10 items-center sm:flex-row sm:flex-wrap sm:justify-center md:gap-x-20">
           {teamData.map((team) => (
             <TeamCard {...team} />
@@ -105,31 +120,44 @@ const JoinUs = ({ title, content }: any) => {
 const technologiesData = [
   {
     imageUrl: blockchainCard,
-    title: "Publed 🤝🏻 Web3",
+    title1: "Publed",
+    title2: "Web3",
+    icon: handshake,
     description:
       "At the backbone of Publed lies a disruptive technology known as a blockchain - a decentralized and distributed ledger that securely operates across an interconnected network of nodes. Publed harnesses the potential of blockchain to reshape the landscape of scientific publishing by introducing newfound transparency and decentralization to the publishing process. By embracing this integration of Web3 technologies, Publed is contributing to a new era of scholarly publishing and communication.",
   },
   {
     imageUrl: nftCard,
-    title: "Ownership in Science 😲",
+    title1: "Ownership in Science",
+    icon: surprise,
     description:
       "Publed ensures that authors retain ownership of their work. In Publed, we encapsulate and recognize the various research artifacts beyond the typical paper. Through this approach, authors can effectively keep their scientific efforts organized while upholding the copyright of their research object. This “Research Object” encompasses a combination of research artifacts that can include not just papers but also datasets, tools, presentations, demos, and more. By including these elements, we promote comprehensive knowledge sharing and enhance the potential for science replication. ",
   },
   {
     imageUrl: decstorageCard,
-    title: "Safeguarding Research Integrity 📑",
+    title1: "Safeguarding Research Integrity",
+    icon: storage,
     description:
       "The importance of data storage within the realm of research can't be overstated. Determining where and how to store data, as well as for how long, constitutes essential variables for research data storage. Publed relies on decentralized protocols for storage to ensure permanent availability and accessibility. By distributing the storage of scientific works across a network of multiple nodes, we prevent data loss and ensure data integrity.",
   },
   {
     imageUrl: aiCard,
-    title: "Artificial Intelligence",
+    title1: "Publed",
+    title2: "AI",
+    icon: ai,
     description:
-      "Blockchain is a decentralized, distributed ledger technology that securely records and verifies transactions across multiple computers or nodes in a network. It consists of a chain of blocks, where each block contains a list of transactions. Once a block is added to the chain, it becomes permanent and cannot be altered without consensus from the network participants. This immutability and transparency make blockchain suitable for various applications, including cryptocurrency transactions, supply chain management, voting systems, and more.",
+      "Just as Publed embraced Web3 for scientific publishing, integrating Artificial Intelligence (AI) with Web3 offers a dynamic alliance. By harnessing AI's data-driven insights, Web3 gains a competitive edge in problem-solving, resource optimization, and network efficiency. In scientific publishing, matching reviewers with papers is a persistent challenge. Publed's AI-driven matching pairs \"Research Objects\" with suitable reviewers, analyzing their expertise and history. This innovation streamlines reviews, expediting evaluations while upholding quality. As AI and scientific publishing converge, Publed pioneers a future of precision, efficiency, and meaningful progress.",
   },
 ];
 
-const TechnologyCard = ({ imageUrl, title, description, isLeft }: any) => {
+const TechnologyCard = ({
+  imageUrl,
+  title1,
+  title2,
+  icon,
+  description,
+  isLeft,
+}: any) => {
   return (
     <div
       className={`rounded-2xl overflow-hidden max-w-4xl bg-top bg-no-repeat ${
@@ -145,9 +173,14 @@ const TechnologyCard = ({ imageUrl, title, description, isLeft }: any) => {
           isLeft ? "sm:pl-72" : "sm:pr-72 card-bg-flip"
         }`}
       >
-        <h2 className="text-[22px] leading-6 mb-4 sm:text-[28px] sm:leading-8 md:text-[32px] md:leading-9 md:mb-6">
-          {title}
+        <h2 className="text-[22px] leading-6 mb-4 sm:text-[28px] sm:leading-8 md:text-[32px] md:leading-9 md:mb-6 flex flex-row items-center">
+          {title1}{" "}
+          <span role="img" aria-label="Web3 Icon">
+            <img src={icon} alt="icon" width={35} className="ml-3 mr-3"></img>
+          </span>
+          {title2}{" "}
         </h2>
+
         <p className="text-xs leading-normal md:text-sm text-justify text-default-40">
           {description}
         </p>
@@ -156,42 +189,100 @@ const TechnologyCard = ({ imageUrl, title, description, isLeft }: any) => {
   );
 };
 
-const teamData = [
+const cofoundersData = [
   {
     image: sandro,
-    name: "Sandro Pinto",
-    role: "Co-Founder",
+    name: "Sandro Pinto, PhD",
+    role: "Co-Founder & Management",
     description:
-      "Passionate researcher with expertise in AI, exploring the frontiers of knowledge to drive innovation and make a positive impact",
-    twitter: "twitter.com",
-    linkedin: "linkedin.com",
+      "Forward-thinking leader with 10+ years of experience managing and leading research groups and startups. Prolific writer with 100+ scientific publications. Web3 advisor and consultant.",
+    twitter: "https://twitter.com/sandro2pinto",
+    linkedin: "https://www.linkedin.com/in/sandro2pinto/",
   },
   {
     image: vitor,
     name: "Vítor Ribeiro",
-    role: "Co-Founder",
+    role: "Co-Founder & Tech",
     description:
-      "Passionate researcher with expertise in AI, exploring the frontiers of knowledge to drive innovation and make a positive impact",
-    twitter: "twitter.com",
-    linkedin: "linkedin.com",
+      "Web3 Full Stack Developer with 3 years of experience leading R&D projects and specializing in Web3 solutions. Web3 Hackathon Hunter",
+    twitter: "https://twitter.com/vitorhsr99",
+    linkedin: "https://www.linkedin.com/in/vitor-ribeiro99/",
   },
   {
     image: mohamed,
-    name: "Mohamed Hassan",
-    role: "Co-Founder",
+    name: "Mohamed Hassan, PhD",
+    role: "Co-Founder & Business",
     description:
-      "Passionate researcher with expertise in AI, exploring the frontiers of knowledge to drive innovation and make a positive impact",
+      "15+ years in R&D of software and hardware solutions. Leading a research lab with 35+ papers in top venues and several awards. In Worked in key industry players including Intel and Qualcomm.",
+    twitter: "https://twitter.com/ProfMoHassan",
+    linkedin: "https://www.linkedin.com/in/profmohassan/",
+  },
+];
+
+const teamData = [
+  {
+    image: diogo,
+    name: "Diogo Costa",
+    role: "AI & Research",
+    description:
+      "Comitted researcher and PhD student with expertise in computer science and AI, driven by a passion for advancing technology's frontiers.",
+    twitter: "https://twitter.com/diogo_21_costa",
+    linkedin: "https://www.linkedin.com/in/diogo-costa-66b190189/",
+  },
+  {
+    image: derek,
+    name: "Derek Furtado",
+    role: "Developer",
+    description:
+      "Dedicated graduate student and researcher with expertise in Computer Engineering, wielding skills in Web design.",
+    twitter: "twitter.com",
+    linkedin: "https://www.linkedin.com/in/dffo/",
+  },
+  {
+    image: ali,
+    name: "Ali Hussein",
+    role: "AI & Developer",
+    description: "",
     twitter: "twitter.com",
     linkedin: "linkedin.com",
   },
 ];
 
-const TeamCard = (props: any) => {
+const CoFoundersCard = (props: any) => {
   const { image, name, role, description, twitter, linkedin } = props;
   return (
     <div className="flex flex-col items-center">
       <img src={image} alt={name} className="mb-7 h-50 w-52 sm:w-72 sm:h-72" />
       <h2 className="text-[22px] leading-6 mb-2 sm:text-[28px] sm:leading-8 sm:mb-3 md:text-[32px] md:leading-9">
+        {name}
+      </h2>
+      <p className="text-default-80 text-sm mb-3 sm:mb-5 md:text-base">
+        {role}
+      </p>
+      <p className="text-center text-xs leading-normal mb-[10px] w-[300px] sm:mb-4 md:text-sm">
+        {description}
+      </p>
+      <div className="flex gap-5 justify-center">
+        <a target="_blank" href={twitter}>
+          <TwitterLogo fill="#131317" />
+        </a>
+        <a target="_blank" href={linkedin}>
+          <LinkedinLogo fill="#131317" />
+        </a>
+      </div>
+    </div>
+  );
+};
+const TeamCard = (props: any) => {
+  const { image, name, role, description, twitter, linkedin } = props;
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <img
+        src={image}
+        alt={name}
+        className="mb-7 h-50 w-52 sm:w-[273px] sm:h-[273px]"
+      />
+      <h2 className="text-[22px] leading-6 mb-2 sm:text-[26px] sm:leading-8 sm:mb-3 md:text-[28px] md:leading-9">
         {name}
       </h2>
       <p className="text-default-80 text-sm mb-3 sm:mb-5 md:text-base">
