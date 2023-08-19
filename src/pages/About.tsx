@@ -25,33 +25,21 @@ const About = () => {
     <>
       <section
         id="vision"
-        className="font-notosans w-full bg-blue-7 px-about py-40 sm:py-45 md:py-60"
+        className="font-notosans w-full bg-blue-20 px-about py-40 sm:py-45 md:py-60"
       >
         <div className="mx-auto max-w-[1280px] grid grid-cols-1 md:grid-cols-2">
-          <h1 className="text-header whitespace-nowrap text-typo-white mb-6">
+          <h1 className="text-header whitespace-nowrap text-typo-dark-blue mb-6 font-semibold">
             Our Vision
           </h1>
-          <p className="text-typo-white text-sm md:text-base md:max-w-2xl">
-            Our vision is to create a decentralized scientific publishing
-            platform that fosters open access, transparent peer review, and
-            global collaboration. By leveraging technologies like blockchain and
-            distributed storage, we aim to democratize access to research,
-            incentivize quality contributions, and empower the scientific
-            community to drive innovation and knowledge dissemination. Join us
-            in revolutionizing scientific publishing for a more inclusive and
-            impactful future.
+          <p className="text-typo-dark-blue text-sm md:text-base md:max-w-2xl">
+            We aim to democratize scientific publishing by creating a
+            decentralized ecosystem that fosters open access, transparent peer
+            review, and global collaboration. By leveraging Web3 technologies
+            like blockchain, NFTs, and distributed storage, we facilitate access
+            to research, incentivize quality contributions, and empower the
+            scientific community to drive innovation and knowledge
+            dissemination.
           </p>
-        </div>
-      </section>
-
-      <section id="why" className="w-full bg-white p-about text-typo-dark-grey">
-        <div className="mx-auto max-w-[1280px] grid grid-cols-1 md:grid-cols-2">
-          <h1 className="text-header whitespace-nowrap mb-6">Why Join Us</h1>
-          <div className="flex flex-col gap-10 md:max-w-2xl">
-            {joinUsData.map((join) => (
-              <JoinUs {...join} />
-            ))}
-          </div>
         </div>
       </section>
 
@@ -59,8 +47,8 @@ const About = () => {
         id="tech"
         className="w-full bg-[#001225] p-about flex flex-col gap-15 md:gap-20 text-typo-white"
       >
-        <h1 className="text-header md:text-center">
-          Decentralized Scientific Publishing
+        <h1 className="text-header text-center font-semibold">
+          Democratizing Scientific Publishing
         </h1>
         <div className="flex flex-col gap-12 items-center">
           {technologiesData.map((technology, index) => (
@@ -92,7 +80,7 @@ const About = () => {
 
 const joinUsData = [
   {
-    title: "1) Scientists",
+    title: "1) Researchers",
     content:
       "Our vision is to create a decentralized scientific publishing platform that fosters open access, transparent peer review, and global collaboration. By leveraging technologies like blockchain and distributed storage, we aim to democratize access to research, incentivize quality contributions, and empower the scientific community to drive innovation and knowledge dissemination.",
   },
@@ -109,12 +97,12 @@ const joinUsData = [
 ];
 
 const JoinUs = ({ title, content }: any) => {
-  return (
-    <div className="flex flex-col gap-4 text-sm md:text-base">
-      <h2 className="font-semibold md:leading-tight">{title}</h2>
-      <p>{content}</p>
-    </div>
-  );
+  // return (
+  //   // <div className="flex flex-col gap-4 text-sm md:text-base">
+  //   //   <h2 className="font-semibold md:leading-tight">{title}</h2>
+  //   //   <p>{content}</p>
+  //   // </div>
+  // );
 };
 
 const technologiesData = [
@@ -124,7 +112,7 @@ const technologiesData = [
     title2: "Web3",
     icon: handshake,
     description:
-      "At the backbone of Publed lies a disruptive technology known as a blockchain - a decentralized and distributed ledger that securely operates across an interconnected network of nodes. Publed harnesses the potential of blockchain to reshape the landscape of scientific publishing by introducing newfound transparency and decentralization to the publishing process. By embracing this integration of Web3 technologies, Publed is contributing to a new era of scholarly publishing and communication.",
+      "At the backbone of Publed lies a disruptive technology known as a Blockchain - a decentralized and distributed ledger that securely operates across an interconnected network of nodes. Publed harnesses the potential of Blockchain to reshape the landscape of scientific publishing by introducing unforeseen transparency and decentralization to the publishing process. By embracing this integration of Web3 technologies, Publed is contributing to a new era of scholarly publishing and communication.",
   },
   {
     imageUrl: nftCard,
@@ -135,10 +123,10 @@ const technologiesData = [
   },
   {
     imageUrl: decstorageCard,
-    title1: "Safeguarding Research Integrity",
+    title1: "Immutable and Always-Available Research",
     icon: storage,
     description:
-      "The importance of data storage within the realm of research can't be overstated. Determining where and how to store data, as well as for how long, constitutes essential variables for research data storage. Publed relies on decentralized protocols for storage to ensure permanent availability and accessibility. By distributing the storage of scientific works across a network of multiple nodes, we prevent data loss and ensure data integrity.",
+      "The importance of data storage within the realm of research can't be overstated. Determining where and how to store data, as well as for how long, constitutes essential variables for research data storage. Publed relies on decentralized protocols for storage to ensure permanent availability and accessibility. By distributing the storage of scientific works across a network of multiple nodes, we prevent data loss and ensure research data integrity.",
   },
   {
     imageUrl: aiCard,
@@ -160,7 +148,7 @@ const TechnologyCard = ({
 }: any) => {
   return (
     <div
-      className={`rounded-2xl overflow-hidden max-w-4xl bg-top bg-no-repeat ${
+      className={`rounded-2xl overflow-hidden max-w-5xl bg-top bg-no-repeat ${
         isLeft ? "sm:bg-left" : "sm:bg-right"
       }`}
       style={{
@@ -170,13 +158,13 @@ const TechnologyCard = ({
     >
       <div
         className={`pb-10 pt-40 xs:pt-60 px-10 sm:py-10 card-bg ${
-          isLeft ? "sm:pl-72" : "sm:pr-72 card-bg-flip"
+          isLeft ? "sm:pl-[340px]" : "sm:pr-[350px] card-bg-flip"
         }`}
       >
-        <h2 className="text-[22px] leading-6 mb-4 sm:text-[28px] sm:leading-8 md:text-[32px] md:leading-9 md:mb-6 flex flex-row items-center">
+        <h2 className="text-[22px] leading-6 mb-4 sm:text-[28px] sm:leading-8 md:text-[30px] md:leading-9 md:mb-6 flex flex-row items-center justify-center sm:justify-normal">
           {title1}{" "}
           <span role="img" aria-label="Web3 Icon">
-            <img src={icon} alt="icon" width={35} className="ml-3 mr-3"></img>
+            <img src={icon} alt="icon" width={35} className="ml-2 mr-2"></img>
           </span>
           {title2}{" "}
         </h2>

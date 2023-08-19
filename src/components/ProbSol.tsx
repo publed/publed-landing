@@ -38,11 +38,11 @@ const ProbSol = () => {
         {/* Problems */}
         <div className="flex flex-col items-center h-full w-full font-notosans text-typo-white">
           {/* 1st Row */}
-          <div className="flex justify-center mt-[160px] mb-6 sm:mt-[115px] md:mb-16 md:mt-16 xlg:mb-2 xlg:mt-24">
+          <div className="flex justify-center mt-[120px] mb-6 sm:mt-[115px] md:mb-16 md:mt-16 xlg:mb-2 xlg:mt-24">
             {/* Monopoly */}
             <ProblemItemCenter
               title={"Centralized Monopoly"}
-              desc={"Scientific Publishing Market"}
+              desc={"scientific publishing market"}
               accent={"$26B"}
               accentColor={"pink"}
               reversed
@@ -61,7 +61,7 @@ const ProbSol = () => {
             <ProblemItem
               title={"Opacity Culture"}
               desc={
-                "main entities (Reviewers, Authors and the middleman) undergo opaque processes "
+                "main authorities(reviewers, authors, middleman) undergo opaque processes"
               }
               accent={"3"}
               accentColor={"red"}
@@ -91,12 +91,12 @@ const ProbSol = () => {
         {/* Solutions */}
         <div className="flex flex-col items-center justify-end h-full w-full font-notosans text-typo-white">
           {/* 1st Row */}
-          <div className="grid grid-cols-2 justify-center gap-16 mb-10 sm:mb-16 md:gap-60 md:mb-12 xlg:gap-[625px]">
+          <div className="grid grid-cols-2 justify-center gap-16 mb-4 sm:mb-16 md:gap-60 md:mb-12 xlg:gap-[620px]">
             {/* Ownership */}
             <SolutionItem
               title={"Democratization"}
               desc={
-                "Publed enables a democratic access to sciencitific knowledge by cutting down the middleman costs"
+                "Publed democratizes access to the scientific knowledge by cutting down the middleman costs"
               }
               accentColor={"yellow"}
               reversed
@@ -105,18 +105,18 @@ const ProbSol = () => {
             <SolutionItem
               title={"Dynamic Research Objects"}
               desc={
-                "Publed combines all artifacts of research including datasets, code, figures, slides, videos, etc..., in a Dynamic Multi-modal Research Object"
+                "Publed combines all artifacts of research (e.g., document, datasets, code, figures, slides, videos) in a Dynamic Multi-modal Research Object”"
               }
               accentColor={"blue"}
             />
           </div>
           {/* 2nd Row */}
-          <div className="grid grid-cols-2 justify-center gap-11 mb-2 sm:mb-12 md:gap-52 md:mb-12 xlg:gap-[365px]">
+          <div className="grid grid-cols-2 justify-center gap-11 mb-6 sm:mb-12 md:gap-52 md:mb-12 xlg:gap-[365px]">
             {/* Democratization */}
             <SolutionItem
               title={"Socializing Science"}
               desc={
-                "In Publed anyone can comment on Research Objects and interact with authors"
+                "Publed enables advanced Peer-to-Peer interaction and socialization of science"
               }
               accentColor={"red"}
               reversed
@@ -125,7 +125,7 @@ const ProbSol = () => {
             <SolutionItem
               title={"Transparency"}
               desc={
-                "Publed enables transparency and traceability within the scientific publishing process, since all actions can be publicly accessed and audited"
+                "Publed enables transparency and traceability within the scientific publishing process"
               }
               accentColor={"purple"}
             />
@@ -136,7 +136,7 @@ const ProbSol = () => {
             <SolutionItemCenter
               title={"Monetization and Ownership"}
               desc={
-                "Publed empowers researchers enabling the monetization of their genuine work through crypto-economic incentives while retaining their intellectual property ownership"
+                "Publed enables the monetization of researchers' genuine work while retaining their IP ownership"
               }
               accentColor={"pink"}
             />

@@ -33,10 +33,10 @@ const Footer = () => {
           {/* navlinks */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-20 font-notosans text-[16px] font-light text-typo-black">
             <Link to="/about">About Us</Link>
-            <Link to="/#team">Team</Link>
-            <a href="#">Docs</a>
+            <a href="/about#vision">Vision</a>
+            <a href="/about#team">Team</a>
             <a href="https://publed.gitbook.io/introduction/" target="__blank">
-              Whitepaper
+              Docs
             </a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
