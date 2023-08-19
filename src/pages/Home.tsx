@@ -47,7 +47,7 @@ const Home = () => {
 
               <div className="flex items-baseline flex-row gap-2">
                 <rect className="w-3 h-3 bg-regular-blue-60"></rect>
-                <span className="flex-1 font-notosans md:text-[16px] text-[12px] font-normal sm:leading-6 leading-5 text-typo-white sm:w-[680px] w-[306px]">
+                <span className="flex-1 font-notosans md:text-[16px] text-[12px] font-normal sm:leading-6 leading-5 text-typo-white sm:w-[680px] w-[336px]">
                   Take control of your scientific contributions! Monetize, be
                   rewarded! Unlock the potential of your research with our
                   decentralized, transparent, and collaborative platform.
