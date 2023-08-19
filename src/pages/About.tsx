@@ -46,10 +46,13 @@ const About = () => {
             ))}
           </div>
         </div>
+        4
       </section>
 
       <section className="w-full bg-[#001225] p-about flex flex-col gap-15 md:gap-20 text-typo-white">
-        <h1 className="text-header md:text-center">Innovative Solutions</h1>
+        <h1 className="text-header md:text-center">
+          Decentralized Scientific Publishing
+        </h1>
         <div className="flex flex-col gap-12 items-center">
           {technologiesData.map((technology, index) => (
             <TechnologyCard {...technology} isLeft={index % 2 == 0} />
@@ -104,20 +107,19 @@ const technologiesData = [
     imageUrl: blockchainCard,
     title: "Publed 🤝🏻 Web3",
     description:
-      " At the backbone of Publed lies a disruptive technology, blockchain - a decentralized and distributed ledger that securely operates accross an interconnected network of nodes.",
-    // Blockchain is a decentralized and distributed ledger that securely records and verifies transactions accross multiple computers or nodes in a network. This revolutionary technology forms the backbone of Publed to transform the lanscape of Scientific Publishing. Leveraging this technology Publed enables transparency and decentralization in the Publishing process. Authors can now publish their research objects ensuring authenticity and ownership. ",
+      "At the backbone of Publed lies a disruptive technology known as a blockchain - a decentralized and distributed ledger that securely operates across an interconnected network of nodes. Publed harnesses the potential of blockchain to reshape the landscape of scientific publishing by introducing newfound transparency and decentralization to the publishing process. By embracing this integration of Web3 technologies, Publed is contributing to a new era of scholarly publishing and communication.",
   },
   {
     imageUrl: nftCard,
-    title: "Non-Fungible Tokens (NFTs)",
+    title: "Ownership in Science 😲",
     description:
-      "Blockchain is a decentralized, distributed ledger technology that securely records and verifies transactions across multiple computers or nodes in a network. It consists of a chain of blocks, where each block contains a list of transactions. Once a block is added to the chain, it becomes permanent and cannot be altered without consensus from the network participants. This immutability and transparency make blockchain suitable for various applications, including cryptocurrency transactions, supply chain management, voting systems, and more.",
+      "Publed ensures that authors retain ownership of their work. In Publed, we encapsulate and recognize the various research artifacts beyond the typical paper. Through this approach, authors can effectively keep their scientific efforts organized while upholding the copyright of their research object. This “Research Object” encompasses a combination of research artifacts that can include not just papers but also datasets, tools, presentations, demos, and more. By including these elements, we promote comprehensive knowledge sharing and enhance the potential for science replication. ",
   },
   {
     imageUrl: decstorageCard,
-    title: "Decentralized Storage",
+    title: "Safeguarding Research Integrity 📑",
     description:
-      "Blockchain is a decentralized, distributed ledger technology that securely records and verifies transactions across multiple computers or nodes in a network. It consists of a chain of blocks, where each block contains a list of transactions. Once a block is added to the chain, it becomes permanent and cannot be altered without consensus from the network participants. This immutability and transparency make blockchain suitable for various applications, including cryptocurrency transactions, supply chain management, voting systems, and more.",
+      "The importance of data storage within the realm of research can't be overstated. Determining where and how to store data, as well as for how long, constitutes essential variables for research data storage. Publed relies on decentralized protocols for storage to ensure permanent availability and accessibility. By distributing the storage of scientific works across a network of multiple nodes, we prevent data loss and ensure data integrity.",
   },
   {
     imageUrl: aiCard,
