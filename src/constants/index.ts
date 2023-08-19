@@ -16,8 +16,6 @@ export const aboutLinks = [
   { id: "home", title: "Home" },
   { id: "about", title: "About" },
   { id: "vision", title: "Vision" },
-  { id: "why", title: "Why Us" },
-  { id: "tech", title: "Tech" },
   { id: "team", title: "Team" },
 ];
 

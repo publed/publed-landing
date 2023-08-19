@@ -105,7 +105,7 @@ const ProbSol = () => {
             <SolutionItem
               title={"Dynamic Research Objects"}
               desc={
-                "Publed combines all artifacts of research (e.g., document, datasets, code, figures, slides, videos) in a Dynamic Multi-modal Research Object”"
+                "Publed combines all artifacts of research (e.g., document, datasets, code, figures, slides, videos) in a Dynamic Multi-Modal Research Object"
               }
               accentColor={"blue"}
             />
