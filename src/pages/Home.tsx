@@ -26,7 +26,7 @@ const Home = () => {
         >
           {/* Text */}
           <div
-            className={`${styles.flexStart} flex-col items-center sm:px-5 px-1 gap-16`}
+            className={`${styles.flexStart} flex-col items-center sm:px-5 px-[5px] gap-16`}
           >
             {/* Heading */}
             <div className={`${styles.flexStart} flex-col gap-16`}>
