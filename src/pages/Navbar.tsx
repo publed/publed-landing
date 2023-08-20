@@ -30,6 +30,7 @@ const Navbar = () => {
                       }`}
                       onClick={() => {
                         setActive("Home");
+                        return;
                       }}
                     >
                       {nav.id === "about" ? (
@@ -41,25 +42,7 @@ const Navbar = () => {
                       )}
                     </li>
                   ))
-                : aboutLinks.map((nav) => (
-                    <li
-                      key={nav.id}
-                      className={`font-notosans font-light cursor-pointer text-[16px] mr-[32px] text-typo-white active:font-bold ${
-                        active === nav.title ? "font-bold" : "font-normal"
-                      }`}
-                      onClick={() => {
-                        setActive("About");
-                      }}
-                    >
-                      {nav.id === "about" ? (
-                        <Link to={`/${nav.id}`}>{nav.title}</Link>
-                      ) : nav.id === "home" ? (
-                        <Link to={`/`}>{nav.title}</Link>
-                      ) : (
-                        <a href={`#${nav.id}`}>{nav.title}</a>
-                      )}
-                    </li>
-                  ))}
+                : null}
             </ul>
 
             <a href="https://publed.io" target="__blank">
