@@ -231,9 +231,9 @@ const teamData = [
     name: "Ali Hussein",
     role: "AI & Research",
     description:
-      "Enthusiastic PhD student and dedicated researcher with a background in AI, blending his fervor with the Blockchain space",
+      "Enthusiastic PhD student and research assistant. Solid background in Deep Learning and Computer Vision, blending his fervor with the Blockchain space.",
     twitter: "twitter.com",
-    linkedin: "linkedin.com",
+    linkedin: "https://www.linkedin.com/in/aliabdellatifhussein/",
   },
 ];
 
