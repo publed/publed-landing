@@ -229,7 +229,7 @@ const teamData = [
   {
     image: ali,
     name: "Ali Hussein",
-    role: "AI & Developer",
+    role: "AI & Research",
     description:
       "Enthusiastic PhD student and dedicated researcher with a background in AI, blending his fervor with the Blockchain space",
     twitter: "twitter.com",
