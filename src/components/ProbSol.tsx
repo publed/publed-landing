@@ -19,7 +19,7 @@ const ProbSol = () => {
       ></div>
 
       {/* Setas LG */}
-      <div className="flex flex-col absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-screen">
+      <div className="flex flex-col absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <img src={arrows} alt="arrows" className="hidden xlg:block" />
           <img src={arrowsSm} alt="arrows" className="pt-[108px] md:hidden" />
