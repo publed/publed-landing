@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { aboutLinks, homeLinks } from "../constants";
 import { close, hlogo, menu } from "../assets";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
   const [active, setActive] = useState<string>("Home");
+  const navigate = useNavigate();
   return (
     <div>
       <nav className="w-full flex flex-col py-4 items-center">
@@ -45,9 +46,13 @@ const Navbar = () => {
                 : null}
             </ul>
 
-            <a href="https://app.publed.io" target="__blank">
-              <button className=" px-4 py-2 ss:px-7 ss:py-3 rounded-full button-main text-typo-dark-blue font-medium transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-3 duration-300">
-                Join Now
+            <a href="#contactus">
+              {" "}
+              <button
+                className=" px-4 py-2 ss:px-7 ss:py-3 rounded-full button-main text-typo-dark-blue font-medium transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-3 duration-300"
+                onClick={() => navigate("/")}
+              >
+                Join Us
               </button>
             </a>
 

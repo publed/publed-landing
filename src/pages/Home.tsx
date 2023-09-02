@@ -5,18 +5,13 @@ import HowItWorks from "../components/HowItWorks";
 import Roadmap from "../components/Roadmap";
 import Partners from "../components/Partners";
 import ContactUs from "../components/ContactUs";
-// import HowItWorks from "../../components/HowItWorks";
-// import Roadmap from "../../components/Roadmap";
-// import Partners from "../../components/Partners";
-// import ContactUs from "../../components/ContactUs";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../collect/firebase";
+import { useNavigate } from "react-router-dom";
 
-// xs: "380px",  52 56 | 18 18 | 14 20
-// ss: "620px",  52 56 | 18 18 | 14 20
-// sm: "768px",  76 76 | 24 24 | 14 20
-// md: "1060px", 76 76 | 24 24 | 16 24
-// lg: "1200px", 88 96 | 24 24 | 16 24
-// xl: "1700px", 88 96 | 24 24 | 16 24
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="bg-hero bg-no-repeat bg-345% md:bg-cover xs:bg-bp-xs ss:bg-bp-ss sm:bg-bp-sm md:bg-[45%] lg:bg-[35%] flex flex-col justify-center h-screen w-full">
@@ -53,6 +48,17 @@ const Home = () => {
                   of your research with our decentralized, transparent, and
                   collaborative platform.
                 </span>
+              </div>
+              <div>
+                <a href="#contactus">
+                  {" "}
+                  <button
+                    className=" px-4 py-2 ss:px-7 ss:py-3 rounded-full button-main text-typo-dark-blue font-medium transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-3 duration-300"
+                    onClick={() => navigate("/")}
+                  >
+                    Join Us
+                  </button>
+                </a>
               </div>
             </div>
           </div>

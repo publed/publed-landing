@@ -1,4 +1,26 @@
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../collect/firebase";
+import { useState } from "react";
+
 const ContactUs = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const addTodo = async (e: any) => {
+    e.preventDefault();
+
+    try {
+      const docRef = await addDoc(collection(db, "users"), {
+        email: email,
+        name: name,
+        university: "University of Minho",
+      });
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  };
+
   return (
     <section
       id="contactus"
@@ -36,6 +58,8 @@ const ContactUs = () => {
                   type="text"
                   placeholder=""
                   aria-label="Full name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
             </form>
@@ -47,26 +71,20 @@ const ContactUs = () => {
                   className="appearance-none bg-transparent border-none w-full text-gray-700 py-1 px-2 leading-tight focus:outline-none"
                   type="text"
                   placeholder=""
-                  aria-label="Full name"
+                  aria-label="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
             </form>
           </div>
-          <form className="flex flex-col">
-            <div className="flex flex-col items-start border-b border-black gap-[32px]">
-              <label>Your Message</label>
-              <input
-                className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                type="text"
-                placeholder=""
-                aria-label="Full name"
-              />
-            </div>
-          </form>
           <div className="flex justify-end">
-            <button className="px-9 py-3 bg-dark-blue-60 rounded-[100px] font-notosans text-typo-white text-[16px] font-medium leading-[20px]">
+            <button
+              className="px-9 py-3 bg-dark-blue-60 rounded-[100px] font-notosans text-typo-white text-[16px] font-medium leading-[20px]"
+              onClick={(e) => addTodo(e)}
+            >
               Submit
-            </button>{" "}
+            </button>
           </div>
         </div>
       </div>
