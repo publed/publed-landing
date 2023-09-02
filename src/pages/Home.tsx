@@ -5,8 +5,7 @@ import HowItWorks from "../components/HowItWorks";
 import Roadmap from "../components/Roadmap";
 import Partners from "../components/Partners";
 import ContactUs from "../components/ContactUs";
-import { collection, addDoc } from "firebase/firestore";
-import { db } from "../collect/firebase";
+
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -21,7 +20,7 @@ const Home = () => {
         >
           {/* Text */}
           <div
-            className={`${styles.flexStart} flex-col items-center sm:px-5 px-[5px] gap-16`}
+            className={`${styles.flexStart} flex-col items-center sm:px-5 px-[5px] gap-10`}
           >
             {/* Heading */}
             <div className={`${styles.flexStart} flex-col gap-16`}>
@@ -49,17 +48,17 @@ const Home = () => {
                   collaborative platform.
                 </span>
               </div>
-              <div>
-                <a href="#contactus">
-                  {" "}
-                  <button
-                    className=" px-4 py-2 ss:px-7 ss:py-3 rounded-full button-main text-typo-dark-blue font-medium transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-3 duration-300"
-                    onClick={() => navigate("/")}
-                  >
-                    Join Us
-                  </button>
-                </a>
-              </div>
+            </div>
+            <div className="flex flex-row w-full items-start">
+              <a href="#contactus">
+                {" "}
+                <button
+                  className=" px-4 py-2 ss:px-7 ss:py-3 rounded-full button-main text-typo-dark-blue font-medium transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-3 duration-300"
+                  onClick={() => navigate("/")}
+                >
+                  Join Waitlist
+                </button>
+              </a>
             </div>
           </div>
         </section>
