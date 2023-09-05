@@ -18,7 +18,12 @@ const ContactUs = () => {
         university: university,
       });
       console.log("Document written with ID: ", docRef.id);
-      setSubmited(true);
+      if (email && name && university) {
+        setSubmited(true);
+        setTimeout(() => {
+          setSubmited(false);
+        }, 2000);
+      }
     } catch (e) {
       console.error("Error adding document: ", e);
     }
@@ -27,10 +32,10 @@ const ContactUs = () => {
   return (
     <section
       id="contactus"
-      className={`bg-white flex flex-row justify-around items-center px-5 ss:px-4 py-[10px]`}
+      className={`bg-white flex flex-row justify-center items-center px-5 ss:px-4 py-[10px]`}
     >
-      <div className="flex flex-row justify-center ss:gap-36 gap-8 flex-wrap md:flex-nowrap w-full p-5 lg:p-10">
-        <div className="flex flex-col items-center py-12 gap-[40px] w-full">
+      <div className="flex flex-col justify-center ss:gap-20 gap-8 flex-wrap md:flex-nowrap w-full p-5 lg:p-10">
+        <div className="flex flex-col items-center py-10 gap-[40px] w-full">
           <div className="flex grow items-center leading-[1em] font-medium text-typo-dark-blue text-4xl md:text-[56px]">
             Join our Waitlist
           </div>
@@ -40,17 +45,9 @@ const ContactUs = () => {
               Publed, please join us by submiting your personal data
             </div>
           </div>
-          {/* <div className="flex flex-col gap-3">
-            <div className="uppercase text-typo-grey leading-[18px] font-semibold text-[16px]">
-              Send an e-mail
-            </div>
-            <div className="text-typo-dark-blue text-[28px] font-normal">
-              info@publed.io
-            </div>
-          </div> */}
         </div>
-        <div className="flex flex-col bg-blue-20 px-12 py-12 gap-[48px] w-full shadow-md items-center">
-          <div className="flex flex-col justify-between md:flex-row self-stretch w-full gap-10">
+        <div className="flex flex-col bg-blue-20 px-12 py-10 gap-[48px] w-full sm:w-1/2 lg:w-1/4 shadow-md items-center mx-auto">
+          <div className="flex flex-col justify-between self-stretch w-full gap-10">
             <form className="flex flex-col w-full">
               <div className="flex flex-col items-start">
                 <label>Name</label>
@@ -87,7 +84,7 @@ const ContactUs = () => {
                   type="text"
                   placeholder=""
                   aria-label="University"
-                  value={email}
+                  value={university}
                   onChange={(e) => setUniversity(e.target.value)}
                 />
               </div>
@@ -103,10 +100,26 @@ const ContactUs = () => {
           </div>
         </div>
         {submited ? (
-          <p className="text-typo-dark-blue text-sm md:text-md bg-white rounded-xl p-2 shadow-md">
+          <p className="text-typo-dark-blue text-sm md:text-md bg-green-50 rounded-xl p-2 shadow-md flex justify-center sm:w-1/2 lg:w-1/4 mx-auto">
             ☑ Thanks for joining us!
           </p>
         ) : null}
+        <div className="flex flex-col gap-3 justify-center mx-auto py-10">
+          <div className="text-typo-dark-blue leading-[18px] font-semibold text-[30px]">
+            How Can We Help You?
+          </div>
+          <div className="w-full flex flex-row gap-2 justify-center items-center">
+            <rect className="w-2 h-2 bg-dark-blue-60"></rect>
+            <div className="uppercase text-typo-grey leading-[18px] font-semibold text-[14px] text-center">
+              Send us an e-mail
+            </div>
+          </div>
+          <a href="mailto:info@publed.io">
+            <div className="text-typo-dark-blue text-[28px] font-normal text-center">
+              info@publed.io
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   );
