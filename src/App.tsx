@@ -6,6 +6,7 @@ import NoMatch from "./pages/NoMatch";
 import Layout from "./pages/Layout";
 import ScrollToTop from "./components/ScrollToTop";
 import UseScrollToTop from "./hooks/useScrollToTop";
+import Publed from "./pages/Publed";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/publ3d" element={<Publed />} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
         </Layout>

@@ -1,28 +1,45 @@
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from "../collect/firebase";
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const ContactUs = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [university, setUniversity] = useState("");
+  const [message, setMessage] = useState("");
   const [submited, setSubmited] = useState(false);
 
   const addEmail = async (e: any) => {
     e.preventDefault();
 
     try {
-      const docRef = await addDoc(collection(db, "users"), {
-        email: email,
-        name: name,
-        university: university,
-      });
-      console.log("Document written with ID: ", docRef.id);
-      if (email && name && university) {
+      const querySnapshot = await getDocs(collection(db, "users"));
+      const existingEmails = querySnapshot.docs.map((doc) => doc.data().email);
+
+      if (existingEmails.includes(email)) {
+        toast.success("Successfully toasted!");
         setSubmited(true);
         setTimeout(() => {
           setSubmited(false);
-        }, 2000);
+        }, 4000);
+      } else {
+        const docRef = await addDoc(collection(db, "users"), {
+          email: email,
+          name: name,
+          university: university,
+        });
+        console.log("Document written with ID: ", docRef.id);
+        if (email && name && university) {
+          setSubmited(true);
+          setName("");
+          setUniversity("");
+          setEmail("");
+          setMessage("☑ Thanks for joining us!");
+          setTimeout(() => {
+            setSubmited(false);
+          }, 4000);
+        }
       }
     } catch (e) {
       console.error("Error adding document: ", e);
@@ -98,12 +115,8 @@ const ContactUs = () => {
               Submit
             </button>
           </div>
+          <Toaster />
         </div>
-        {submited ? (
-          <p className="text-typo-dark-blue text-sm md:text-md bg-green-50 rounded-xl p-2 shadow-md flex justify-center sm:w-1/2 lg:w-1/4 mx-auto">
-            ☑ Thanks for joining us!
-          </p>
-        ) : null}
         <div className="flex flex-col gap-3 justify-center mx-auto py-10">
           <div className="text-typo-dark-blue leading-[18px] font-semibold text-[30px]">
             How Can We Help You?
