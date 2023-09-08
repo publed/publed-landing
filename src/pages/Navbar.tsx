@@ -46,7 +46,7 @@ const Navbar = () => {
                 : null}
             </ul>
 
-            <a href="#contactus">
+            <a href="#joinus">
               {" "}
               <button
                 className=" px-4 py-2 ss:px-7 ss:py-3 rounded-full button-main text-typo-dark-blue font-medium transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-3 duration-300"
