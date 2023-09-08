@@ -42,7 +42,7 @@ const ContactUs = () => {
 
   return (
     <section
-      id="contactus"
+      id="joinus"
       className={`bg-white flex flex-row justify-center items-center px-5 ss:px-4 py-[10px]`}
     >
       <div className="flex flex-col justify-center ss:gap-20 gap-8 flex-wrap md:flex-nowrap w-full p-5 lg:p-10">
