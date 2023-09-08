@@ -9,7 +9,7 @@ import scheme from "./scheme.png";
 import linear_gradient from "./svg/linear-gradient.svg";
 import line from "./svg/line.svg";
 import soluni from "./logo 2.png";
-import solanaLogo from "./svg/solanaLogo.svg";
+import solanaLogo from "./logo-wordmark-light.svg";
 import solanaUni from "./svg/logo2.svg";
 import twitter from "./svg/twitter.svg";
 import { ReactComponent as TwitterLogo } from "./svg/twitter.svg";

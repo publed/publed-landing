@@ -201,7 +201,7 @@ const cofoundersData = [
     name: "Mohamed Hassan, PhD",
     role: "Co-Founder & Business",
     description:
-      "15+ years in R&D of software and hardware solutions. Leading a research lab with 35+ papers in top venues and several awards. In Worked in key industry players including Intel and Qualcomm.",
+      "15+ years in R&D of software and hardware solutions. Leading a research lab with 35+ papers in top venues and several awards. Worked in key industry players including Intel and Qualcomm.",
     twitter: "https://twitter.com/ProfMoHassan",
     linkedin: "https://www.linkedin.com/in/profmohassan/",
   },

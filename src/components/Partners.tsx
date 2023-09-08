@@ -9,7 +9,7 @@ const Partners = () => {
       <h2 className="font-notosans text-typo-white text-[28px] sm:text-[56px] leading-normal font-semibold mt-[80px]">
         Our Partners
       </h2>
-      <div className="flex flex-row mb-[120px] justify-center gap-10 flex-wrap">
+      <div className="flex flex-row mb-[120px] justify-center gap-10 flex-wrap items-center">
         <img src={solanaLogo} alt="partner1" />
         <img src={solanaUni} alt="partner2" />
       </div>
