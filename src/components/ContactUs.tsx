@@ -7,8 +7,6 @@ const ContactUs = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [university, setUniversity] = useState("");
-  const [message, setMessage] = useState("");
-  const [submited, setSubmited] = useState(false);
 
   const addEmail = async (e: any) => {
     e.preventDefault();
@@ -17,32 +15,28 @@ const ContactUs = () => {
       const querySnapshot = await getDocs(collection(db, "users"));
       const existingEmails = querySnapshot.docs.map((doc) => doc.data().email);
 
-      if (existingEmails.includes(email)) {
-        toast.success("Successfully toasted!");
-        setSubmited(true);
-        setTimeout(() => {
-          setSubmited(false);
-        }, 4000);
-      } else {
-        const docRef = await addDoc(collection(db, "users"), {
-          email: email,
-          name: name,
-          university: university,
-        });
-        console.log("Document written with ID: ", docRef.id);
-        if (email && name && university) {
-          setSubmited(true);
-          setName("");
-          setUniversity("");
-          setEmail("");
-          setMessage("☑ Thanks for joining us!");
-          setTimeout(() => {
-            setSubmited(false);
-          }, 4000);
+      if (email) {
+        if (existingEmails.includes(email)) {
+          toast.success("Already registered, thank you!");
+        } else {
+          if (email) {
+            const docRef = await addDoc(collection(db, "users"), {
+              email: email,
+              name: name,
+              university: university,
+            });
+            console.log("Document written with ID: ", docRef.id);
+            setName("");
+            setUniversity("");
+            setEmail("");
+            toast.success("Thanks for joining us!");
+          }
         }
+      } else {
+        toast.error("Please insert your data");
       }
     } catch (e) {
-      console.error("Error adding document: ", e);
+      toast.error("Error!");
     }
   };
 
