@@ -2,6 +2,9 @@ import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from "../collect/firebase";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { LuSchool2 } from "react-icons/lu";
+import { BsFillPersonVcardFill } from "react-icons/bs";
+import { MdAlternateEmail } from "react-icons/md";
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -61,7 +64,10 @@ const ContactUs = () => {
           <div className="flex flex-col justify-between self-stretch w-full gap-10">
             <form className="flex flex-col w-full">
               <div className="flex flex-col items-start">
-                <label>Name</label>
+                <div className="flex flex-row justify-start items-center gap-2 w-full ">
+                  <BsFillPersonVcardFill />
+                  <label>Name</label>
+                </div>
                 <input
                   className="bg-blue-20 border border-gray-300 text-gray-900 text-sm rounded-lg focus:bg-gray-50 focus:border-blue-500 block w-full p-2.5 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   type="text"
@@ -75,7 +81,10 @@ const ContactUs = () => {
 
             <form className="flex flex-col w-full">
               <div className="flex flex-col items-start ">
-                <label>Email</label>
+                <div className="flex flex-row justify-start items-center gap-2 w-full ">
+                  <MdAlternateEmail />
+                  <label>Email</label>
+                </div>
                 <input
                   className="bg-blue-20 border border-gray-300 text-gray-900 text-sm rounded-lg focus:bg-gray-50 focus:border-blue-500 block w-full p-2.5 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   type="text"
@@ -89,11 +98,14 @@ const ContactUs = () => {
 
             <form className="flex flex-col w-full">
               <div className="flex flex-col items-start w-full ">
-                <label>University</label>
+                <div className="flex flex-row justify-start items-center gap-2 w-full ">
+                  <LuSchool2 />
+                  <label>Afilliation</label>
+                </div>
                 <input
                   className="bg-blue-20 border border-gray-300 text-gray-900 text-sm rounded-lg focus:bg-gray-50 focus:border-blue-500 block w-full p-2.5 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   type="text"
-                  placeholder=""
+                  placeholder="University of ..., Research Group ... "
                   aria-label="University"
                   value={university}
                   onChange={(e) => setUniversity(e.target.value)}
@@ -112,7 +124,7 @@ const ContactUs = () => {
           <Toaster />
         </div>
         <div className="flex flex-col gap-3 justify-center mx-auto py-10">
-          <div className="text-typo-dark-blue leading-[18px] font-semibold text-[30px]">
+          <div className="text-typo-dark-blue leading-[18px] font-semibold text-[20px] md:text-[28px]">
             How Can We Help You?
           </div>
           <div className="w-full flex flex-row gap-2 justify-center items-center">
