@@ -9,7 +9,7 @@ export const homeLinks = [
   { id: "howitworks", title: "How it Works" },
   { id: "roadmap", title: "Roadmap" },
   { id: "partners", title: "Partners" },
-  { id: "contactus", title: "Contact Us" },
+  // { id: "joinus", title: "Contact Us" },
   { id: "about", title: "About" },
 ];
 export const aboutLinks = [
