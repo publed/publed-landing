@@ -59,10 +59,12 @@ const Home = () => {
           </div>
         </section>
 
-        <a href="#probsol" className="mt-auto">
-          <div className="flex flex-row justify-center">
-            <img src={arrow} alt="arrow" />
-            <div className="font-notosans text-typo-white">Scroll Down</div>
+        <a href="#probsol" className="mb-2">
+          <div className="flex flex-row justify-center items-center">
+            <img src={arrow} alt="arrow" width={30} />
+            <div className="font-notosans text-typo-white text-lg animate-pulse">
+              Scroll Down
+            </div>
           </div>
         </a>
       </div>
