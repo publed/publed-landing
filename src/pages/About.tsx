@@ -48,7 +48,7 @@ const About = () => {
         className="w-full bg-[#001225] p-about flex flex-col gap-15 md:gap-20 text-typo-white"
       >
         <h1 className="text-header text-center font-semibold">
-          Democratizing Scientific Publishing
+          Democratizing Scientific Knowledge
         </h1>
         <div className="flex flex-col gap-12 items-center">
           {technologiesData.map((technology, index) => (
