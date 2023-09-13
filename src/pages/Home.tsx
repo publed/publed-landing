@@ -35,7 +35,7 @@ const Home = () => {
                 </p>
                 <span className="font-notosans xs:text-[47px] ss:text-[52px] sm:text-[52px] md:text-[76px] lg:text-[88px] xl:text-[88px] font-normal leading-[1em]  text-typo-white capitalize">
                   Democratizing
-                  <br /> Scientific Publishing
+                  <br /> Scientific Knowledge
                 </span>
               </div>
 
