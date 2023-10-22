@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import { hiw, hiwfm, hiwpm, howitworks, teeny, teenyBlue } from "../assets";
+import { howitworks } from "../assets";
 import { useState } from "react";
 
 const HowItWorks = () => {
@@ -11,7 +11,7 @@ const HowItWorks = () => {
       className={`flex flex-col justify-center items-center px-10 py-20 gap-8`}
     >
       <h2 className="font-notosans text-typo-dark-blue text-[28px] sm:text-[56px] leading-normal font-semibold ">
-        Publed Ecossystem
+        Knowledge Ecossystem
       </h2>
       {/* <div className="flex flex-row justify-start w-[296px] gap-0 mt-[40px]">
         <button
@@ -72,7 +72,17 @@ const HowItWorks = () => {
           </div>
         </div>
       </div> */}
-      <img src={howitworks} alt="hiw" />
+      <div className="flex relative justify-center items-center">
+        <img src={howitworks} alt="hiw" />
+        <a
+          href="#joinus"
+          className="absolute top-[57%] left-[53%] transform -translate-x-1/2 -translate-y-1/2"
+        >
+          <button className=" px-4 py-2 ss:px-7 ss:py-3 rounded-full text-typo-white font-medium transition ease-in-out delay-150 bg-dark-blue-60 hover:-translate-y-1 hover:scale-110 hover:bg-inherit hover:text-typo-dark-grey duration-300 border border-dark-blue-60 ring-dark-blue-60">
+            <p className="animate-pulse">Join Now!</p>
+          </button>
+        </a>
+      </div>
     </section>
   );
 };

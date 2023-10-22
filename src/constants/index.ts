@@ -5,7 +5,7 @@ export const defaultLinks = [
 ];
 export const homeLinks = [
   { id: "home", title: "Home" },
-  { id: "probsol", title: "Publed" },
+  { id: "showcase", title: "Publed" },
   { id: "howitworks", title: "How it Works" },
   { id: "roadmap", title: "Roadmap" },
   { id: "partners", title: "Partners" },
