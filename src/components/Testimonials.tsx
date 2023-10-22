@@ -97,12 +97,12 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className={`bg-white flex flex-row justify-center items-center px-56 py-40`}
+      className={`bg-white flex flex-row justify-center items-center container mx-auto px-2 ss:px-8 py-40`}
     >
-      <div className="flex flex-row gap-10 w-full items-center">
-        <div className="flex-col inline-flex  w-1/3">
+      <div className="flex flex-col md:flex-row gap-10 w-full items-center">
+        <div className="inline-flex md:flex-col rounded-lg">
           <button
-            className={`bg-default-0 border px-5 py-3 rounded-t-lg transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
+            className={`bg-default-0 px-5 py-3 border rounded-l-lg md:rounded-t-lg transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
               selectedCategory === "Professors" ? "active-category" : ""
             }`}
             onClick={() => handleCategoryClick("Professors")}
@@ -110,7 +110,7 @@ const Testimonials = () => {
             Professors
           </button>
           <button
-            className={`bg-default-0 border px-5 py-3 transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
+            className={`bg-default-0 px-5 py-3 border-y md:border-x transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
               selectedCategory === "Students" ? "active-category" : ""
             }`}
             onClick={() => handleCategoryClick("Students")}
@@ -118,7 +118,7 @@ const Testimonials = () => {
             Students
           </button>
           <button
-            className={`bg-default-0 border px-5 py-3 rounded-b-lg transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
+            className={`bg-default-0 px-5 py-3 border rounded-r-lg md:rounded-b-lg transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
               selectedCategory === "Researchers" ? "active-category" : ""
             }`}
             onClick={() => handleCategoryClick("Researchers")}
@@ -127,8 +127,8 @@ const Testimonials = () => {
           </button>
         </div>
 
-        <div className="bg-default-0 border rounded-lg flex flex-row gap-12 py-5 px-14 justify-center items-center relative w-full h-[320px]">
-          <div className="flex justify-center items-center">
+        <div className="bg-default-0 border rounded-lg flex flex-row gap-12 py-10 px-12 justify-center items-center relative w-full">
+          <div className="justify-center items-center hidden ss:flex">
             <img
               src={testimonialsImage[selectedCategory]}
               alt="researcher"
@@ -136,7 +136,7 @@ const Testimonials = () => {
               height="100px"
             />
           </div>
-          <div className="flex h-60">{testimonialsData[selectedCategory]}</div>
+          <div className="">{testimonialsData[selectedCategory]}</div>
           <img
             src={commas}
             className="absolute top-[-17px] left-7"
