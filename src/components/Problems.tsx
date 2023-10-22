@@ -3,17 +3,14 @@ import { circlelogo } from "../assets";
 
 const Problems = () => {
   return (
-    <section
-      id="problems"
-      className={`relative flex flex-row items-start self-stretch`}
-    >
+    <section id="problems" className={`relative grid grid-cols-2`}>
       <div
-        className={`bg-dark-blue-60 flex flex-col justify-center items-center w-full gap-12 py-20 pl-60 pr-36`}
+        className={`bg-dark-blue-60 flex flex-col justify-center items-center w-full gap-12 py-12 px-5 ss:py-16 ss:pr-15 ss:pl-10`}
       >
         <p className="text-default-0 text-5xl leading-[60px] font-normal">
           Problems
         </p>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 w-full">
           <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px]">
             <ProblemItemCenter
               title={"Access Barriers"}
@@ -63,18 +60,18 @@ const Problems = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="hidden ss:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <circle className="flex bg-dark-blue-60 bolinha justify-center items-center rounded-full h-20 w-20 md:w-40 md:h-40">
           <img src={circlelogo} alt="logo" className="h-[48px] md:h-[96px]" />
         </circle>
       </div>
       <div
-        className={`bg-blue-20 flex flex-col justify-center items-center w-full gap-12 py-20 pr-60 pl-36`}
+        className={`bg-blue-20 flex flex-col justify-center items-center w-full gap-12 py-12 px-5 ss:py-16 ss:pl-15 ss:pr-10`}
       >
         <p className="text-dark-blue-60 text-5xl leading-[60px] font-normal">
           Solutions
         </p>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 w-full">
           <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px]">
             <SolutionItemCenter
               title={"Democratizing of Knowledge"}
@@ -158,7 +155,7 @@ const ProblemItemCenter = ({ title, desc, accent, accentColor }: any) => {
           "flex flex-col items-center text-center md:text-left md:gap-4"
         }
       >
-        <p className={`${descStyle} text-default-40 w-56`}>
+        <p className={`${descStyle} text-default-40 max-w-56`}>
           <span
             className={`text-xs sm:text-base md:text-[24px] leading-none ${textColor}`}
           >
