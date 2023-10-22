@@ -182,7 +182,9 @@ const SolutionItemCenter = ({ title, desc, accentColor }: any) => {
           {title}
         </h2>
 
-        <p className={`${descStyle} text-default-60 w-44 sm:w-80`}>{desc}</p>
+        <p className={`${descStyle} text-default-60 max-w-44 sm:max-w-80`}>
+          {desc}
+        </p>
       </div>
     </div>
   );
