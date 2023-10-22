@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import { hiw, hiwfm, hiwpm, teeny, teenyBlue } from "../assets";
+import { hiw, hiwfm, hiwpm, howitworks, teeny, teenyBlue } from "../assets";
 import { useState } from "react";
 
 const HowItWorks = () => {
@@ -8,12 +8,12 @@ const HowItWorks = () => {
   return (
     <section
       id="howitworks"
-      className={`flex flex-col justify-center items-center px-10 py-20`}
+      className={`flex flex-col justify-center items-center px-10 py-20 gap-8`}
     >
       <h2 className="font-notosans text-typo-dark-blue text-[28px] sm:text-[56px] leading-normal font-semibold ">
-        How It Works
+        Publed Ecossystem
       </h2>
-      <div className="flex flex-row justify-start w-[296px] gap-0 mt-[40px]">
+      {/* <div className="flex flex-row justify-start w-[296px] gap-0 mt-[40px]">
         <button
           className="bg-dark-blue-60 w-full py-4 px-5 rounded-s flex flex-row gap-1 items-center"
           onClick={() => {
@@ -38,8 +38,8 @@ const HowItWorks = () => {
             FREE
           </p>
         </button>
-      </div>
-      <div className="flex justify-center items-center lg:w-[800px] h-full">
+      </div> */}
+      {/* <div className="flex justify-center items-center lg:w-[800px] h-full">
         <div className="flex flex-col justify-center">
           <div className="group h-96 w-96 ss:h-[600px] ss:w-[600px] md:w-[800px] md:h-[800px] [perspective:1000px] p-2">
             <div
@@ -71,7 +71,8 @@ const HowItWorks = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <img src={howitworks} alt="hiw" />
     </section>
   );
 };

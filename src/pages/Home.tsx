@@ -7,6 +7,9 @@ import Partners from "../components/Partners";
 import ContactUs from "../components/ContactUs";
 
 import { useNavigate } from "react-router-dom";
+import Showcase from "../components/Showcase";
+import Testimonials from "../components/Testimonials";
+import Problems from "../components/Problems";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -27,7 +30,7 @@ const Home = () => {
               <div className="flex flex-col items-start gap-2">
                 <p>
                   <span className="font-notosans sm:text-[24px] text-[16px] font-normal leading-[1em] text-typo-white">
-                    Bringing Science from Web0 to{" "}
+                    Bringing Knowledge from Web0 to{" "}
                     <span className=" font-notosans sm:text-[24px] text-[18px] font-normal leading-[1em] text-regular-blue-40">
                       Web3
                     </span>
@@ -35,7 +38,7 @@ const Home = () => {
                 </p>
                 <span className="font-notosans xs:text-[47px] ss:text-[52px] sm:text-[52px] md:text-[76px] lg:text-[88px] xl:text-[88px] font-normal leading-[1em]  text-typo-white capitalize">
                   Democratizing
-                  <br /> Scientific Knowledge
+                  <br /> & Socializing Knowledge
                 </span>
               </div>
 
@@ -59,7 +62,7 @@ const Home = () => {
           </div>
         </section>
 
-        <a href="#probsol" className="mb-2">
+        <a href="#showcase" className="mb-2">
           <div className="flex flex-row justify-center items-center">
             <img src={arrow} alt="arrow" width={30} />
             <div className="font-notosans text-typo-white text-lg animate-pulse">
@@ -70,7 +73,10 @@ const Home = () => {
       </div>
       <div className={`${styles.flexStart} w-full`}>
         <div className={`${styles.boxWidth}`}>
-          <ProbSol />
+          <Showcase />
+          <Testimonials />
+          {/* <ProbSol /> */}
+          <Problems />
           <HowItWorks />
           <Roadmap />
           <Partners />

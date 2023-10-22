@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { aboutLinks, homeLinks } from "../constants";
-import { close, hlogo, menu } from "../assets";
+import { closeMenu, hlogo, menu } from "../assets";
 import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -58,7 +58,7 @@ const Navbar = () => {
 
             <div className="md:hidden flex justify-end items-center">
               <img
-                src={toggle ? close : menu}
+                src={toggle ? closeMenu : menu}
                 alt="menu"
                 className="w-[28px] h-[28px] object-contain "
                 onClick={() => setToggle((prev) => !prev)}

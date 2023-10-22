@@ -1,20 +1,20 @@
-import close from "./close.svg";
+import closeMenu from "./close.svg";
+import close from "./svg/close.svg";
+import open from "./svg/open.svg";
 import menu from "./menu.svg";
 import hlogo from "./logoh.png";
 import circlelogo from "./svg/circle-logo.svg";
+import vision from "./svg/vision.svg";
 import h2logo from "./logo uma cor.png";
 import arrow from "./arrow.svg";
 import arrows from "./svg/arrows.svg";
 import scheme from "./scheme.png";
-import linear_gradient from "./svg/linear-gradient.svg";
 import line from "./svg/line.svg";
-import soluni from "./logo 2.png";
 import solanaLogo from "./logo-wordmark-light.svg";
 import solanaUni from "./svg/logo2.svg";
 import twitter from "./svg/twitter.svg";
 import { ReactComponent as TwitterLogo } from "./svg/twitter.svg";
 import { ReactComponent as DiscordLogo } from "./svg/discord.svg";
-import github from "./svg/github.svg";
 import { ReactComponent as LinkedinLogo } from "./svg/linkedin.svg";
 import frame from "./svg/Frame (1).svg";
 import svgmarado from "./content.svg";
@@ -42,9 +42,21 @@ import handshake from "./handshake.svg";
 import surprise from "./surprise.svg";
 import storage from "./storage.svg";
 import ai from "./ai.svg";
+import showcase from "./svg/demo.svg";
+import commas from "./svg/commas.svg";
+import researcher from "./svg/Researcher.svg";
+import professor from "./svg/Professor.svg";
+import student from "./svg/Student.svg";
+import rmap from "./roadmap.png";
+import howitworks from "./svg/howitworks.svg";
 
 export {
+  rmap,
+  howitworks,
+  showcase,
+  closeMenu,
   close,
+  open,
   menu,
   hlogo,
   h2logo,
@@ -52,14 +64,11 @@ export {
   arrow,
   arrows,
   scheme,
-  linear_gradient,
   line,
-  soluni,
   solanaLogo,
   solanaUni,
   twitter,
   DiscordLogo,
-  github,
   frame,
   aiCard,
   svgmarado,
@@ -88,4 +97,9 @@ export {
   surprise,
   storage,
   ai,
+  researcher,
+  student,
+  professor,
+  vision,
+  commas,
 };

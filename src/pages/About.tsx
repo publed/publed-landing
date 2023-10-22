@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   twitter,
   LinkedinLogo,
@@ -16,11 +17,17 @@ import {
   surprise,
   storage,
   ai,
+  open,
+  close,
 } from "../assets";
 
 import "../index.css";
 
 const About = () => {
+  const [selectedFAQ1, setSelectedFAQ1] = useState<boolean>();
+  const [selectedFAQ2, setSelectedFAQ2] = useState<boolean>();
+  const [selectedFAQ3, setSelectedFAQ3] = useState<boolean>();
+
   return (
     <>
       <section
@@ -32,13 +39,10 @@ const About = () => {
             Our Vision
           </h1>
           <p className="text-typo-dark-blue text-sm md:text-base md:max-w-2xl">
-            We aim to democratize scientific publishing by creating a
-            decentralized ecosystem that fosters open access, transparent peer
-            review, and global collaboration. By leveraging Web3 technologies
-            like blockchain, NFTs, and distributed storage, we facilitate access
-            to research, incentivize quality contributions, and empower the
-            scientific community to drive innovation and knowledge
-            dissemination.
+            We aim to build a knowledge-centric social media platform that
+            facilitates <strong>knowledge</strong> creation, aggregation,
+            sharing, and monetization using the decentralized capabilities of
+            Web3 technologies.
           </p>
         </div>
       </section>
@@ -48,7 +52,7 @@ const About = () => {
         className="w-full bg-[#001225] p-about flex flex-col gap-15 md:gap-20 text-typo-white"
       >
         <h1 className="text-header text-center font-semibold">
-          Democratizing Scientific Knowledge
+          Empowering Knowledge and Connections
         </h1>
         <div className="flex flex-col gap-12 items-center">
           {technologiesData.map((technology, index) => (
@@ -72,6 +76,73 @@ const About = () => {
           {teamData.map((team) => (
             <TeamCard {...team} />
           ))}
+        </div>
+        <div className="flex flex-col sm:flex-row items-center px-30 py-20 gap-20 ">
+          <h1 className="text-4xl font-medium leading-10 text-typo-dark-blue flex my-auto mt-0 ml-0 w-1/3">
+            Frequently Asked Questions
+          </h1>
+          <div className="flex flex-col gap-8 w-2/3">
+            <div className="flex flex-col gap-4 items-end">
+              <div className="flex flex-row gap-10">
+                <p className="text-default-80 text-2xl font-semibold">
+                  How does decentralization benefit me as a publisher?
+                </p>
+                <button
+                  onClick={() => setSelectedFAQ1(!selectedFAQ1)}
+                  className=""
+                >
+                  <img
+                    src={selectedFAQ1 ? close : open}
+                    alt="menu"
+                    className="w-[28px] h-[28px] object-contain "
+                  />
+                </button>
+              </div>
+              {selectedFAQ1 && (
+                <p className="text-[16px] font-normal text-default-80 text-justify max-w-2xl">
+                  Our vision is to create a decentralized scientific publishing
+                  platform that fosters open access, transparent peer review,
+                  and global collaboration. By leveraging technologies like
+                  blockchain and distributed storage, we aim to democratize
+                  access to research, incentivize quality contributions, and
+                  empower the scientific community to drive innovation and
+                  knowledge dissemination.{" "}
+                </p>
+              )}
+            </div>
+
+            <div className="flex flex-col gap-4 items-end">
+              <div className="flex flex-row gap-10">
+                <p className="text-default-80 text-2xl font-semibold">
+                  What types of content can I publish on Publed?
+                </p>
+                <button onClick={() => setSelectedFAQ2(!selectedFAQ2)}>
+                  <img
+                    src={selectedFAQ2 ? close : open}
+                    alt="menu"
+                    className="w-[28px] h-[28px] object-contain "
+                  />
+                </button>
+              </div>
+              {selectedFAQ2 && <p>description2</p>}
+            </div>
+
+            <div className="flex flex-col gap-4 items-end">
+              <div className="flex flex-row gap-10">
+                <p className="text-default-80 text-2xl font-semibold">
+                  How do I get started with Publed?
+                </p>
+                <button onClick={() => setSelectedFAQ3(!selectedFAQ3)}>
+                  <img
+                    src={selectedFAQ3 ? close : open}
+                    alt="menu"
+                    className="w-[28px] h-[28px] object-contain "
+                  />
+                </button>
+              </div>
+              {selectedFAQ3 && <p>description3</p>}
+            </div>
+          </div>
         </div>
       </section>
     </>

@@ -17,7 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            {/* <Route path="/publ3d" element={<Publed />} /> */}
+            <Route path="/publ3d" element={<Publed />} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
         </Layout>
