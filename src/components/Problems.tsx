@@ -93,15 +93,13 @@ const Problems = () => {
           <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <SolutionItemCenter
               title={"Aggregation of Knowledge"}
-              desc={
-                "Publed provides aggregation and agglomeration of Knowledge"
-              }
+              desc={"Publed enables aggregation and agglomeration of Knowledge"}
               accentColor={"red"}
             />
           </div>
           <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <SolutionItemCenter
-              title={"Obsolete Format"}
+              title={"Digital & Dynamic Knowledge Objects"}
               desc={
                 "Publed packages all artifacts including datasets, code, figures, slides, videos, into a Digital and Dynamic Knowledge Object."
               }

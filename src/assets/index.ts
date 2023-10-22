@@ -43,6 +43,7 @@ import surprise from "./surprise.svg";
 import storage from "./storage.svg";
 import ai from "./ai.svg";
 import showcase from "./svg/demo.svg";
+import mshowcase from "./svg/mdemo.svg";
 import commas from "./svg/commas.svg";
 import researcher from "./svg/Researcher.svg";
 import professor from "./svg/Professor.svg";
@@ -54,6 +55,7 @@ export {
   rmap,
   howitworks,
   showcase,
+  mshowcase,
   closeMenu,
   close,
   open,

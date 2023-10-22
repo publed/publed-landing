@@ -75,7 +75,6 @@ const Home = () => {
         <div className={`${styles.boxWidth}`}>
           <Showcase />
           <Testimonials />
-          {/* <ProbSol /> */}
           <Problems />
           <HowItWorks />
           <Roadmap />
