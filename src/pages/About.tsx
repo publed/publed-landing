@@ -151,7 +151,7 @@ const About = () => {
                   />
                 </button>
               </div>
-              {selectedFAQ1 && (
+              {selectedFAQ3 && (
                 <p className="text-[16px] font-normal text-default-80 text-justify max-w-2xl">
                   Simply log in with your preferred social login, use a
                   passwordless email, or connect via a Web3 wallet. Customize
