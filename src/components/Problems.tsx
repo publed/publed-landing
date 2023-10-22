@@ -11,7 +11,7 @@ const Problems = () => {
           Problems
         </p>
         <div className="flex flex-col gap-6 w-full">
-          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px]">
+          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <ProblemItemCenter
               title={"Access Barriers"}
               desc={" - the rise in textbooks prices since 1977"}
@@ -20,7 +20,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px]">
+          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <ProblemItemCenter
               title={"Silos"}
               desc={"Social Media Platforms for Knowledge"}
@@ -29,7 +29,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px]">
+          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <ProblemItemCenter
               title={"Knowledge Fragmentation"}
               desc={"of fragmented data expected by 2025"}
@@ -38,7 +38,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px]">
+          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <ProblemItemCenter
               title={"Obsolete Format"}
               desc={"static format is obsolete"}
@@ -47,7 +47,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px]">
+          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <ProblemItemCenter
               title={"Lack of Incentives"}
               desc={
@@ -72,7 +72,7 @@ const Problems = () => {
           Solutions
         </p>
         <div className="flex flex-col gap-6 w-full">
-          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px]">
+          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <SolutionItemCenter
               title={"Democratizing of Knowledge"}
               desc={
@@ -81,7 +81,7 @@ const Problems = () => {
               accentColor={"pink"}
             />
           </div>
-          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px]">
+          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <SolutionItemCenter
               title={"Socialization of Knowledge"}
               desc={
@@ -90,7 +90,7 @@ const Problems = () => {
               accentColor={"purple"}
             />
           </div>
-          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px]">
+          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <SolutionItemCenter
               title={"Aggregation of Knowledge"}
               desc={
@@ -99,7 +99,7 @@ const Problems = () => {
               accentColor={"red"}
             />
           </div>
-          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px]">
+          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <SolutionItemCenter
               title={"Obsolete Format"}
               desc={
@@ -108,7 +108,7 @@ const Problems = () => {
               accentColor={"blue"}
             />
           </div>
-          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px]">
+          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <SolutionItemCenter
               title={"Monetization and Ownership"}
               desc={
@@ -174,17 +174,21 @@ const SolutionItemCenter = ({ title, desc, accentColor }: any) => {
 
   return (
     <div
-      className={`flex flex-col md:flex-row justify-end items-center md:items-baseline gap-1 md:gap-4`}
+      className={`flex flex-col justify-end items-center md:items-baseline gap-2 md:gap-4`}
     >
-      <div className={`h-3 w-3 ${bgColor}`} />
-      <div className={"text-center md:text-left"}>
-        <h2 className="text-default-80 text-xs sm:text-[20px] leading-6 font-medium uppercase md:mb-2">
+      <div className="flex flex-row items-center gap-1">
+        <div className={`h-3 w-3 ${bgColor}`} />
+
+        <h2 className="text-default-80 text-xs sm:text-[20px] leading-6 font-medium uppercase">
           {title}
         </h2>
-
-        <p className={`${descStyle} text-default-60 max-w-44 sm:max-w-80`}>
-          {desc}
-        </p>
+      </div>
+      <div
+        className={
+          "flex flex-col items-center text-center md:text-left md:gap-4"
+        }
+      >
+        <p className={`${descStyle} text-default-60 max-w-56`}>{desc}</p>
       </div>
     </div>
   );
