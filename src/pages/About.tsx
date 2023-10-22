@@ -85,7 +85,7 @@ const About = () => {
             <div className="flex flex-col gap-4 items-end">
               <div className="flex flex-row gap-10">
                 <p className="text-default-80 text-2xl font-semibold">
-                  How does decentralization benefit me as a publisher?
+                  What is a Knowledge Object?
                 </p>
                 <button
                   onClick={() => setSelectedFAQ1(!selectedFAQ1)}
@@ -100,13 +100,14 @@ const About = () => {
               </div>
               {selectedFAQ1 && (
                 <p className="text-[16px] font-normal text-default-80 text-justify max-w-2xl">
-                  Our vision is to create a decentralized scientific publishing
-                  platform that fosters open access, transparent peer review,
-                  and global collaboration. By leveraging technologies like
-                  blockchain and distributed storage, we aim to democratize
-                  access to research, incentivize quality contributions, and
-                  empower the scientific community to drive innovation and
-                  knowledge dissemination.{" "}
+                  A Knowledge Object is a unique and digital on-chain
+                  representation of a set of artifacts resulting from research
+                  work or any type of knowledge creation. In the case of
+                  scientific research, this can include a research paper, as
+                  well as datasets, videos, presentations, statistics, and other
+                  related materials. All these elements are consolidated into a
+                  Non-Fungible Token (NFT) and published on-chain, preserving
+                  the author's ownership.
                 </p>
               )}
             </div>
@@ -124,7 +125,17 @@ const About = () => {
                   />
                 </button>
               </div>
-              {selectedFAQ2 && <p>description2</p>}
+              {selectedFAQ2 && (
+                <p className="text-[16px] font-normal text-default-80 text-justify max-w-2xl">
+                  As outlined within the Knowledge Object, a diverse range of
+                  formats is supported, granting authors the flexibility to
+                  choose. Researchers can publish research artifacts, whether or
+                  not they undergo peer-review. Educators and students can share
+                  various forms of knowledge production, including university
+                  papers, class presentations, mini courses, tutorials, and
+                  more.
+                </p>
+              )}
             </div>
 
             <div className="flex flex-col gap-4 items-end">
@@ -140,7 +151,14 @@ const About = () => {
                   />
                 </button>
               </div>
-              {selectedFAQ3 && <p>description3</p>}
+              {selectedFAQ1 && (
+                <p className="text-[16px] font-normal text-default-80 text-justify max-w-2xl">
+                  Simply log in with your preferred social login, use a
+                  passwordless email, or connect via a Web3 wallet. Customize
+                  your profile as a Researcher, Professor, Student, or any role
+                  that suits you, and start sharing your knowledge!
+                </p>
+              )}
             </div>
           </div>
         </div>
@@ -183,21 +201,21 @@ const technologiesData = [
     title2: "Web3",
     icon: handshake,
     description:
-      "At the backbone of Publed lies a disruptive technology known as a Blockchain - a decentralized and distributed ledger that securely operates across an interconnected network of nodes. Publed harnesses the potential of Blockchain to reshape the landscape of scientific publishing by introducing unforeseen transparency and decentralization to the publishing process. By embracing this integration of Web3 technologies, Publed is contributing to a new era of scholarly publishing and communication.",
+      "At the backbone of Publed lies a disruptive technology known as a Blockchain - a decentralized and distributed ledger that securely operates across an interconnected network of nodes. Publed harnesses the potential of Blockchain to reshape knowledge production and collaboration by introducing unforeseen transparency and decentralization to the process. By embracing this integration of Web3 technologies, Publed is contributing to a new era of knowledge sharing.",
   },
   {
     imageUrl: nftCard,
-    title1: "Ownership in Science",
+    title1: "Ownership of Knowledge",
     icon: surprise,
     description:
-      "Publed ensures that authors retain ownership of their work. In Publed, we encapsulate and recognize the various research artifacts beyond the typical paper. Through this approach, authors can effectively keep their scientific efforts organized while upholding the copyright of their research object. This “Research Object” encompasses a combination of research artifacts that can include not just papers but also datasets, tools, presentations, demos, and more. By including these elements, we promote comprehensive knowledge sharing and enhance the potential for science replication. ",
+      "Publed guarantees knowledge creators maintain ownership of their contributions. We encapsulate and acknowledge diverse knowledge artifacts, extending beyond conventional and obsolete formats. This 'Knowledge Object' encompasses various elements like datasets, tools, presentations, demos, and more, preserving copyright and promoting comprehensive knowledge sharing, thereby fostering replication.",
   },
   {
     imageUrl: decstorageCard,
-    title1: "Immutable and Always-Available Research",
+    title1: "Immutable and Always-Available Knowledge",
     icon: storage,
     description:
-      "The importance of data storage within the realm of research can't be overstated. Determining where and how to store data, as well as for how long, constitutes essential variables for research data storage. Publed relies on decentralized protocols for storage to ensure permanent availability and accessibility. By distributing the storage of scientific works across a network of multiple nodes, we prevent data loss and ensure research data integrity.",
+      "The significance of data storage in the realm of knowledge, whether it encompasses research findings or academic work can't be overstated. Determining where and how to store data, as well as for how long, constitutes essential variables for knowledge data storage. Publed relies on decentralized protocols for storage to ensure permanent availability and accessibility. By distributing knowledge data across a network of nodes, we safeguard against data loss and uphold the integrity of knowledge data.",
   },
   {
     imageUrl: aiCard,
@@ -205,7 +223,7 @@ const technologiesData = [
     title2: "AI",
     icon: ai,
     description:
-      "Just as Publed embraced Web3 for scientific publishing, integrating Artificial Intelligence (AI) with Web3 offers a dynamic alliance. By harnessing AI's data-driven insights, Web3 gains a competitive edge in problem-solving, resource optimization, and network efficiency. In scientific publishing, matching reviewers with papers is a persistent challenge. Publed's AI-driven matching pairs \"Research Objects\" with suitable reviewers, analyzing their expertise and history. This innovation streamlines reviews, expediting evaluations while upholding quality. As AI and scientific publishing converge, Publed pioneers a future of precision, efficiency, and meaningful progress.",
+      "Just as Publed adopted Web3 for scientific publishing, the fusion of Artificial Intelligence (AI) with Web3 forms a powerful synergy. In the context of scientific publishing, the challenge of matching reviewers with papers persists. Publed's AI-driven system pairs 'Knowledge Objects' with qualified reviewers, analyzing their expertise and history. This innovation streamlines reviews, accelerating evaluations without compromising quality. With AI and scientific publishing merging, Publed leads the way toward a future marked by precision, efficiency, and meaningful progress.",
   },
 ];
 
