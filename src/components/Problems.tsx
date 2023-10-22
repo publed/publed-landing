@@ -7,11 +7,11 @@ const Problems = () => {
       <div
         className={`bg-dark-blue-60 flex flex-col justify-center items-center w-full gap-12 py-12 px-5 ss:py-16 ss:pr-15 ss:pl-10`}
       >
-        <p className="text-default-0 text-2xl md:text-5xl leading-[60px] font-normal">
+        <p className="text-default-0 text-5xl leading-[60px] font-normal">
           Problems
         </p>
         <div className="flex flex-col gap-6 w-full">
-          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px]">
+          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <ProblemItemCenter
               title={"Access Barriers"}
               desc={" - the rise in textbooks prices since 1977"}
@@ -20,7 +20,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 py-2 px-3 md:py-4 md:px-6 rounded-lg flex flex-col md:h-[131px]">
+          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <ProblemItemCenter
               title={"Silos"}
               desc={"Social Media Platforms for Knowledge"}
@@ -29,7 +29,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 py-2 px-3 md:py-4 md:px-6 rounded-lg flex flex-col md:h-[131px]">
+          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <ProblemItemCenter
               title={"Knowledge Fragmentation"}
               desc={"of fragmented data expected by 2025"}
@@ -38,7 +38,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 py-2 px-3 md:py-4 md:px-6 rounded-lg flex flex-col md:h-[131px]">
+          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <ProblemItemCenter
               title={"Obsolete Format"}
               desc={"static format is obsolete"}
@@ -47,7 +47,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 py-2 px-3 md:py-4 md:px-6 rounded-lg flex flex-col md:h-[131px]">
+          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <ProblemItemCenter
               title={"Lack of Incentives"}
               desc={
@@ -68,11 +68,11 @@ const Problems = () => {
       <div
         className={`bg-blue-20 flex flex-col justify-center items-center w-full gap-12 py-12 px-5 ss:py-16 ss:pl-15 ss:pr-10`}
       >
-        <p className="text-dark-blue-60 text-2xl md:text-5xl leading-[60px] font-normal">
+        <p className="text-dark-blue-60 text-5xl leading-[60px] font-normal">
           Solutions
         </p>
         <div className="flex flex-col gap-6 w-full">
-          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px]">
+          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <SolutionItemCenter
               title={"Democratizing of Knowledge"}
               desc={
@@ -81,7 +81,7 @@ const Problems = () => {
               accentColor={"pink"}
             />
           </div>
-          <div className="bg-regular-blue-30 py-2 px-3 md:py-4 md:px-6 rounded-lg flex flex-col h-[140px]">
+          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <SolutionItemCenter
               title={"Socialization of Knowledge"}
               desc={
@@ -90,7 +90,7 @@ const Problems = () => {
               accentColor={"purple"}
             />
           </div>
-          <div className="bg-regular-blue-30 py-2 px-3 md:py-4 md:px-6 rounded-lg flex flex-col h-[140px]">
+          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <SolutionItemCenter
               title={"Aggregation of Knowledge"}
               desc={
@@ -99,7 +99,7 @@ const Problems = () => {
               accentColor={"red"}
             />
           </div>
-          <div className="bg-regular-blue-30 py-2 px-3 md:py-4 md:px-6 rounded-lg flex flex-col h-[140px]">
+          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <SolutionItemCenter
               title={"Obsolete Format"}
               desc={
@@ -108,7 +108,7 @@ const Problems = () => {
               accentColor={"blue"}
             />
           </div>
-          <div className="bg-regular-blue-30 py-2 px-3 md:py-4 md:px-6 rounded-lg flex flex-col h-[140px]">
+          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
             <SolutionItemCenter
               title={"Monetization and Ownership"}
               desc={
@@ -146,7 +146,7 @@ const ProblemItemCenter = ({ title, desc, accent, accentColor }: any) => {
       <div className="flex flex-row items-center gap-1">
         <div className={`h-3 w-3 ${bgColor}`} />
 
-        <h2 className="text-default-20 text-[10px] sm:text-[20px] leading-6 font-medium uppercase">
+        <h2 className="text-default-20 text-xs sm:text-[20px] leading-6 font-medium uppercase">
           {title}
         </h2>
       </div>
@@ -174,17 +174,21 @@ const SolutionItemCenter = ({ title, desc, accentColor }: any) => {
 
   return (
     <div
-      className={`flex flex-col md:flex-row justify-end items-center md:items-baseline gap-1 md:gap-4`}
+      className={`flex flex-col justify-end items-center md:items-baseline gap-2 md:gap-4`}
     >
-      <div className={`h-3 w-3 ${bgColor}`} />
-      <div className={"text-center md:text-left"}>
-        <h2 className="text-default-80 text-[10px] sm:text-[20px] leading-6 font-medium uppercase md:mb-2">
+      <div className="flex flex-row items-center gap-1">
+        <div className={`h-3 w-3 ${bgColor}`} />
+
+        <h2 className="text-default-80 text-xs sm:text-[20px] leading-6 font-medium uppercase">
           {title}
         </h2>
-
-        <p className={`${descStyle} text-default-60 max-w-44 sm:max-w-80`}>
-          {desc}
-        </p>
+      </div>
+      <div
+        className={
+          "flex flex-col items-center text-center md:text-left md:gap-4"
+        }
+      >
+        <p className={`${descStyle} text-default-60 max-w-56`}>{desc}</p>
       </div>
     </div>
   );
