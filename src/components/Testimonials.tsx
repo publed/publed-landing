@@ -102,7 +102,7 @@ const Testimonials = () => {
       <div className="flex flex-col md:flex-row gap-10 w-full items-center">
         <div className="inline-flex md:flex-col rounded-lg">
           <button
-            className={`bg-default-0 px-5 py-3 border rounded-l-lg md:rounded-t-lg transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
+            className={`bg-default-0 px-5 py-3 border rounded-l-lg md:rounded-t-lg md:rounded-bl-none transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
               selectedCategory === "Professors" ? "active-category" : ""
             }`}
             onClick={() => handleCategoryClick("Professors")}
@@ -110,7 +110,7 @@ const Testimonials = () => {
             Professors
           </button>
           <button
-            className={`bg-default-0 px-5 py-3 border-y md:border-x transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
+            className={`bg-default-0 px-5 py-3 border-y md:border-x md:border-y-0 transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
               selectedCategory === "Students" ? "active-category" : ""
             }`}
             onClick={() => handleCategoryClick("Students")}
@@ -118,7 +118,7 @@ const Testimonials = () => {
             Students
           </button>
           <button
-            className={`bg-default-0 px-5 py-3 border rounded-r-lg md:rounded-b-lg transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
+            className={`bg-default-0 px-5 py-3 border rounded-r-lg md:rounded-b-lg md:rounded-tr-none transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
               selectedCategory === "Researchers" ? "active-category" : ""
             }`}
             onClick={() => handleCategoryClick("Researchers")}
