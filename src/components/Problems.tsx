@@ -11,7 +11,7 @@ const Problems = () => {
           Problems
         </p>
         <div className="flex flex-col gap-6 w-full">
-          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
+          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
             <ProblemItemCenter
               title={"Access Barriers"}
               desc={" - the rise in textbooks prices since 1977"}
@@ -20,7 +20,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
+          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
             <ProblemItemCenter
               title={"Silos"}
               desc={"Social Media Platforms for Knowledge"}
@@ -29,7 +29,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
+          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
             <ProblemItemCenter
               title={"Knowledge Fragmentation"}
               desc={"of fragmented data expected by 2025"}
@@ -38,7 +38,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
+          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
             <ProblemItemCenter
               title={"Obsolete Format"}
               desc={"static format is obsolete"}
@@ -47,7 +47,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
+          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
             <ProblemItemCenter
               title={"Lack of Incentives"}
               desc={
@@ -72,7 +72,7 @@ const Problems = () => {
           Solutions
         </p>
         <div className="flex flex-col gap-6 w-full">
-          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
+          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-2 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
             <SolutionItemCenter
               title={"Democratizing of Knowledge"}
               desc={
@@ -81,7 +81,7 @@ const Problems = () => {
               accentColor={"pink"}
             />
           </div>
-          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
+          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
             <SolutionItemCenter
               title={"Socialization of Knowledge"}
               desc={
@@ -90,14 +90,14 @@ const Problems = () => {
               accentColor={"purple"}
             />
           </div>
-          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
+          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
             <SolutionItemCenter
               title={"Aggregation of Knowledge"}
               desc={"Publed enables aggregation and agglomeration of Knowledge"}
               accentColor={"red"}
             />
           </div>
-          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
+          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
             <SolutionItemCenter
               title={"Digital & Dynamic Knowledge Objects"}
               desc={
@@ -106,7 +106,7 @@ const Problems = () => {
               accentColor={"blue"}
             />
           </div>
-          <div className="bg-regular-blue-30 py-4 px-6 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto">
+          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
             <SolutionItemCenter
               title={"Monetization and Ownership"}
               desc={
@@ -144,7 +144,7 @@ const ProblemItemCenter = ({ title, desc, accent, accentColor }: any) => {
       <div className="flex flex-row items-center gap-1">
         <div className={`h-3 w-3 ${bgColor}`} />
 
-        <h2 className="text-default-20 text-xs sm:text-[20px] leading-6 font-medium uppercase">
+        <h2 className="text-default-20 text-[11px] sm:text-[20px] font-medium uppercase">
           {title}
         </h2>
       </div>
@@ -174,10 +174,10 @@ const SolutionItemCenter = ({ title, desc, accentColor }: any) => {
     <div
       className={`flex flex-col justify-end items-center md:items-baseline gap-2 md:gap-4`}
     >
-      <div className="flex flex-row items-center gap-1">
+      <div className="flex flex-row items-center gap-1 w-full">
         <div className={`h-3 w-3 ${bgColor}`} />
 
-        <h2 className="text-default-80 text-xs sm:text-[20px] leading-6 font-medium uppercase">
+        <h2 className="text-default-80 text-[11px] sm:text-[20px] font-medium uppercase leading-none text-center">
           {title}
         </h2>
       </div>
