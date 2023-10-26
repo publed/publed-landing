@@ -128,6 +128,7 @@ module.exports = {
       mroadmap: "url('/src/assets/svg/mroadmap.svg')",
       troadmap: "url('/src/assets/svg/troadmap.svg')",
       mshowcase: "url('/src/assets/svg/mdemo.svg')",
+      mdshowcase: "url('/src/assets/svg/mddemo.svg')",
       showcase: "url('/src/assets/svg/vision.svg')",
     },
     textColor: {
