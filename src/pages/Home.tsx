@@ -78,8 +78,8 @@ const Home = () => {
           <Problems />
           <HowItWorks />
           <Roadmap />
-          <Partners />
           <ContactUs />
+          <Partners />
         </div>
       </div>
     </>

@@ -124,9 +124,6 @@ module.exports = {
     },
     backgroundImage: {
       hero: "url('/src/assets/herobg.png')",
-      droadmap: "url('/src/assets/svg/droadmap.svg')",
-      mroadmap: "url('/src/assets/svg/mroadmap.svg')",
-      troadmap: "url('/src/assets/svg/troadmap.svg')",
       mshowcase: "url('/src/assets/svg/mdemo.svg')",
       mdshowcase: "url('/src/assets/svg/mddemo.svg')",
       showcase: "url('/src/assets/svg/vision.svg')",

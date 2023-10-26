@@ -33,9 +33,9 @@ import derek from "./derek.png";
 import ali from "./ali.png";
 import arrowsMd from "./svg/arrows-md.svg";
 import arrowsSm from "./svg/arrows-sm.svg";
-import mroadmap from "./svg/mroadmap.svg";
-import troadmap from "./svg/troadmap.svg";
-import droadmap from "./svg/droadmap.svg";
+import sroadmap from "./svg/rmv-v2-small.svg";
+import mroadmap from "./svg/rmv-v2.svg";
+import lroadmap from "./svg/rmh-v2.svg";
 import teeny from "./svg/teenyicons_play-solid.svg";
 import teenyBlue from "./svg/teenyicons_blue.svg";
 import handshake from "./handshake.svg";
@@ -48,11 +48,9 @@ import commas from "./svg/commas.svg";
 import researcher from "./svg/Researcher.svg";
 import professor from "./svg/Professor.svg";
 import student from "./svg/Student.svg";
-import rmap from "./roadmap.png";
 import howitworks from "./svg/howitworks.svg";
 
 export {
-  rmap,
   howitworks,
   showcase,
   mshowcase,
@@ -88,9 +86,9 @@ export {
   arrowsSm,
   LinkedinLogo,
   TwitterLogo,
-  droadmap,
+  lroadmap,
+  sroadmap,
   mroadmap,
-  troadmap,
   teeny,
   teenyBlue,
   derek,
