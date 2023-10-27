@@ -7,6 +7,8 @@ const Problems = () => {
   const isVisible1 = useIsVisible(ref1);
   const ref2 = useRef<HTMLDivElement>(null);
   const isVisible2 = useIsVisible(ref2);
+  const ref3 = useRef<HTMLDivElement>(null);
+  const isVisible3 = useIsVisible(ref3);
 
   return (
     <section id="problems" className={`relative grid grid-cols-2`}>
@@ -16,13 +18,13 @@ const Problems = () => {
         <p className="text-default-0 text-2xl md:text-5xl leading-9 md:leading-[60px] font-normal">
           Problems
         </p>
-        <div className="flex flex-col gap-6 w-full">
-          <div
-            className={`bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center transition-opacity ease-in duration-700 ${
-              isVisible1 ? "opacity-100" : "opacity-0"
-            }`}
-            ref={ref1}
-          >
+        <div
+          className={`flex flex-col gap-6 w-full transition-opacity ease-in-out duration-700 ${
+            isVisible1 ? "opacity-100" : "opacity-0"
+          }`}
+          ref={ref1}
+        >
+          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center hover:opacity-70">
             <ProblemItemCenter
               title={"Access Barriers"}
               desc={" - the rise in textbooks prices since 1977"}
@@ -31,7 +33,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
+          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center hover:opacity-70">
             <ProblemItemCenter
               title={"Silos"}
               desc={"Social Media Platforms for Knowledge"}
@@ -40,7 +42,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
+          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center hover:opacity-70">
             <ProblemItemCenter
               title={"Knowledge Fragmentation"}
               desc={"of fragmented data expected by 2025"}
@@ -49,7 +51,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
+          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center hover:opacity-70">
             <ProblemItemCenter
               title={"Obsolete Format"}
               desc={"static format is obsolete"}
@@ -58,7 +60,7 @@ const Problems = () => {
               reversed
             />
           </div>
-          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
+          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center hover:opacity-70">
             <ProblemItemCenter
               title={"Lack of Incentives"}
               desc={
@@ -72,12 +74,12 @@ const Problems = () => {
         </div>
       </div>
       <div
-        className={`hidden ss:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity ease-in duration-700 ${
-          isVisible2 ? "opacity-100" : "opacity-0"
+        className={`hidden ss:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity ease-in duration-[10000ms] ${
+          isVisible3 ? "opacity-100" : "opacity-0"
         }`}
-        ref={ref2}
+        ref={ref3}
       >
-        <circle className="flex bg-dark-blue-60 bolinha justify-center items-center rounded-full h-20 w-20 md:w-40 md:h-40">
+        <circle className="flex bg-dark-blue-60 bolinha justify-center items-center rounded-full h-20 w-20 md:w-40 md:h-40 hover:opacity-50">
           <img src={circlelogo} alt="logo" className="h-[48px] md:h-[96px]" />
         </circle>
       </div>
@@ -87,8 +89,13 @@ const Problems = () => {
         <p className="text-dark-blue-60 text-2xl md:text-5xl leading-9 md:leading-[60px] font-normal">
           Solutions
         </p>
-        <div className="flex flex-col gap-6 w-full">
-          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-2 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
+        <div
+          className={`flex flex-col gap-6 w-full transition-opacity ease-in duration-1000 ${
+            isVisible2 ? "opacity-100" : "opacity-0"
+          }`}
+          ref={ref2}
+        >
+          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-2 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center hover:opacity-70">
             <SolutionItemCenter
               title={"Democratizing of Knowledge"}
               desc={
@@ -97,7 +104,7 @@ const Problems = () => {
               accentColor={"pink"}
             />
           </div>
-          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
+          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center hover:opacity-70">
             <SolutionItemCenter
               title={"Socialization of Knowledge"}
               desc={
@@ -106,14 +113,14 @@ const Problems = () => {
               accentColor={"purple"}
             />
           </div>
-          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
+          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center hover:opacity-70">
             <SolutionItemCenter
               title={"Aggregation of Knowledge"}
               desc={"Publed enables aggregation and agglomeration of Knowledge"}
               accentColor={"red"}
             />
           </div>
-          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
+          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center hover:opacity-70">
             <SolutionItemCenter
               title={"Digital & Dynamic Knowledge Objects"}
               desc={
@@ -122,7 +129,7 @@ const Problems = () => {
               accentColor={"blue"}
             />
           </div>
-          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
+          <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center hover:opacity-70">
             <SolutionItemCenter
               title={"Monetization and Ownership"}
               desc={
