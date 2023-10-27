@@ -102,8 +102,10 @@ const Testimonials = () => {
       <div className="flex flex-col md:flex-row gap-10 w-full items-center">
         <div className="inline-flex md:flex-col rounded-lg">
           <button
-            className={`bg-default-0 px-5 py-3 border rounded-l-lg md:rounded-t-lg md:rounded-bl-none transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
-              selectedCategory === "Professors" ? "active-category" : ""
+            className={`$bg-default-0 px-5 py-3 border rounded-l-lg md:rounded-t-lg md:rounded-bl-none transition duration-150 ease-in-out hover:bg-regular-blue-60 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-regular-blue-70 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-regular-blue-90 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] ${
+              selectedCategory === "Professors"
+                ? "bg-regular-blue-60"
+                : "bg-default-0"
             }`}
             onClick={() => handleCategoryClick("Professors")}
           >
@@ -127,8 +129,8 @@ const Testimonials = () => {
           </button>
         </div>
 
-        <div className="bg-default-0 border rounded-lg flex flex-row gap-12 py-10 px-12 justify-center items-center relative w-full">
-          <div className="justify-center items-center hidden ss:flex">
+        <div className="bg-default-0 border rounded-lg flex flex-col ss:flex-row gap-12 py-10 px-12 justify-center items-center relative w-full">
+          <div className="justify-center items-center ss:flex">
             <img
               src={testimonialsImage[selectedCategory]}
               alt="researcher"
