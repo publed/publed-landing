@@ -7,7 +7,7 @@ const Roadmap = () => {
       className={`bg-dark-blue-60 flex flex-col items-center justify-center h-full py-20`}
     >
       <div className="flex flex-col justify-center items-center gap-10">
-        <h1 className="text-typo-white text-5xl font-normal leading-[60px]">
+        <h1 className="text-typo-white text-4xl md:text-5xl font-normal leading-[60px]">
           Roadmap
         </h1>
         <img

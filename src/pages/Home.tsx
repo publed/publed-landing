@@ -10,16 +10,38 @@ import { useNavigate } from "react-router-dom";
 import Showcase from "../components/Showcase";
 import Testimonials from "../components/Testimonials";
 import Problems from "../components/Problems";
+import { useIsVisible } from "../hooks/useIsVisible";
+import { LegacyRef, createRef, useRef } from "react";
 
 const Home = () => {
   const navigate = useNavigate();
+
+  const ref1 = useRef<HTMLDivElement>(null);
+  const isVisible1 = useIsVisible(ref1);
+  const ref2 = useRef<HTMLDivElement>(null);
+  const isVisible2 = useIsVisible(ref2);
+  const ref3 = useRef<HTMLDivElement>(null);
+  const isVisible3 = useIsVisible(ref3);
+  const ref4 = useRef<HTMLDivElement>(null);
+  const isVisible4 = useIsVisible(ref4);
+  const ref5 = useRef<HTMLDivElement>(null);
+  const isVisible5 = useIsVisible(ref5);
+  const ref6 = useRef<HTMLDivElement>(null);
+  const isVisible6 = useIsVisible(ref6);
+  const ref7 = useRef<HTMLDivElement>(null);
+  const isVisible7 = useIsVisible(ref7);
+  const ref8 = useRef<HTMLDivElement>(null);
+  const isVisible8 = useIsVisible(ref8);
 
   return (
     <>
       <div className="bg-hero bg-no-repeat bg-345% md:bg-cover xs:bg-bp-xs ss:bg-bp-ss sm:bg-bp-sm md:bg-[45%] lg:bg-[35%] flex flex-col justify-center h-screen w-full">
         <section
+          ref={ref1}
           id="Hero"
-          className={` flex flex-col items-start w-full h-screen justify-center`}
+          className={` flex flex-col items-start w-full h-screen justify-center transition-opacity ease-in duration-1000 ${
+            isVisible1 ? "opacity-100" : "opacity-0"
+          }`}
         >
           {/* Text */}
           <div
@@ -45,10 +67,10 @@ const Home = () => {
               <div className="flex items-baseline flex-row gap-2">
                 <rect className="w-3 h-3 bg-regular-blue-60"></rect>
                 <span className="flex-1 font-notosans md:text-[16px] text-[12px] font-normal sm:leading-6 leading-5 text-typo-white sm:w-[680px] w-[336px]">
-                  Take control of your scientific contributions!{" "}
-                  <strong>Monetize, be rewarded! </strong> Unlock the potential
-                  of your research with our decentralized, transparent, and
-                  collaborative platform.
+                  Empower your knowledge!{" "}
+                  <strong>Monetize and be recognized! </strong> Unlock the
+                  potential of your expertise with our decentralized,
+                  transparent, and collaborative knowledge-sharing platform.
                 </span>
               </div>
             </div>
@@ -73,13 +95,62 @@ const Home = () => {
       </div>
       <div className={`${styles.flexStart} w-full`}>
         <div className={`${styles.boxWidth}`}>
-          <Showcase />
-          <Testimonials />
-          <Problems />
-          <HowItWorks />
-          <Roadmap />
-          <ContactUs />
-          <Partners />
+          <div
+            ref={ref2}
+            className={`transition-opacity ease-in duration-1000 ${
+              isVisible2 ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <Showcase />
+          </div>
+          <div
+            ref={ref3}
+            className={`transition-opacity ease-in duration-1000 ${
+              isVisible3 ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <Testimonials />
+          </div>
+          <div
+            ref={ref4}
+            className={`transition-opacity ease-in duration-1000 ${
+              isVisible4 ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <Problems />
+          </div>
+          <div
+            ref={ref5}
+            className={`transition-opacity ease-in duration-1000 ${
+              isVisible5 ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <HowItWorks />
+          </div>
+          <div
+            ref={ref6}
+            className={`transition-opacity ease-in duration-1000 ${
+              isVisible6 ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <Roadmap />
+          </div>
+          <div
+            ref={ref7}
+            className={`transition-opacity ease-in duration-1000 ${
+              isVisible7 ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <ContactUs />
+          </div>
+          <div
+            ref={ref8}
+            className={`transition-opacity ease-in duration-1000 ${
+              isVisible8 ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <Partners />
+          </div>
         </div>
       </div>
     </>

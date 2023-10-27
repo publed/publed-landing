@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 import { circlelogo } from "../assets";
+import { useIsVisible } from "../hooks/useIsVisible";
 
 const Problems = () => {
+  const ref1 = useRef<HTMLDivElement>(null);
+  const isVisible1 = useIsVisible(ref1);
+  const ref2 = useRef<HTMLDivElement>(null);
+  const isVisible2 = useIsVisible(ref2);
+
   return (
     <section id="problems" className={`relative grid grid-cols-2`}>
       <div
         className={`bg-dark-blue-60 flex flex-col justify-center items-center w-full gap-12 py-12 px-5 ss:py-16 ss:pr-15 ss:pl-10`}
       >
-        <p className="text-default-0 text-5xl leading-[60px] font-normal">
+        <p className="text-default-0 text-2xl md:text-5xl leading-9 md:leading-[60px] font-normal">
           Problems
         </p>
         <div className="flex flex-col gap-6 w-full">
-          <div className="bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center">
+          <div
+            className={`bg-dark-blue-110 sm:py-4 sm:px-6 py-2 px-3 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center transition-opacity ease-in duration-700 ${
+              isVisible1 ? "opacity-100" : "opacity-0"
+            }`}
+            ref={ref1}
+          >
             <ProblemItemCenter
               title={"Access Barriers"}
               desc={" - the rise in textbooks prices since 1977"}
@@ -60,7 +71,12 @@ const Problems = () => {
           </div>
         </div>
       </div>
-      <div className="hidden ss:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div
+        className={`hidden ss:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity ease-in duration-700 ${
+          isVisible2 ? "opacity-100" : "opacity-0"
+        }`}
+        ref={ref2}
+      >
         <circle className="flex bg-dark-blue-60 bolinha justify-center items-center rounded-full h-20 w-20 md:w-40 md:h-40">
           <img src={circlelogo} alt="logo" className="h-[48px] md:h-[96px]" />
         </circle>
@@ -68,7 +84,7 @@ const Problems = () => {
       <div
         className={`bg-blue-20 flex flex-col justify-center items-center w-full gap-12 py-12 px-5 ss:py-16 ss:pl-15 ss:pr-10`}
       >
-        <p className="text-dark-blue-60 text-5xl leading-[60px] font-normal">
+        <p className="text-dark-blue-60 text-2xl md:text-5xl leading-9 md:leading-[60px] font-normal">
           Solutions
         </p>
         <div className="flex flex-col gap-6 w-full">
