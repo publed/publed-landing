@@ -15,7 +15,7 @@ const Problems = () => {
       <div
         className={`bg-dark-blue-60 flex flex-col justify-center items-center w-full gap-12 py-12 px-5 ss:py-16 ss:pr-15 ss:pl-10`}
       >
-        <p className="text-default-0 text-2xl md:text-5xl leading-9 md:leading-[60px] font-normal">
+        <p className="text-default-0 text-2xl md:text-5xl leading-9 md:leading-[60px] font-medium">
           Problems
         </p>
         <div
@@ -86,7 +86,7 @@ const Problems = () => {
       <div
         className={`bg-blue-20 flex flex-col justify-center items-center w-full gap-12 py-12 px-5 ss:py-16 ss:pl-15 ss:pr-10`}
       >
-        <p className="text-dark-blue-60 text-2xl md:text-5xl leading-9 md:leading-[60px] font-normal">
+        <p className="text-dark-blue-60 text-2xl md:text-5xl leading-9 md:leading-[60px] font-medium">
           Solutions
         </p>
         <div
