@@ -74,7 +74,7 @@ const Problems = () => {
         </div>
       </div>
       <div
-        className={`hidden ss:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity ease-in duration-[10000ms] ${
+        className={`hidden ss:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity ease-in duration-10000 ${
           isVisible3 ? "opacity-100" : "opacity-0"
         }`}
         ref={ref3}
