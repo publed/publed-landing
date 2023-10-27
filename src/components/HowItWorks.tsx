@@ -10,7 +10,7 @@ const HowItWorks = () => {
       id="howitworks"
       className={`flex flex-col justify-center items-center px-10 py-20 gap-8`}
     >
-      <h2 className="font-notosans text-typo-dark-blue text-[28px] sm:text-[56px] leading-normal font-semibold ">
+      <h2 className="font-notosans text-typo-dark-blue text-[28px] sm:text-[56px] leading-normal font-semibold text-center">
         Knowledge Ecosystem
       </h2>
       {/* <div className="flex flex-row justify-start w-[296px] gap-0 mt-[40px]">
