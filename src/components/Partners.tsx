@@ -10,8 +10,8 @@ const Partners = () => {
         Our Partners
       </h2>
       <div className="flex flex-row mb-[120px] justify-center gap-10 flex-wrap items-center">
-        <img src={solanaLogo} alt="partner1" />
-        <img src={solanaUni} alt="partner2" />
+        <img src={solanaLogo} alt="partner1" className="w-60 md:w-5/12" />
+        <img src={solanaUni} alt="partner2" className="w-72 md:w-6/12" />
       </div>
     </section>
   );
