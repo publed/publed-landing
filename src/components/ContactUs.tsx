@@ -49,8 +49,8 @@ const ContactUs = () => {
       className={`bg-white flex flex-row justify-center items-center px-5 ss:px-4 py-[10px]`}
     >
       <div className="flex flex-col justify-center ss:gap-20 gap-8 flex-wrap md:flex-nowrap w-full p-5 lg:p-10">
-        <div className="flex flex-col items-center py-10 gap-[40px] w-full">
-          <div className="flex grow items-center leading-[1em] font-medium text-typo-dark-blue text-4xl md:text-[56px]">
+        {/* <div className="flex flex-col items-center py-10 gap-[40px] w-full">
+          {/* <div className="flex grow items-center leading-[1em] font-medium text-typo-dark-blue text-4xl md:text-[56px]">
             Join our Waitlist
           </div>
           <div className="flex flex-row items-center justify-start gap-2">
@@ -58,9 +58,9 @@ const ContactUs = () => {
               If you are interested in publishing your research object in
               Publed, please join us by submiting your personal data
             </div>
-          </div>
-        </div>
-        <div className="flex flex-col bg-blue-20 px-12 py-10 gap-[48px] w-full sm:w-1/2 lg:w-1/4 shadow-md items-center mx-auto">
+          </div> */}
+        {/* </div> */}
+        {/* <div className="flex flex-col bg-blue-20 px-12 py-10 gap-[48px] w-full sm:w-1/2 lg:w-1/4 shadow-md items-center mx-auto">
           <div className="flex flex-col justify-between self-stretch w-full gap-10">
             <form className="flex flex-col w-full">
               <div className="flex flex-col items-start">
@@ -122,7 +122,7 @@ const ContactUs = () => {
             </button>
           </div>
           <Toaster />
-        </div>
+        </div> */}
         <div className="flex flex-col gap-3 justify-center mx-auto py-10">
           <div className="text-typo-dark-blue leading-[18px] font-semibold text-[20px] md:text-[28px]">
             How Can We Help You?
