@@ -59,26 +59,31 @@ const Testimonials = () => {
     Researchers: (
       <ul className="flex flex-col gap-2">
         <li>
-          <strong>Aggregation:</strong> Consolidate all your knowledge,
-          regardless of its format, into one accessible platform.
+          <strong>Dynamic Research Objects:</strong> Combine all artifacts of
+          your research project etc in a dynamic multi-modal NFT including
+          datasets, code, figures, slides, videos,... .
         </li>
         <li>
-          <strong>Ownership:</strong> Secure undeniable proof of ownership for
-          your contributions, no matter their scale or significance.
+          <strong>Ownership and Monetization:</strong> Retain copyright
+          ownership of your contributions and monetize your intellectual
+          property
         </li>
         <li>
-          <strong>Dynamic Profile:</strong> Conventional CVs can't capture your
-          professional growth adequately. Craft a lively dynamic profile that
-          directly connects to your contributions and easily share it with
-          potential employers.
+          <strong>Community:</strong> Create a community around your work by our
+          decentralized social media for science. Anyone can comment on Research
+          Objects and interact with authors
         </li>
         <li>
-          <strong>Socialization:</strong> Cultivate a thriving community around
-          the knowledge you create or appreciate!
+          <strong>Dynamic Profile:</strong> Have your lively dynamic profile
+          that directly connects to your contributions and easily share it with
+          the world. You can also connect to other profiles to automatically
+          follow thier work
         </li>
         <li>
-          <strong>Monetization:</strong> Convert your contributions into revenue
-          while aiding others on their educational journey.
+          <strong>Transparency, traceability, and accountability:</strong>{" "}
+          Permanent, secure, immutable, and replicable research record. Open
+          on-chain reviews. AI-based reviewer assignment. Digital Identity
+          blockchain-based verification mechanism.
         </li>
       </ul>
     ),
