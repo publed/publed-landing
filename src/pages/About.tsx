@@ -77,24 +77,24 @@ const About = () => {
             <TeamCard {...team} />
           ))}
         </div>
-        <div className="flex flex-col sm:flex-row items-center px-30 py-20 gap-20 ">
-          <h1 className="text-4xl font-medium leading-10 text-typo-dark-blue flex my-auto mt-0 ml-0 w-1/3">
+        <div className="flex flex-col sm:flex-row items-center md:px-30 md:py-20 gap-10 md:gap-14 w-full justify-center">
+          <h1 className="text-2xl md:text-5xl font-medium leading-10 text-typo-dark-blue flex my-auto md:mt-0 md:ml-0 w-full md:w-1/2 text-center md:text-start">
             Frequently Asked Questions
           </h1>
-          <div className="flex flex-col gap-8 w-2/3">
-            <div className="flex flex-col gap-4 items-end">
-              <div className="flex flex-row gap-10">
-                <p className="text-default-80 text-2xl font-semibold">
+          <div className="flex flex-col gap-8 w-full md:w-2/3">
+            <div className="flex flex-col gap-4 items-start md:items-end">
+              <div className="flex flex-row gap-10 w-full items-center md:justify-end">
+                <p className="text-default-80 text-lg md:text-2xl font-semibold mr-0">
                   What is a Knowledge Object?
                 </p>
                 <button
                   onClick={() => setSelectedFAQ1(!selectedFAQ1)}
-                  className=""
+                  className="mr-0 mx-auto md:mx-0 flex md:flex-none"
                 >
                   <img
                     src={selectedFAQ1 ? close : open}
                     alt="menu"
-                    className="w-[28px] h-[28px] object-contain "
+                    className="min-w-[28px] h-[28px] object-contain"
                   />
                 </button>
               </div>
@@ -112,16 +112,16 @@ const About = () => {
               )}
             </div>
 
-            <div className="flex flex-col gap-4 items-end">
+            <div className="flex flex-col gap-4 items-start md:items-end">
               <div className="flex flex-row gap-10">
-                <p className="text-default-80 text-2xl font-semibold">
+                <p className="text-default-80 text-lg md:text-2xl font-semibold">
                   What types of content can I publish on Publed?
                 </p>
                 <button onClick={() => setSelectedFAQ2(!selectedFAQ2)}>
                   <img
                     src={selectedFAQ2 ? close : open}
                     alt="menu"
-                    className="w-[28px] h-[28px] object-contain "
+                    className="min-w-[28px] h-[28px] object-contain"
                   />
                 </button>
               </div>
@@ -138,9 +138,9 @@ const About = () => {
               )}
             </div>
 
-            <div className="flex flex-col gap-4 items-end">
+            <div className="flex flex-col gap-4 items-start  md:items-end">
               <div className="flex flex-row gap-10">
-                <p className="text-default-80 text-2xl font-semibold">
+                <p className="text-default-80 text-lg md:text-2xl font-semibold">
                   How do I get started with Publed?
                 </p>
                 <button onClick={() => setSelectedFAQ3(!selectedFAQ3)}>
