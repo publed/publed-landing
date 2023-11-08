@@ -97,7 +97,7 @@ const Problems = () => {
         >
           <div className="bg-regular-blue-30 sm:py-4 sm:px-6 py-2 px-2 rounded-lg flex flex-col h-[131px] lg:max-w-lg lg:min-w-[512px] lg:mx-auto justify-center hover:opacity-70">
             <SolutionItemCenter
-              title={"Democratizing of Knowledge"}
+              title={"Democratization of Knowledge"}
               desc={
                 "Publed democratizes access to the knowledge by cutting down the middleman costs"
               }
