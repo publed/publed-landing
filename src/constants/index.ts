@@ -5,11 +5,6 @@ export const defaultLinks = [
 ];
 export const homeLinks = [
   { id: "home", title: "Home" },
-  { id: "showcase", title: "Publed" },
-  { id: "howitworks", title: "Ecosystem" },
-  { id: "roadmap", title: "Roadmap" },
-  { id: "partners", title: "Partners" },
-  // { id: "joinus", title: "Contact Us" },
   { id: "about", title: "About" },
 ];
 export const aboutLinks = [
