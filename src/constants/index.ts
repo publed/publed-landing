@@ -6,6 +6,7 @@ export const defaultLinks = [
 export const homeLinks = [
   { id: "home", title: "Home" },
   { id: "about", title: "About" },
+  { id: 'blog', title: 'Blog' }
 ];
 export const aboutLinks = [
   { id: "home", title: "Home" },

@@ -6,7 +6,7 @@ const Testimonials = () => {
 
   const testimonialsData: any = {
     Professors: (
-      <ul className="flex flex-col gap-2">
+      <ul className="flex flex-col gap-2 text-dark-blue-60">
         <li>
           <strong>Aggregation:</strong> Bring all your knowledge, regardless of
           its format, onto a unified platform.
@@ -32,7 +32,7 @@ const Testimonials = () => {
       </ul>
     ),
     Students: (
-      <ul className="flex flex-col gap-2">
+      <ul className="flex flex-col gap-2 text-dark-blue-60">
         <li>
           <strong>Aggregation:</strong> Centralize all your knowledge,
           regardless of its format, in one convenient platform.
@@ -57,7 +57,7 @@ const Testimonials = () => {
       </ul>
     ),
     Researchers: (
-      <ul className="flex flex-col gap-2">
+      <ul className="flex flex-col gap-2 text-dark-blue-60">
         <li>
           <strong>Dynamic Research Objects:</strong> Combine all artifacts of
           your research project etc in a dynamic multi-modal NFT including

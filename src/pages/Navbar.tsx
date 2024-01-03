@@ -34,7 +34,9 @@ const Navbar = () => {
                         return;
                       }}
                     >
-                      {nav.id === "about" ? (
+                      {nav.id === "blog" ? (
+                        <Link to={`/${nav.id}`}>{nav.title}</Link>
+                      ) : nav.id === "about" ? (
                         <Link to={`/${nav.id}`}>{nav.title}</Link>
                       ) : nav.id === "home" ? (
                         <Link to={`/`}>{nav.title}</Link>
