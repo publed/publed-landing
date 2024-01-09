@@ -1,5 +1,2 @@
-const postList = [
-
-  ];
-  export default postList;
-  
+const postList = ["welcome-publed"];
+export default postList;
