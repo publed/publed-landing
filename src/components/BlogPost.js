@@ -74,7 +74,7 @@ const BlogPost = ({ fileName }) => {
 
   return (
     <div className="my-20 mx-auto flex flex-col items-center">
-      <div className="max-w-screen-lg flex flex-col items-center">
+      <div className="max-w-screen-lg flex flex-col items-center px-4">
         <Helmet>
           <title>{post.title}</title>
           <meta property="og:title" content={post.title} />

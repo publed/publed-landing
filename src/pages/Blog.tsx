@@ -29,7 +29,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <section className="bg-white h-screen flex justify-center items-center px-16 my-2">
+    <section className="bg-white h-screen flex justify-center items-center px-7 my-2">
       <div className="max-w-screen-xl m-auto w-full py-4 px-4 lg:py-8 lg:px-6">
         <div className="mx-auto max-w-screen-sm text-center mb-8">
           <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-dark-blue-60 ">
