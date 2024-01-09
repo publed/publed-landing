@@ -3,7 +3,7 @@ title: "Welcome to Publed!"
 excerpt: "Democratizing & Socializing Knowledge"
 category : 'Web3, DeSci'
 coverImage: '../assets/blog/welcome-publed/2-knowledge2.jpg'
-date: '16-03-2020'
+date: '01-01-2024'
 author:
   name: "Vítor Ribeiro"
   photo: "../assets/blog/authors/vitor.png"
