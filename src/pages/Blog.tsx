@@ -36,12 +36,8 @@ const Blog = () => {
             Our Blog
           </h2>
           <p className="font-light text-default-60 sm:text-xl dark:text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            sollicitudin leo metus, eget dapibus leo feugiat eget. Fusce et nisi
-            vel lectus ultrices molestie et nec dui. Curabitur varius elit et
-            enim gravida pulvinar. Phasellus eget dictum sapien. Duis vitae ante
-            in leo sodales tristique. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
+            Find out more about Publed and stay tuned for all the announcements
+            and information from our experts in the space.
           </p>
         </div>
         <div className="grid gap-8 lg:grid-cols-2">

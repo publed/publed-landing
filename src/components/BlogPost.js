@@ -73,7 +73,7 @@ const BlogPost = ({ fileName }) => {
   }, [fileName]);
 
   return (
-    <div className="my-20 mx-auto flex flex-col items-center">
+    <div className="my-20 mx-auto flex flex-col items-center h-screen">
       <div className="max-w-screen-lg flex flex-col items-center">
         <Helmet>
           <title>{post.title}</title>
