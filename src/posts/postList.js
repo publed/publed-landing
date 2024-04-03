@@ -1,2 +1,2 @@
-const postList = ["welcome-publed", "science-education"];
+const postList = ["welcome-publed"];
 export default postList;
