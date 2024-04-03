@@ -1,16 +1,15 @@
 ---
 title: "Welcome to Publed!"
 excerpt: "Democratizing & Socializing Knowledge"
-category : 'Web3, DeSci'
-coverImage: '../assets/blog/welcome-publed/2-knowledge2.jpg'
-date: '01-01-2024'
+category: "Web3, DeSci"
+coverImage: "/assets/blog/welcome-publed/2-knowledge2.jpg"
+date: "01-01-2024"
 author:
   name: "Vítor Ribeiro"
-  photo: "../assets/blog/authors/vitor.png"
+  photo: "/assets/blog/authors/vitor.png"
 ogImage:
-  url: '../assets/blog/welcome-publed/saga_publed1.png'
+  url: "/assets/blog/welcome-publed/saga_publed1.png"
 ---
-
 
 # Publed - Empowering Knowledge and Connections
 
@@ -18,7 +17,7 @@ ogImage:
 
 Empower your knowledge! Monetize and be recognized! Unlock the potential of your expertise with our decentralized, transparent, and collaborative knowledge-sharing platform.
 
-----
+---
 
 ### Publed and Web3
 
@@ -27,7 +26,7 @@ At the backbone of Publed lies a disruptive technology known as a Blockchain - a
 ### Ownership of Knowledge
 
 Publed guarantees knowledge creators maintain ownership of their contributions. We encapsulate and acknowledge diverse knowledge artifacts, extending beyond conventional and obsolete formats. This 'Knowledge Object' encompasses various elements like datasets, tools, presentations, demos, and more, preserving copyright and promoting comprehensive knowledge sharing, thereby fostering replication.
- 
+
 ### Immutable and Always-Available Knowledge
 
 The significance of data storage in the realm of knowledge, whether it encompasses research findings or academic work can't be overstated. Determining where and how to store data, as well as for how long, constitutes essential variables for knowledge data storage. Publed relies on decentralized protocols for storage to ensure permanent availability and accessibility. By distributing knowledge data across a network of nodes, we safeguard against data loss and uphold the integrity of knowledge data.
