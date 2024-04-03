@@ -4,9 +4,10 @@ import matter from "gray-matter";
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Helmet } from "react-helmet";
-
 import { Buffer } from "buffer";
+
 window.Buffer = Buffer;
+const publedLink = "https://www.publed.io/";
 
 const BlogPost = ({ fileName }) => {
   const [post, setPost] = useState({
@@ -81,11 +82,17 @@ const BlogPost = ({ fileName }) => {
         <Helmet>
           <title>{post.title}</title>
           <meta property="og:title" content={post.title} />
-          <meta property="og:image" content={post.coverImage} />
+          <meta
+            property="og:image"
+            content={`${publedLink}${post.coverImage}`}
+          />
           <meta property="og:description" content={post.excerpt} />
 
           <meta name="twitter:title" content={post.title} />
-          <meta name="twitter:image" content={post.coverImage} />
+          <meta
+            name="twitter:image"
+            content={`${publedLink}${post.coverImage}`}
+          />
           <meta name="twitter:description" content={post.excerpt} />
 
           <meta name="description" content={post.excerpt} />
