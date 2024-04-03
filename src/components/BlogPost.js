@@ -72,6 +72,9 @@ const BlogPost = ({ fileName }) => {
       });
   }, [fileName]);
 
+  console.log(post.title);
+  console.log(post.excerpt);
+
   return (
     <div className="my-20 mx-auto flex flex-col items-center">
       <div className="max-w-screen-lg flex flex-col items-center px-4">
@@ -92,7 +95,6 @@ const BlogPost = ({ fileName }) => {
 
           <meta name="keywords" content={post.keywords} />
         </Helmet>
-
         <h1 className="font-semibold text-dark-blue-60 text-5xl text-center mb-2 mt-12 ">
           {post.title}
         </h1>

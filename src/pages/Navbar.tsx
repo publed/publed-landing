@@ -22,29 +22,27 @@ const Navbar = () => {
             <ul className="list-none md:flex hidden justify-end items-center text-center">
               {active === "Home"
                 ? homeLinks.map((nav, index) => (
-                    <li
-                      key={nav.id}
-                      className={`font-notosans font-light cursor-pointer text-[16px] mr-[32px] text-typo-white ${
-                        active === nav.title ? "font-extrabold" : "font-light"
-                      } ${
-                        nav.id === "about" ? "font-extrabold" : "font-light"
+                  <li
+                    key={nav.id}
+                    className={`font-notosans font-light cursor-pointer text-[16px] mr-[32px] text-typo-white ${active === nav.title ? "font-extrabold" : "font-light"
+                      } ${nav.id === "about" ? "font-extrabold" : "font-light"
                       }`}
-                      onClick={() => {
-                        setActive("Home");
-                        return;
-                      }}
-                    >
-                      {nav.id === "blog" ? (
-                        <Link to={`/${nav.id}`}>{nav.title}</Link>
-                      ) : nav.id === "about" ? (
-                        <Link to={`/${nav.id}`}>{nav.title}</Link>
-                      ) : nav.id === "home" ? (
-                        <Link to={`/`}>{nav.title}</Link>
-                      ) : (
-                        <a href={`#${nav.id}`}>{nav.title}</a>
-                      )}
-                    </li>
-                  ))
+                    onClick={() => {
+                      setActive("Home");
+                      return;
+                    }}
+                  >
+                    {nav.id === "blog" ? (
+                      <Link to={`/${nav.id}`}>{nav.title}</Link>
+                    ) : nav.id === "about" ? (
+                      <Link to={`/${nav.id}`}>{nav.title}</Link>
+                    ) : nav.id === "home" ? (
+                      <Link to={`/`}>{nav.title}</Link>
+                    ) : (
+                      <a href={`#${nav.id}`}>{nav.title}</a>
+                    )}
+                  </li>
+                ))
                 : null}
             </ul>
 
@@ -70,25 +68,27 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`${
-            toggle ? "flex" : "hidden"
-          } w-full flex-row relative sidebar justify-end
+          className={`${toggle ? "flex" : "hidden"
+            } w-full flex-row relative sidebar justify-end
           `}
         >
           <ul className="flex flex-col justify-center items-end h-screen mr-28 ">
             {homeLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-notosans font-normal text-typo-white cursor-pointer text-[16px] leading-8 ${
-                  active === nav.title ? "font-semibold" : "font-normal"
-                } ${index === homeLinks.length - 1 ? "mb-0" : "mb-4"}`}
+                className={`font-notosans font-normal text-typo-white cursor-pointer text-[16px] leading-8 ${active === nav.title ? "font-semibold" : "font-normal"
+                  } ${index === homeLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => {
                   setActive(nav.title);
                   setToggle(false);
                 }}
               >
-                {nav.id === "about" ? (
-                  <a href={`${nav.id}`}>{nav.title}</a>
+                {nav.id === "blog" ? (
+                  <Link to={`/${nav.id}`}>{nav.title}</Link>
+                ) : nav.id === "about" ? (
+                  <Link to={`/${nav.id}`}>{nav.title}</Link>
+                ) : nav.id === "home" ? (
+                  <Link to={`/`}>{nav.title}</Link>
                 ) : (
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 )}
