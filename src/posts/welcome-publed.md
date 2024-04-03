@@ -8,7 +8,7 @@ author:
   name: "Vítor Ribeiro"
   photo: "/assets/blog/authors/vitor.png"
 ogImage:
-  url: "/assets/blog/welcome-publed/saga_publed1.png"
+  url: "/assets/blog/welcome-publed/2-knowledge2.jpg"
 ---
 
 # Publed - Empowering Knowledge and Connections
