@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 import { Buffer } from "buffer";
 
 window.Buffer = Buffer;
-const publedLink = "https://www.publed.io/";
+const publedLink = "https://www.publed.io";
 
 const BlogPost = ({ fileName }) => {
   const [post, setPost] = useState({
