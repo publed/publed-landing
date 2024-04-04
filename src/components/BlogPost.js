@@ -47,11 +47,15 @@ const BlogPost = ({ fileName }) => {
     img: ({ src, alt }) => {
       console.log("Rendering image with src:", src); // Debug: Log the image source
       return (
-        <img
-          src={src}
-          alt={alt}
-          className="rounded-lg overflow-hidden my-12 w-full"
-        />
+        <>
+          {" "}
+          <img
+            src={src}
+            alt={alt}
+            className="rounded-lg overflow-hidden w-full mt-8"
+          />
+          <figcaption className="mb-8 text-light-blue-80">{alt}</figcaption>
+        </>
       );
     },
     p: ({ children }) => {
@@ -102,7 +106,7 @@ const BlogPost = ({ fileName }) => {
 
           <meta name="keywords" content={post.keywords} />
         </Helmet>
-        <h1 className="font-semibold text-dark-blue-60 text-5xl text-center mb-2 mt-12 ">
+        <h1 className="font-semibold text-dark-blue-60 text-5xl text-center mb-5 mt-12 ">
           {post.title}
         </h1>
 
