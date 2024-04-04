@@ -28,7 +28,7 @@ const Layout = ({ children }: Props) => {
     : {};
 
   return (
-    <div style={layoutStyle}>
+    <div style={layoutStyle} className="flex flex-col min-w-fit">
       <>
         <div
           className={`bg-secondary-blue-60 backdrop-blur-[6px] ${styles.paddingX} flex justify-center items-center fixed w-full z-10`}

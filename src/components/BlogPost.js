@@ -48,12 +48,14 @@ const BlogPost = ({ fileName }) => {
       console.log("Rendering image with src:", src); // Debug: Log the image source
       return (
         <>
+
           {" "}
           <img
             src={src}
             alt={alt}
             className="rounded-lg overflow-hidden w-full mt-8"
-          />
+            />
+
           <figcaption className="mb-8 text-light-blue-80">{alt}</figcaption>
         </>
       );
@@ -81,8 +83,8 @@ const BlogPost = ({ fileName }) => {
   console.log(post.excerpt);
 
   return (
-    <div className="my-20 mx-auto flex flex-col items-center">
-      <div className="max-w-screen-md flex flex-col items-center px-3">
+    <div className="xs:my-20 my-32 mx-auto flex flex-col items-center">
+      <div className="max-w-screen-md flex flex-col items-center px-3 ">
         <Helmet>
           <title>{post.title}</title>
           <meta property="og:title" content={post.title} />
