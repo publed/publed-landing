@@ -11,21 +11,24 @@ import UseScrollToTop from "./hooks/useScrollToTop";
 import Publed from "./pages/Publed";
 import Blog from "./pages/Blog";
 import BlogPost from "./components/BlogPost";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
     <>
       <Router>
-        <ScrollToTop />
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<NoMatch />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:fileName" element={<BlogPostWrapper />} />
-          </Routes>
-        </Layout>
+        <HelmetProvider>
+          <ScrollToTop />
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="*" element={<NoMatch />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:fileName" element={<BlogPostWrapper />} />
+            </Routes>
+          </Layout>
+        </HelmetProvider>
       </Router>
       <UseScrollToTop />
     </>

@@ -83,29 +83,7 @@ const BlogPost = ({ fileName }) => {
   return (
     <div className="my-20 mx-auto flex flex-col items-center">
       <div className="max-w-screen-md flex flex-col items-center px-3">
-        <Helmet>
-          <title>{post.title}</title>
-          <meta property="og:title" content={post.title} />
-          <meta
-            property="og:image"
-            content={`${publedLink}${post.coverImage}`}
-          />
-          <meta property="og:description" content={post.excerpt} />
-
-          <meta name="twitter:title" content={post.title} />
-          <meta
-            name="twitter:image"
-            content={`${publedLink}${post.coverImage}`}
-          />
-          <meta name="twitter:description" content={post.excerpt} />
-
-          <meta name="description" content={post.excerpt} />
-
-          <meta name="author" content={post.author.name} />
-          <meta name="date" content={post.date} />
-
-          <meta name="keywords" content={post.keywords} />
-        </Helmet>
+        <SEO title={post.title} description={post.excerpt} />
         <h1 className="font-semibold text-dark-blue-60 text-5xl text-center mb-5 mt-12 ">
           {post.title}
         </h1>
