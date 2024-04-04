@@ -88,14 +88,14 @@ const BlogPost = ({ fileName }) => {
           <meta property="og:title" content={post.title} />
           <meta
             property="og:image"
-            content={`${publedLink}${post.coverImage}`}
+            content={`https://www.publed.io/assets/blog/science-education/science-education.png`}
           />
           <meta property="og:description" content={post.excerpt} />
 
           <meta name="twitter:title" content={post.title} />
           <meta
             name="twitter:image"
-            content={`${publedLink}${post.coverImage}`}
+            content={`https://www.publed.io/assets/blog/science-education/science-education.png`}
           />
           <meta name="twitter:description" content={post.excerpt} />
 
