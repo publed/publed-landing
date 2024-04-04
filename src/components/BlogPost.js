@@ -3,8 +3,8 @@ import ReactMarkdown from "react-markdown";
 import matter from "gray-matter";
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { Helmet } from "react-helmet";
 import { Buffer } from "buffer";
-import SEO from "./SEO.tsx";
 
 window.Buffer = Buffer;
 const publedLink = "https://www.publed.io";
@@ -83,7 +83,29 @@ const BlogPost = ({ fileName }) => {
   return (
     <div className="my-20 mx-auto flex flex-col items-center">
       <div className="max-w-screen-md flex flex-col items-center px-3">
-        <SEO title={post.title} description={post.excerpt} />
+        <Helmet>
+          <title>{post.title}</title>
+          <meta property="og:title" content={post.title} />
+          <meta
+            property="og:image"
+            content={`${publedLink}${post.coverImage}`}
+          />
+          <meta property="og:description" content={post.excerpt} />
+
+          <meta name="twitter:title" content={post.title} />
+          <meta
+            name="twitter:image"
+            content={`${publedLink}${post.coverImage}`}
+          />
+          <meta name="twitter:description" content={post.excerpt} />
+
+          <meta name="description" content={post.excerpt} />
+
+          <meta name="author" content={post.author.name} />
+          <meta name="date" content={post.date} />
+
+          <meta name="keywords" content={post.keywords} />
+        </Helmet>
         <h1 className="font-semibold text-dark-blue-60 text-5xl text-center mb-5 mt-12 ">
           {post.title}
         </h1>
