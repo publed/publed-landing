@@ -3,8 +3,8 @@ import ReactMarkdown from "react-markdown";
 import matter from "gray-matter";
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { Helmet } from "react-helmet";
 import { Buffer } from "buffer";
+import SEO from "./SEO.tsx";
 
 window.Buffer = Buffer;
 const publedLink = "https://www.publed.io";
