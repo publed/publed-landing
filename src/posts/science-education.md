@@ -25,11 +25,11 @@ Much like how decentralized finance (DeFi) has challenged traditional financial 
 
 In the field of **Education**, there has been a notable push for change, marked by initiatives aimed at revolutionizing the sector. Concepts such as **Learning Experience Platforms (LXP)** are gaining momentum, serving as dynamic tools for creating personalized online learning experiences. In the **Web3** sphere, several projects are pushing boundaries in this direction. Among the prominent players is Binance, which has already made significant investments in this area with projects like the [**Open Campus Protocol**](https://www.opencampus.xyz/) and the recent unveiling of [**Giggle Academy**](https://www.giggleacademy.com/), personally introduced by _CZ_, co-founder and former CEO of Binance. Additionally, organizations like [**Solana University**](https://www.solanau.org/), [**Waterloo Blockchain**](https://www.waterlooblockchain.com/), and [**BEN (Blockchain Education Network)**](https://www.blockchainedu.org/) are commendably empowering their students to navigate the vast array of opportunities in this new landscape.
 
-![desci](../../assets/blog/science-education/cz.png)
+![](../../assets/blog/science-education/cz.png)
 
 The symbiotic relationship between **Science** and **Education** forms a dynamic, positive feedback loop. **Education** serves as the bedrock for disseminating scientific knowledge, sparking curiosity, and creating the researchers of tomorrow. Meanwhile, **Science** enriches **Education** by furnishing novel discoveries, methodologies, and technologies, enhancing teaching practices, and equipping academia with innovative tools. This reciprocal interaction underscores the pivotal roles of both fields in driving innovation, addressing global challenges, and shaping the future trajectory of societies.
 
-![desci](../../assets/blog/science-education/infinite-loop.png)
+![](../../assets/blog/science-education/infinite-loop.png)
 
 Unfortunately, numerous challenges hinder innovation and diverge from the fundamental principles within these industries. These obstacles include:
 
@@ -48,14 +48,14 @@ Unfortunately, numerous challenges hinder innovation and diverge from the fundam
 
 At **Publed**, we aim to provide these benefits by leveraging these key **Web3** technologies to revolutionize the way Educational and Scientific Knowledge is created, consumed, aggregated, and distributed.
 
-![desci](../../assets/blog/science-education/publed-overview.png)
+![](../../assets/blog/science-education/publed-overview.png)
 
 **Publed** facilitates the aggregation of diverse Knowledge Artifacts, spanning various formats, into a unified Knowledge Object. This enables all users to access, interact with, comment on, and potentially monetize this content in the future.
 The Knowledge Object, represented as an **NFT**, is immortalized on the **Blockchain**, ensuring ownership rights for the creator. All associated artifacts (files) are uploaded to decentralized storage networks, eliminating reliance on third parties for data management and storage
 
 Moreover, **NFTs** serve a pivotal role in the profiles of researchers or students. Embodying the Digital and Dynamic **CV**, **NFTs** consolidate all relevant information and activities, including published content and interactions, securely stored and traceable on the **Blockchain**.
 
-![desci](../../assets/blog/science-education/publed-homepage.png)
+![](../../assets/blog/science-education/publed-homepage.png)
 
 There are numerous additional benefits and compelling reasons to take advantage of Web3 in Publed that we will touch on in future articles, all of which have the potential to revolutionize Knowledge.
 
