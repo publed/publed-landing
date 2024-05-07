@@ -4,11 +4,11 @@ import LogoBgPubledBottom from '../icons/Logo-bg-publed-bottom';
 import Image from 'next/image';
 
 import Feature_1_2 from '../icons/Features_1.2.png';
-import Feature_1_1 from '../icons/Features_1.1.png';
-import Feature_2 from '../icons/Features_2.png';
-import Feature_3 from '../icons/Features_3.png';
-import Feature_4_1 from '../icons/Features_4.1.png';
-import Feature_4_2 from '../icons/Features_4.2.png';
+import Feature_1_1 from '../icons/features_1.1.png';
+import Feature_2 from '../icons/features_2.png';
+import Feature_3 from '../icons/features_3.png';
+import Feature_4_1 from '../icons/features_4.1.png';
+import Feature_4_2 from '../icons/features_4.2.png';
 
 const KnowledgePage = () => {
   return (
