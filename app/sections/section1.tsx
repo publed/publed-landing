@@ -85,6 +85,7 @@ export const Slogan = () => {
           <Button
             variant="blue"
             className="ring-2 ring-dark-blue-60 ring-offset-2 hover:ring-offset-0"
+            href="https://app.publed.io/"
           >
             Open App
           </Button>

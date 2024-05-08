@@ -5,33 +5,30 @@ const people = [
     name: 'Sandro Pinto, PhD',
     role: 'Co-Founder & Management',
     bio: 'Forward-thinking leader with 10+ years of experience managing and leading research groups and startups. Prolific writer with 100+ scientific publications. Web3 advisor and consultant.',
-    imageUrl:
-      'https://www.publed.io/static/media/sandro.e9e2e04289ba8efc9cf0.png',
+    imageUrl: '/team/sandro.png',
     xUrl: 'https://twitter.com/sandro2pinto',
     linkedinUrl: 'https://www.linkedin.com/in/sandro2pinto/',
-    publedUrl: 'https://www.publed.io/',
+    publedUrl: 'https://app.publed.io/profile/2',
   },
   {
     name: 'Vítor Ribeiro',
     role: 'Co-Founder & Tech',
     bio: 'Web3 Full Stack Developer with 3 years of experience leading R&D projects and specializing in Web3 solutions. Web3 Hackathon Hunter.',
 
-    imageUrl:
-      'https://www.publed.io/static/media/vitor.3ac344f1f725df83366f.png',
+    imageUrl: '/team/vitor.png',
     xUrl: 'https://twitter.com/vitorhsr99',
     linkedinUrl: 'https://www.linkedin.com/in/vitor-ribeiro99/',
-    publedUrl: 'https://www.publed.io/',
+    publedUrl: 'https://app.publed.io/profile/1',
   },
 
   {
     name: 'Mohamed Hassan, PhD',
     role: 'Co-Founder & Business',
     bio: '15+ years in R&D of software and hardware solutions. Leading a research lab with 35+ papers in top venues and several awards. Worked in key industry players including Intel and Qualcomm.',
-    imageUrl:
-      'https://www.publed.io/static/media/mohamed.4fd0bd1e61fdb69860bd.png',
+    imageUrl: '/team/mohamed.png',
     xUrl: 'https://twitter.com/ProfMoHassan',
     linkedinUrl: 'https://www.linkedin.com/in/profmohassan/',
-    publedUrl: 'https://www.publed.io/',
+    publedUrl: 'https://app.publed.io/profile/13',
   },
 ];
 

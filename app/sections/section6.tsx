@@ -248,7 +248,7 @@ const KnowledgePage = () => {
           {/* Explore App Button */}
           <div className="flex flex-col items-center justify-center gap-4 ">
             <span className="text-white">or</span>
-            <Button variant="light" className="w-[200px]">
+            <Button href="https://app.publed.io/" variant="light">
               Explore App
             </Button>
           </div>

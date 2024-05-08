@@ -3,12 +3,12 @@ import LogoBgPubled from '../icons/Logo-bg-publed';
 import LogoBgPubledBottom from '../icons/Logo-bg-publed-bottom';
 import Image from 'next/image';
 
-import Feature_1_2 from '../icons/Features_1.2.png';
-import Feature_1_1 from '../icons/Features_1.1.png';
-import Feature_2 from '../icons/Features_2.png';
-import Feature_3 from '../icons/Features_3.png';
-import Feature_4_1 from '../icons/Features_4.1.png';
-import Feature_4_2 from '../icons/Features_4.2.png';
+import Feature_1_2 from '../icons/features_1.2.png';
+import Feature_1_1 from '../icons/features_1.1.png';
+import Feature_2 from '../icons/features_2.png';
+import Feature_3 from '../icons/features_3.png';
+import Feature_4_1 from '../icons/features_4.1.png';
+import Feature_4_2 from '../icons/features_4.2.png';
 
 const KnowledgePage = () => {
   return (
@@ -125,8 +125,8 @@ const KnowledgePage = () => {
         Empowering Knowledge <br /> and Connections
       </header>
 
-      <div className="z-10 flex w-full px-6 flex-col justify-center gap-4 md:w-2/3 lg:w-full lg:flex-row">
-        <section className="relative h-[300px] overflow-hidden rounded bg-light-blue-60 p-4 shadow lg:h-[400px] w-full lg:w-[820px]">
+      <div className="z-10 flex w-full flex-col justify-center gap-4 px-6 md:w-2/3 lg:w-full lg:flex-row">
+        <section className="relative h-[300px] w-full overflow-hidden rounded bg-light-blue-60 p-4 shadow lg:h-[400px] lg:w-[820px]">
           <h2 className="mb-4 text-2xl font-bold lg:text-3xl">
             Create a Knowledge Object
           </h2>
@@ -168,7 +168,7 @@ const KnowledgePage = () => {
       </div>
       {/* Content for md end*/}
 
-      <div className="z-10 flex  w-full px-6  flex-col justify-center gap-4 md:w-2/3 lg:w-full lg:flex-row">
+      <div className="z-10 flex  w-full flex-col  justify-center gap-4 px-6 md:w-2/3 lg:w-full lg:flex-row">
         <section className="relative h-[300px] overflow-hidden rounded bg-light-blue-60 p-4 shadow sm:hidden md:hidden lg:flex lg:h-[400px] lg:w-[400px]">
           <h2 className="mb-4 text-2xl font-bold lg:text-3xl">
             Engage in Discussions

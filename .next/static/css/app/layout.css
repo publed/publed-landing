@@ -845,6 +845,12 @@ video {
 .top-1\/2{
   top: 50%;
 }
+.left-5{
+  left: 1.25rem;
+}
+.top-5{
+  top: 1.25rem;
+}
 .z-0{
   z-index: 0;
 }
@@ -1134,6 +1140,10 @@ video {
   --tw-translate-y: 1rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.-translate-y-12{
+  --tw-translate-y: -3rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .rotate-180{
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1213,6 +1223,9 @@ video {
 }
 .gap-\[40px\]{
   gap: 40px;
+}
+.gap-2{
+  gap: 0.5rem;
 }
 .gap-x-6{
   column-gap: 1.5rem;
