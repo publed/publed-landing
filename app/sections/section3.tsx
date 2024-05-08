@@ -127,12 +127,7 @@ const KnowledgePage = () => {
             <div className="w-full flex-1 md:w-1/2">
               <ul className="space-y-2">
                 {currentRoleContent.list.map((item, index) => (
-                  <Disclosure
-                    key={index}
-                    as="div"
-                    className="w-full"
-                    open={openItem === index}
-                  >
+                  <Disclosure key={index} as="div" className="w-full">
                     {({ open }) => (
                       <>
                         <Disclosure.Button
