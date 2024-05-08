@@ -167,7 +167,7 @@ const KnowledgePage = () => {
       {/* Content */}
 
       <header className="z-10 text-3xl font-semibold leading-tight text-white lg:text-5xl lg:leading-[60px]">
-        Why publish on Publed?
+        Why Publed?
       </header>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8 ">
