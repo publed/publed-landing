@@ -26,6 +26,44 @@ function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   );
 }
 
+import { useEffect, useState } from 'react';
+
+function useScrollDirection() {
+  const [lastScrollY, setLastScrollY] = useState(window.scrollY);
+  const [buttonStyle, setButtonStyle] = useState({
+    opacity: 1,
+    transform: 'translateY(0px)',
+  });
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        setButtonStyle({
+          opacity: 0,
+          transform: `translateY(-${Math.min(100, currentScrollY - lastScrollY)}px)`,
+        });
+      } else {
+        // Scrolling up
+        setButtonStyle({
+          opacity: 1,
+          transform: 'translateY(0px)',
+        });
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
+  return buttonStyle;
+}
+
 export function ArticleLayout({
   article,
   children,
@@ -35,6 +73,7 @@ export function ArticleLayout({
 }) {
   let router = useRouter();
   let { previousPathname } = useContext(AppContext);
+  const buttonStyle = useScrollDirection();
 
   return (
     <div className="bg-slate-100 dark:bg-zinc-900">
@@ -46,10 +85,15 @@ export function ArticleLayout({
               type="button"
               onClick={() => router.back()}
               aria-label="Go back to articles"
-              className="group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition lg:absolute lg:-left-5 lg:-mt-2 lg:mb-0 xl:-top-1.5 xl:left-0 xl:mt-0 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20"
+              className="fixed left-4 top-20 z-50 mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition-all duration-500 ease-in-out md:left-20 md:top-32 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20"
+              style={{
+                opacity: buttonStyle.opacity,
+                transform: buttonStyle.transform,
+              }}
             >
               <ArrowLeftIcon className="h-4 w-4 stroke-zinc-500 transition group-hover:stroke-zinc-700 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400" />
             </button>
+
             <article>
               <header className="flex flex-col">
                 <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">

@@ -77,13 +77,7 @@ const KnowledgePage = () => {
   };
 
   const handleDisclosure = (index: number) => {
-    if (openItem === index) {
-      // If clicking the same item, toggle it
-      setOpenItem(null);
-    } else {
-      // Open the new item and close the previous
-      setOpenItem(index);
-    }
+    setOpenItem(prevIndex => (prevIndex !== index ? index : null));
   };
 
   return (
@@ -129,11 +123,16 @@ const KnowledgePage = () => {
           transition={{ duration: 0.5, ease: 'easeInOut' }}
         >
           <div className="flex flex-col items-center gap-12 rounded-lg bg-zinc-100 px-8 py-10 shadow-[0px_0px_24px_0px_rgba(5,69,128,0.15)] md:flex-row lg:w-[950px]">
-            <div>{currentRoleContent.SVG}</div>
+            <div className="">{currentRoleContent.SVG}</div>
             <div className="w-full flex-1 md:w-1/2">
               <ul className="space-y-2">
                 {currentRoleContent.list.map((item, index) => (
-                  <Disclosure key={index} as="div" className="w-full">
+                  <Disclosure
+                    key={index}
+                    as="div"
+                    className="w-full"
+                    open={openItem === index}
+                  >
                     {({ open }) => (
                       <>
                         <Disclosure.Button
@@ -142,22 +141,32 @@ const KnowledgePage = () => {
                         >
                           {item}
                           <ChevronUpIcon
-                            className={`${openItem === index ? 'rotate-180 transform' : ''} h-5 w-5 text-dark-blue-60`}
+                            className={`${open ? 'rotate-180' : ''} h-5 w-5 transform text-dark-blue-60 transition-transform duration-200`}
                           />
                         </Disclosure.Button>
-                        {openItem === index && (
-                          <Disclosure.Panel className="px-4 pb-2 pt-4 text-sm text-gray-500">
-                            {currentRoleContent.details[index]}
-                          </Disclosure.Panel>
-                        )}
+                        <AnimatePresence>
+                          {open && (
+                            <motion.div
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              exit={{ opacity: 0 }}
+                              transition={{ duration: 0.2 }}
+                            >
+                              <Disclosure.Panel className="px-4 pb-2 pt-4 text-sm text-gray-500">
+                                {currentRoleContent.details[index]}
+                              </Disclosure.Panel>
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
                       </>
                     )}
                   </Disclosure>
                 ))}
               </ul>
-              <div className="mt-4 flex justify-center md:justify-start">
+
+              {/* <div className="mt-4 flex justify-center md:justify-start">
                 <Button variant="light">Sign Up</Button>
-              </div>
+              </div> */}
             </div>
           </div>
         </motion.div>
