@@ -7,7 +7,7 @@ import { formatDate } from '@/lib/formatDate';
 
 function Article({ article }: { article: ArticleWithSlug }) {
   return (
-    <article className="rounded-lg bg-slate-50 p-4 shadow md:grid md:grid-cols-4 md:items-baseline h-full">
+    <article className="rounded-lg bg-slate-50 p-4 shadow md:grid md:grid-cols-4 md:items-baseline">
       <Card className=" gap-3 md:col-span-4">
         <Card.ImgPreview
           imageUrl={article.imgPreview}

@@ -155,6 +155,9 @@ const KnowledgePage = () => {
                   </Disclosure>
                 ))}
               </ul>
+              <div className="mt-4 flex justify-center md:justify-start">
+                <Button variant="light">Sign Up</Button>
+              </div>
             </div>
           </div>
         </motion.div>

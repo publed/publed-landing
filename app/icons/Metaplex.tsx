@@ -1,4 +1,4 @@
-const McMasterUniversity = ({ className }: { className: string }) => {
+const Metaplex = ({ className }: { className: string }) => {
   return (
     <svg
       width="258"
@@ -30,4 +30,4 @@ const McMasterUniversity = ({ className }: { className: string }) => {
   );
 };
 
-export default McMasterUniversity;
+export default Metaplex;

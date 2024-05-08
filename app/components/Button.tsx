@@ -40,7 +40,7 @@ const Button = ({
   );
 
   return href ? (
-    <a href={href} target='_blank' className={`${className} ${variants[variant]}`}>
+    <a href={href} className={`${className} ${variants[variant]}`}>
       {children}
     </a>
   ) : (
