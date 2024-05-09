@@ -35,11 +35,11 @@ function Article({ article }: { article: ArticleWithSlug }) {
   );
 }
 
-export const metadata: Metadata = {
-  title: 'Blog | Publed',
-  description:
-    'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
-};
+// export const metadata: Metadata = {
+//   title: 'Blog | Publed',
+//   description:
+//     'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
+// };
 
 export default async function ArticlesIndex() {
   let articles = await getAllArticles();

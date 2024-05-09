@@ -78,6 +78,8 @@ export function ArticleLayout({
   let { previousPathname } = useContext(AppContext);
   const buttonStyle = useScrollDirection();
 
+  console.log('metadata', metadata);
+
   return (
     <div className="bg-slate-100 dark:bg-zinc-900">
       <Head>
