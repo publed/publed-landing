@@ -13,7 +13,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
           imageUrl={article.imgPreview}
           altText={`${article.title} image preview`}
         />
-        <div className="mt-2 flex items-center justify-center space-x-4">
+        <div className="mt-2 flex items-center justify-center space-x-2">
           <Card.Eyebrow as="time" dateTime={article.date}>
             {formatDate(article.date)}
           </Card.Eyebrow>

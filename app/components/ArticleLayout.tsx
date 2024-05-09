@@ -1,5 +1,5 @@
 'use client';
-
+import type { Metadata } from 'next';
 import { useContext } from 'react';
 import { useRouter } from 'next/navigation';
 
@@ -13,6 +13,17 @@ import Link from 'next/link';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
+import { useEffect, useState } from 'react';
+import Head from 'next/head';
+
+export function generateMetadata(): Metadata {
+  return {
+    title: 'Blog | Publed',
+    description:
+      'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
+  };
+}
+
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
@@ -25,9 +36,6 @@ function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     </svg>
   );
 }
-
-import { useEffect, useState } from 'react';
-import Head from 'next/head';
 
 function useScrollDirection() {
   const [lastScrollY, setLastScrollY] = useState(window.scrollY);
