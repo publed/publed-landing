@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { AppContext } from '../providers';
 import { Container } from '../components/Container';
 import { Prose } from '../components/Prose';
-import { type ArticleWithSlug } from '@/lib/articles';
+import { ArticleMetadata, type ArticleWithSlug } from '@/lib/articles';
 import { formatDate } from '@/lib/formatDate';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -68,9 +68,11 @@ function useScrollDirection() {
 export function ArticleLayout({
   article,
   children,
+  metadata,
 }: {
   article: ArticleWithSlug;
   children: React.ReactNode;
+  metadata: ArticleMetadata;
 }) {
   let router = useRouter();
   let { previousPathname } = useContext(AppContext);
@@ -79,19 +81,13 @@ export function ArticleLayout({
   return (
     <div className="bg-slate-100 dark:bg-zinc-900">
       <Head>
-        <title>{article.metadata?.title}</title>
-        <meta name="description" content={article.metadata?.description} />
-        <meta property="og:title" content={article.metadata?.title} />
-        <meta
-          property="og:description"
-          content={article.metadata?.description}
-        />
-        <meta property="og:image" content={article.metadata?.imgPreview} />
+        <title>{metadata?.title}</title>
+        <meta name="description" content={metadata?.description} />
+        <meta property="og:title" content={metadata?.title} />
+        <meta property="og:description" content={metadata?.description} />
+        <meta property="og:image" content={metadata?.imgPreview} />
         <meta property="og:type" content="article" />
-        <meta
-          property="article:published_time"
-          content={article.metadata?.date}
-        />
+        <meta property="article:published_time" content={metadata?.date} />
       </Head>
 
       <Navbar />

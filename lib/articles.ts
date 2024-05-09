@@ -22,24 +22,27 @@ interface Article {
   tags: string[];
   readingTime: string;
   imgPreview: string;
-  metadata: ArticleMetadata;
 }
 
 export interface ArticleWithSlug extends Article {
   slug: string;
+  metadata: ArticleMetadata;
 }
 
 async function importArticle(
   articleFilename: string,
 ): Promise<ArticleWithSlug> {
-  let { article } = (await import(`../app/blog/${articleFilename}`)) as {
-    default: React.ComponentType;
+  const { article, metadata } = (await import(
+    `../app/blog/${articleFilename}`
+  )) as {
     article: Article;
+    metadata: ArticleMetadata;
   };
 
   return {
     slug: articleFilename.replace(/(\/page)?\.mdx$/, ''),
     ...article,
+    metadata,
   };
 }
 
