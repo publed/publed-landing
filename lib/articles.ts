@@ -7,6 +7,13 @@ interface Author {
   link: string;
 }
 
+export interface ArticleMetadata {
+  title: string;
+  description: string;
+  imgPreview: string;
+  date: string;
+}
+
 interface Article {
   title: string;
   description: string;
@@ -15,6 +22,7 @@ interface Article {
   tags: string[];
   readingTime: string;
   imgPreview: string;
+  metadata: ArticleMetadata;
 }
 
 export interface ArticleWithSlug extends Article {

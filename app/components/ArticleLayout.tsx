@@ -27,6 +27,7 @@ function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 import { useEffect, useState } from 'react';
+import Head from 'next/head';
 
 function useScrollDirection() {
   const [lastScrollY, setLastScrollY] = useState(window.scrollY);
@@ -77,6 +78,22 @@ export function ArticleLayout({
 
   return (
     <div className="bg-slate-100 dark:bg-zinc-900">
+      <Head>
+        <title>{article.metadata?.title}</title>
+        <meta name="description" content={article.metadata?.description} />
+        <meta property="og:title" content={article.metadata?.title} />
+        <meta
+          property="og:description"
+          content={article.metadata?.description}
+        />
+        <meta property="og:image" content={article.metadata?.imgPreview} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="article:published_time"
+          content={article.metadata?.date}
+        />
+      </Head>
+
       <Navbar />
       <Container className="py-32 ">
         <div className="xl:relative">
