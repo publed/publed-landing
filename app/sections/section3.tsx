@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ProfessorSVG from '../icons/Professor';
 import ResearcherSVG from '../icons/Researcher';
 import StudentSVG from '../icons/Student';
+import OrganizationSVG from '../icons/Organizations';
 import Button from '../components/Button';
-import BackgroundLines from '../icons/BackgroundLines';
 import Image from 'next/image';
 import { Disclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/24/outline';
@@ -18,7 +18,7 @@ const KnowledgePage = () => {
     Professor: {
       SVG: <ProfessorSVG />,
       list: [
-        'Aggregate Your Knowledge',
+        'Aggregate Your Offical Docs',
         'Own Your Content',
         'Get a Proof of your Work (Dynamic CV)',
         'Engage and Empower Your Students',
@@ -66,6 +66,23 @@ const KnowledgePage = () => {
         'Transform your Knowledge into a lucrative endeavor while enriching the learning experiences of others on their educational journey.',
       ],
     },
+    Organizations: {
+      SVG: <OrganizationSVG />,
+      list: [
+        'Aggregate Your Offical Docs On-chain',
+        'Own Your Content',
+        'Foster Collaboration within your Community',
+        'Ensure Integrity and Immutability of your Docs',
+        'Be Transparent with your Community'
+      ],
+      details: [
+        'Consolidate all official your official docs, regardless of format (PDF, PPTX, PNG, etc.), within your Organization Workspace.',
+        'Safeguard your content with indisputable Proof of Ownership provided by the fundamentals of the Blockchain.',
+        "Foster collaboration and engagement within your organization’s community, enabling seamless communication and knowledge sharing among members.",
+        'Guarantee the integrity and immutability of your documents by storing them on decentralized storage, ensuring that they remain tamper-proof and unchangeable.',
+        'Enhance transparency and trust within your community by making all organizational documents easily accessible and verifiable on the blockchain.',
+      ],
+    },
   };
 
   const currentRoleContent = roleContent[
@@ -111,6 +128,12 @@ const KnowledgePage = () => {
           onClick={() => setSelectedRole('Student')}
         >
           For Students
+        </Button>
+        <Button
+          variant={selectedRole === 'Organizations' ? 'blue' : 'light'}
+          onClick={() => setSelectedRole('Organizations')}
+        >
+          For Organizations
         </Button>
       </div>
       <AnimatePresence mode="wait">
