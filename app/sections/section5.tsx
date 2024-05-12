@@ -10,14 +10,14 @@ const dataSlides = [
     button: 'Create Profile',
   },
   {
-    h1: 'Share your Knowledge Artifacts',
-    p: "Whether you're a student doing coursework, a researcher developing a research project or a professor creating material for your students, you can do it easily, with a few steps and no friction, by uploading all the artifacts in the most diverse formats.",
-    button: 'Share Your Knowledge',
-  },
-  {
     h1: "Explore others' work",
     p: 'Explore an array of Knowledge Objects crafted by diverse creators, immersing yourself in a myriad of content formats. Engage with creators through interactive features such as comments, questions, or even extend a word of appreciation for their remarkable work.',
     button: 'Explore',
+  },
+  {
+    h1: 'Share your Knowledge Artifacts',
+    p: "Whether you're doing a coursework, a research project, educational material, official documents, you can do it easily, with a few steps and no friction, by uploading all the docs in the most diverse formats (e.g., pdfs, slides, videos, code).",
+    button: 'Share Your Knowledge',
   },
   {
     h1: 'Create your workspace',
@@ -88,7 +88,7 @@ export const Explore = () => {
               className={`mt-8 hidden ${active == i ? 'lg:flex' : 'lg:hidden'} w-[400px] flex-col items-center justify-center text-center ss:w-[500px] md:w-[700px] xl:mt-0 xl:items-start xl:text-start`}
             >
               <h1 className="font-sans text-4xl font-bold">{data.h1}</h1>
-              <p className="mt-4 font-sans text-default-50 md:mt-2">{data.p}</p>
+              <p className="mt-4 font-sans text-default-50 md:mt-2 px-2">{data.p}</p>
               <Button
                 variant="lightblue"
                 className="mt-12 px-[36px] py-[10px] font-sans"
@@ -131,13 +131,45 @@ export const Explore = () => {
 
           <div className="-mt-4 mb-8 flex w-[400px] flex-col items-center justify-center text-center ss:w-[500px] md:w-[800px] lg:hidden">
             <h1 className="font-sans text-4xl font-bold">
-              Share your Knowledge Artifacts
+              Create your Profile
             </h1>
-            <p className="mt-4 font-sans text-default-50 md:mt-2">
-              Whether you're a student doing coursework, a researcher developing
-              a research project or a professor creating material for your
-              students, you can do it easily, with a few steps and no friction,
-              by uploading all the artifacts in the most diverse formats.
+            <p className="mt-4 font-sans text-default-50 md:mt-2 px-2">
+              You can easily create your profile, which will be minted as an NFT and will act as an NFT and will act as a digital and dynamic CV that will record all your proactivity during your knowledge-seeking journey.
+            </p>
+            <Button
+              variant="lightblue"
+              className="mt-12 px-[36px] py-[10px] font-sans"
+            >
+              Share Your Knowledge
+            </Button>
+          </div>
+
+          {/* Tablet img */}
+          <Image
+            src="/Content3.png"
+            className="z-10 mt-3 hidden w-[800px] rounded-lg md:block lg:hidden"
+            alt="box"
+            width={2000}
+            height={1600}
+          />
+          <div className="absolute z-0 mt-12 hidden h-[400px] w-[800px] bg-[#55daff84] blur-3xl md:block lg:hidden xl:h-[800px] xl:w-[1200px]"></div>
+
+          {/* Smartphone img */}
+          <Image
+            src="/sec5pic3_mobile.png"
+            className="z-10 my-3 block w-[336px] rounded-lg md:hidden"
+            alt="box"
+            width={2000}
+            height={1600}
+          />
+          <div className="absolute z-0 mt-12 block h-[475px] w-[336px] bg-[#55daff84] blur-3xl md:hidden"></div>
+
+          <div className="-mt-4 mb-8 flex w-[400px] flex-col items-center justify-center text-center ss:w-[500px] md:w-[800px] lg:hidden">
+            <h1 className="font-sans text-4xl font-bold">
+              Share your Knowledge
+            </h1>
+            <p className="mt-4 font-sans text-default-50 md:mt-2 px-2">
+              Whether you're doing a coursework, a research project, educational material, official documents, you can do it easily, with a few steps and no friction, by uploading all the docs in the most diverse formats (e.g., pdfs, slides, videos, code).
             </p>
             <Button
               variant="lightblue"
@@ -174,7 +206,7 @@ export const Explore = () => {
               <h1 className="font-sans text-4xl font-bold">
                 Explore others&apos; work
               </h1>
-              <p className="mt-4 font-sans text-default-50 md:mt-2">
+              <p className="mt-4 font-sans text-default-50 md:mt-2 px-2">
                 Explore an array of Knowledge Objects crafted by diverse
                 creators, immersing yourself in a myriad of content formats.
                 Engage with creators through interactive features such as
@@ -193,7 +225,7 @@ export const Explore = () => {
           <div className="relative">
             {/* Tablet img */}
             <Image
-              src="/sec5pic3.png"
+              src="/Content4.png"
               className="absolute z-10 hidden w-[800px] rounded-lg md:block lg:hidden"
               alt="box"
               width={2000}
@@ -216,7 +248,7 @@ export const Explore = () => {
             <h1 className="font-sans text-4xl font-bold">
               Create your workspace
             </h1>
-            <p className="mt-4 font-sans text-default-50 md:mt-2">
+            <p className="mt-4 font-sans text-default-50 md:mt-2 px-3">
               If you&apos;re creating a workshop, a course or anything else that
               needs to have more sections and more content, you can create your
               own dedicated Workspace and organize all your content seamlessly.
