@@ -25,7 +25,7 @@ const Footer = () => {
           <Link href={'https://www.linkedin.com/company/publ3d/'}>
             <Linkedin className="fill-[#4D6983] transition-colors duration-300 hover:fill-gray-600" />
           </Link>
-          <Link href={'/'}>
+          <Link href={'https://discord.gg/tYgZc49R'}>
             <Discord className="fill-[#4D6983] transition-colors duration-300 hover:fill-gray-600" />
           </Link>
         </div>
