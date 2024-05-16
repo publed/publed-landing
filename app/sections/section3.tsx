@@ -42,7 +42,7 @@ const KnowledgePage = () => {
         'Monetize Your Expertise',
       ],
       details: [
-        'Consolidate todos os artefactos dos teus trabalhos de investigação, regardless of format (PDF, PPTX, PNG, etc.), into a single, accessible Knowledge Object.',
+        'Consolidate all your research artifacts, regardless of format (PDF, PPTX, PNG, etc.), into a single, accessible Knowledge Object.',
         'Keep the copyright of your scientific contributions and take advantage of that intellectual property!',
         'Have your lively dynamic profile that directly connects to your contributions and easily share it with the world. You can also connect to other profiles to automatically follow their work.',
         'Create a community around Scientific Knowledge by our decentralized social network. Anyone can comment and engage on your Knowledge/Research Objects and easily interact with authors.',
