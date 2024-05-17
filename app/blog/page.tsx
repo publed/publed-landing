@@ -6,7 +6,7 @@ import { type ArticleWithSlug, getAllArticles } from '@/lib/articles';
 import { formatDate } from '@/lib/formatDate';
 
 export const metadata: Metadata = {
-  title: 'belog',
+  title: 'Blog | Publed',
   metadataBase: new URL('https://www.publed.io/'),
   description:
     'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     'Science, Education, Knowledge, DeSci, Web, Web3, SOL, Solana, mint, collection, Knowledge Object, KO, Artifacts, Papers, Scientific Publishing, Publishing',
   openGraph: {
     type: 'website',
-    title: 'belog',
+    title: 'Blog | Publed',
     description:
       'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
     images: 'hero_publed.png',
@@ -22,11 +22,11 @@ export const metadata: Metadata = {
     siteName: 'Publed',
   },
   appleWebApp: {
-    title: 'belog',
+    title: 'Blog | Publed',
     startupImage: 'logo_twitter.png',
   },
   twitter: {
-    title: 'belog',
+    title: 'Blog | Publed',
     description:
       'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
     card: 'summary_large_image',
