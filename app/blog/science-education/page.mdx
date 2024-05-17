@@ -1,30 +1,31 @@
-
-import { ArticleLayout } from '../../components/ArticleLayout'
+import { ArticleLayout } from '../../components/ArticleLayout';
 
 export const article = {
   author: {
     name: 'Vítor Ribeiro',
-    role: 'Co-Founder & Tech Lead', 
+    role: 'Co-Founder & Tech Lead',
     image: '/team/vitor.png',
     link: 'https://app.publed.io/profile/1',
   },
   date: '2024-04-04',
-  title: "When Science & Education meet Web3",
+  title: 'When Science & Education meet Web3',
   tags: ['Web3', 'DeSci'],
   description:
-    'Democratizing & Socializing Knowledge',
+    'Web3 is often associated only with the crypto market, NFTs, and, unfortunately, scams, which are reasons that end up being reflected in adopting these new technologies. As a novel technological revolution, it\'s normal to suffer from these so-called "growing pains." Still, typically, history repeats itself, and just as at the beginning of the Internet, the projects adding value established themselves and succeeded.',
   imgPreview: '/assets/blog/science-education/science-education.png',
   readingTime: '5 min',
-}
+};
 
 export const metadata = {
   title: article.title,
   description: article.description,
   imgPreview: article.imgPreview,
   date: article.date,
-}
+};
 
-export default (props) => <ArticleLayout article={article} metadata={metadata} {...props} />
+export default props => (
+  <ArticleLayout article={article} metadata={metadata} {...props} />
+);
 
 **Web3** is often associated only with the **crypto** market, **NFTs**, and, unfortunately, scams, which are reasons that end up being reflected in adopting these new technologies. As a novel technological revolution, it's normal to suffer from these so-called "growing pains." Still, typically, history repeats itself, and just as at the beginning of the Internet, the projects adding value established themselves and succeeded.
 ![](../../assets/blog/science-education/scams.png)

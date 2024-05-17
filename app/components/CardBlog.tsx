@@ -70,7 +70,7 @@ Card.Description = function CardDescription({
 }: {
   children: React.ReactNode;
 }) {
-  const MAX_LENGTH = 260;
+  const MAX_LENGTH = 125;
   if (typeof children === 'string' && children.length > MAX_LENGTH) {
     children = children.slice(0, MAX_LENGTH) + '...';
   }

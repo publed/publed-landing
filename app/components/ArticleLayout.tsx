@@ -175,7 +175,6 @@ export function ArticleLayout({
           </div>
         </div>
       </Container>
-      <Footer />
     </div>
   );
 }

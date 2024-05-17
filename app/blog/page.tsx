@@ -8,7 +8,7 @@ import { formatDate } from '@/lib/formatDate';
 function Article({ article }: { article: ArticleWithSlug }) {
   return (
     <article className="rounded-lg bg-slate-50 p-4 shadow md:grid md:grid-cols-4 md:items-baseline">
-      <Card className=" gap-3 md:col-span-4">
+      <Card className="gap-2 md:col-span-4">
         <Card.ImgPreview
           imageUrl={article.imgPreview}
           altText={`${article.title} image preview`}
@@ -21,7 +21,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
         </div>
 
         <Card.Title href={`/blog/${article.slug}`}>{article.title}</Card.Title>
-        <div className=" py-4">
+        <div className=" py-2">
           <Card.Description>{article.description}</Card.Description>
         </div>
         <Card.Author
