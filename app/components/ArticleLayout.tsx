@@ -11,41 +11,10 @@ import { formatDate } from '@/lib/formatDate';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from './Navbar';
-import Footer from './Footer';
 
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 
-export const metadata: Metadata = {
-  title: 'Blog | Publed',
-  metadataBase: new URL('https://www.publed.io/'),
-  description:
-    'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
-  keywords:
-    'Science, Education, Knowledge, DeSci, Web, Web3, SOL, Solana, mint, collection, Knowledge Object, KO, Artifacts, Papers, Scientific Publishing, Publishing',
-  openGraph: {
-    type: 'website',
-    title: 'Blog | Publed',
-    description:
-      'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
-    images: 'hero_publed.png',
-    url: 'https://www.publed.io/',
-    siteName: 'Publed',
-  },
-  appleWebApp: {
-    title: 'Blog | Publed',
-    startupImage: 'logo_twitter.png',
-  },
-  twitter: {
-    title: 'Blog | Publed',
-    description:
-      'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
-    card: 'summary_large_image',
-    site: '@publed_official',
-    creator: '@publed_official',
-    images: 'hero_publed.png',
-  },
-};
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
