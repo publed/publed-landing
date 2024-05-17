@@ -66,11 +66,11 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <div className="hidden sm:block">
-                <Button variant="light" href="https://app.publed.io/">
+              <Link href="https://app.publed.io/" className="hidden sm:block" target='_blank'>
+                <Button variant="light">
                   Open App
                 </Button>
-              </div>
+              </Link>
 
               <div className="flex sm:hidden">
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-dark-blue-70 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -115,9 +115,11 @@ const Navbar = () => {
                   className={`${currentPage.includes('/blog') ? 'absolute' : 'hidden'} bottom-0 left-0 right-0 h-0.5 bg-white`}
                 ></span>
               </Link>
-              <Button variant="light" href="https://app.publed.io/">
-                Open App
-              </Button>
+              <Link href="https://app.publed.io/" target='_blank'>
+                <Button variant="light">
+                  Open App
+                </Button>
+              </Link>
             </div>
           </Disclosure.Panel>
         </>

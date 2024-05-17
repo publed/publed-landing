@@ -76,12 +76,12 @@ export const Slogan = () => {
         <h1 className="cursor-default px-3 text-center font-sans text-4xl font-bold text-black sm:text-5xl xl:text-7xl">
           Next-gen Knowledge-centric <br /> Decentralized Platform
         </h1>
-        <p className="mt-3 cursor-default hyphens-auto break-all px-10 text-center text-sm text-black lg:w-full xl:text-xl">
+        <p className="mt-3 cursor-default px-10 text-center text-sm text-black lg:w-full xl:text-xl">
           Unlock the potential of your Knowledge with our decentralized,
           transparent and collaborative platform! <br /> A new way of sharing
           Educational or Scientific knowledge. Join us now!
         </p>
-        <div className="mt-4 flex flex-col items-center justify-center gap-4 ss:flex-row ss:gap-12">
+        <div className="mt-4 flex flex-row items-center justify-center gap-4 ss:flex-row ss:gap-12">
           <Button
             variant="blue"
             className="ring-2 ring-dark-blue-60 ring-offset-2 hover:ring-offset-0"

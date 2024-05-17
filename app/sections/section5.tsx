@@ -2,27 +2,32 @@
 import Image from 'next/image';
 import React, { useEffect } from 'react';
 import Button from '../components/Button';
+import Link from 'next/link';
 
 const dataSlides = [
   {
     h1: 'Create your profile',
     p: 'You can easily create your profile, which will be minted as an NFT and will act as an NFT and will act as a digital and dynamic CV that will record all your proactivity during your knowledge-seeking journey.',
     button: 'Create Profile',
+    link: "https://app.publed.io/signin"
   },
   {
     h1: "Explore others' work",
     p: 'Explore an array of Knowledge Objects crafted by diverse creators, immersing yourself in a myriad of content formats. Engage with creators through interactive features such as comments, questions, or even extend a word of appreciation for their remarkable work.',
     button: 'Explore',
+    link: "https://app.publed.io/"
   },
   {
     h1: 'Share your Knowledge Artifacts',
     p: "Whether you're doing a coursework, a research project, educational material, official documents, you can do it easily, with a few steps and no friction, by uploading all the docs in the most diverse formats (e.g., pdfs, slides, videos, code).",
     button: 'Share Your Knowledge',
+    link: "https://app.publed.io/upload"
   },
   {
     h1: 'Create your workspace',
     p: "If you're creating a workshop, a course or anything else that needs to have more sections and more content, you can create your own dedicated Workspace and organize all your content seamlessly.",
     button: 'Create Workspace',
+    link: "https://app.publed.io/workspaces"
   },
 ];
 
@@ -89,12 +94,14 @@ export const Explore = () => {
             >
               <h1 className="font-sans text-4xl font-bold">{data.h1}</h1>
               <p className="mt-4 font-sans text-default-50 md:mt-2 px-2">{data.p}</p>
-              <Button
-                variant="lightblue"
-                className="mt-12 px-[36px] py-[10px] font-sans"
-              >
-                {data.button}
-              </Button>
+              <Link href={data.link} target='_blank'>
+                <Button
+                  variant="lightblue"
+                  className="mt-12 px-[36px] py-[10px] font-sans"
+                >
+                  {data.button}
+                </Button>
+              </Link>
             </div>
           ))}
 
@@ -136,12 +143,15 @@ export const Explore = () => {
             <p className="mt-4 font-sans text-default-50 md:mt-2 px-2">
               You can easily create your profile, which will be minted as an NFT and will act as an NFT and will act as a digital and dynamic CV that will record all your proactivity during your knowledge-seeking journey.
             </p>
-            <Button
-              variant="lightblue"
-              className="mt-12 px-[36px] py-[10px] font-sans"
-            >
-              Share Your Knowledge
-            </Button>
+            <Link href="https://app.publed.io/signin" target='_blank'>
+              <Button
+                variant="lightblue"
+                className="mt-12 px-[36px] py-[10px] font-sans"
+              >
+                Create your profile
+              </Button>
+            </Link>
+
           </div>
 
           {/* Tablet img */}
@@ -171,12 +181,14 @@ export const Explore = () => {
             <p className="mt-4 font-sans text-default-50 md:mt-2 px-2">
               Whether you're doing a coursework, a research project, educational material, official documents, you can do it easily, with a few steps and no friction, by uploading all the docs in the most diverse formats (e.g., pdfs, slides, videos, code).
             </p>
-            <Button
-              variant="lightblue"
-              className="mt-12 px-[36px] py-[10px] font-sans"
-            >
-              Share Your Knowledge
-            </Button>
+            <Link href="https://app.publed.io/upload" target='_blank'>
+              <Button
+                variant="lightblue"
+                className="mt-12 px-[36px] py-[10px] font-sans"
+              >
+                Share Your Knowledge
+              </Button>
+            </Link>
           </div>
 
           <div className="relative">
@@ -213,12 +225,14 @@ export const Explore = () => {
                 comments, questions, or even extend a word of appreciation for
                 their remarkable work.
               </p>
-              <Button
-                variant="lightblue"
-                className="mt-12 px-[36px] py-[10px] font-sans"
-              >
-                Explore
-              </Button>
+              <Link href="https://app.publed.io/" target='_blank'>
+                <Button
+                  variant="lightblue"
+                  className="mt-12 px-[36px] py-[10px] font-sans"
+                >
+                  Explore
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -253,12 +267,14 @@ export const Explore = () => {
               needs to have more sections and more content, you can create your
               own dedicated Workspace and organize all your content seamlessly.
             </p>
-            <Button
-              variant="lightblue"
-              className="mt-12 px-[36px] py-[10px] font-sans"
-            >
-              Create Profile
-            </Button>
+            <Link href="https://app.publed.io/workspaces" target='_blank'>
+              <Button
+                variant="lightblue"
+                className="mt-12 px-[36px] py-[10px] font-sans"
+              >
+                Create your workspace
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
