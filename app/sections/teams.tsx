@@ -1,4 +1,6 @@
+"use client"
 import React from 'react';
+import { motion } from 'framer-motion';
 import LogoGrayPubled from '../icons/LogoGrayPubled';
 const people = [
   {
@@ -34,7 +36,18 @@ const people = [
 
 export default function Teams() {
   return (
-    <div className="bg-slate-100">
+    <motion.div
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial="hidden"
+      animate="visible"
+      transition={{
+        duration: 1,
+        delay: 0.5,
+      }}
+    >
       <div className="mx-auto max-w-7xl text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
@@ -111,6 +124,6 @@ export default function Teams() {
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }

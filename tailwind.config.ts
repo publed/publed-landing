@@ -15,16 +15,6 @@ const config: Config = {
       fontFamily: {
         sans: ['Noto Sans', 'sans-serif'],
       },
-      screens: {
-        xxs: '360px',
-        xs: '390px',
-        ss: '620px',
-        sm: '768px',
-        md: '1020px',
-        lg: '1200px',
-        xl: '1700px',
-        xlg: '1400px',
-      },
       fontSize: {
         'desktop-title': ['88px', '96px'],
         'desktop-display-2xl': ['72px', '80px'],
@@ -146,10 +136,15 @@ const config: Config = {
         '50%': { left: '-20px', top: '-50px' },
         '100%': { left: '0px', top: '0px' },
       },
+      pulse: {
+        '0%, 100%': { opacity: '100%' },
+        '50%': { opacity: '50%' },
+      },
     },
     animation: {
       wiggle: 'wiggle 5s ease-in-out infinite alternate',
       lines: 'lines 15s ease-in-out infinite alternate',
+      pulse: 'pulse 5s cubic-bezier(0.4, 0, 0.6, 1)',
     },
     typography: typographyStyles,
   },
