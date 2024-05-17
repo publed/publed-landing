@@ -3,6 +3,7 @@ import { getAllArticles } from '@/lib/articles';
 
 export async function generateMetadata(params: { slug: any }) {
   const { slug } = params;
+  console.log(slug);
 
   if (!slug) {
     // No slug provided, return default metadata for generic pages or homepage

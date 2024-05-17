@@ -5,6 +5,37 @@ import { SimpleLayout } from '../components/SimpleLayout';
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles';
 import { formatDate } from '@/lib/formatDate';
 
+export const metadata: Metadata = {
+  title: 'belog',
+  metadataBase: new URL('https://www.publed.io/'),
+  description:
+    'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
+  keywords:
+    'Science, Education, Knowledge, DeSci, Web, Web3, SOL, Solana, mint, collection, Knowledge Object, KO, Artifacts, Papers, Scientific Publishing, Publishing',
+  openGraph: {
+    type: 'website',
+    title: 'Blog | Publed',
+    description:
+      'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
+    images: 'hero_publed.png',
+    url: 'https://www.publed.io/',
+    siteName: 'Publed',
+  },
+  appleWebApp: {
+    title: 'Blog | Publed',
+    startupImage: 'logo_twitter.png',
+  },
+  twitter: {
+    title: 'Blog | Publed',
+    description:
+      'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
+    card: 'summary_large_image',
+    site: '@publed_official',
+    creator: '@publed_official',
+    images: 'hero_publed.png',
+  },
+};
+
 function Article({ article }: { article: ArticleWithSlug }) {
   return (
     <article className="rounded-lg bg-slate-50 p-4 shadow md:grid md:grid-cols-4 md:items-baseline">
@@ -34,12 +65,6 @@ function Article({ article }: { article: ArticleWithSlug }) {
     </article>
   );
 }
-
-// export const metadata: Metadata = {
-//   title: 'Blog | Publed',
-//   description:
-//     'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
-// };
 
 export default async function ArticlesIndex() {
   let articles = await getAllArticles();
