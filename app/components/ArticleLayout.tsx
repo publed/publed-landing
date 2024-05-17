@@ -113,7 +113,7 @@ export function ArticleLayout({
 
   return (
     <div className="bg-slate-100 dark:bg-zinc-900">
-      <Head>
+      {/* <Head>
         <title>{metadata?.title}</title>
         <meta name="description" content={metadata?.description} />
         <meta property="og:title" content={metadata?.title} />
@@ -121,7 +121,7 @@ export function ArticleLayout({
         <meta property="og:image" content={metadata?.imgPreview} />
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content={metadata?.date} />
-      </Head>
+      </Head> */}
 
       <Navbar />
       <Container className="py-32 ">
