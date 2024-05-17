@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     'Science, Education, Knowledge, DeSci, Web, Web3, SOL, Solana, mint, collection, Knowledge Object, KO, Artifacts, Papers, Scientific Publishing, Publishing',
   openGraph: {
     type: 'website',
-    title: 'Blog | Publed',
+    title: 'belog',
     description:
       'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
     images: 'hero_publed.png',
@@ -22,11 +22,11 @@ export const metadata: Metadata = {
     siteName: 'Publed',
   },
   appleWebApp: {
-    title: 'Blog | Publed',
+    title: 'belog',
     startupImage: 'logo_twitter.png',
   },
   twitter: {
-    title: 'Blog | Publed',
+    title: 'belog',
     description:
       'Find out more about Publed and stay tuned for all the announcements and information from our experts in the space.',
     card: 'summary_large_image',
