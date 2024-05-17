@@ -1,13 +1,13 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Teams from '../sections/teams';
+import { SimpleLayout } from '../components/SimpleLayout';
 
 export default function Home() {
   return (
-    <div className="pt-6">
-      <Navbar />
+    <SimpleLayout
+    >
       <Teams />
-      <Footer />
-    </div>
+    </SimpleLayout>
   );
 }

@@ -10,14 +10,12 @@ import Section4 from './sections/section4';
 export default function Home() {
   return (
     <div className="pt-6">
-      <Navbar />
       <Section1 />
       <Section2 />
       <Section3 />
       <Section4 />
       <Section5 />
       <Section6 />
-      <Footer />
     </div>
   );
 }

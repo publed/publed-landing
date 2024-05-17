@@ -32,10 +32,10 @@ const people = [
   },
 ];
 
-export default function Example() {
+export default function Teams() {
   return (
-    <div className="bg-slate-100 py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
+    <div className="bg-slate-100">
+      <div className="mx-auto max-w-7xl text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
             Meet our team
