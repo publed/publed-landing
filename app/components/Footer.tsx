@@ -46,7 +46,7 @@ const Footer = () => {
             <Link href="/about">About Us</Link>
             <Link href="/about">Team</Link>
             {/* External links remain within 'a' tags */}
-            <Link href="/blog">
+            <Link href="https://docs.publed.io" target='_blank'>
               Docs
             </Link>
             <Link href="/about">Privacy Policy</Link>
