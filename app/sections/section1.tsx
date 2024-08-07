@@ -18,6 +18,7 @@ import PlayButton from '../icons/PlayButton';
 import Metaplex from '../icons/Metaplex';
 import Link from 'next/link';
 import Deanslist from '../icons/Deanslist';
+import Valueverse from '../icons/Valueverse';
 
 export const Slogan = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -150,6 +151,9 @@ export const Slogan = () => {
             </Link>
             <Link href={'https://www.deanslist.services/'} target="_blank">
               <Deanslist className="mx-6" />
+            </Link>
+            <Link href={'https://linktr.ee/valueverselab'} target="_blank">
+              <Valueverse className="mx-6" />
             </Link>
           </Marquee>
         </div>
