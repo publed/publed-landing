@@ -17,6 +17,7 @@ import Nucleo from '../icons/Nucleo';
 import PlayButton from '../icons/PlayButton';
 import Metaplex from '../icons/Metaplex';
 import Link from 'next/link';
+import Deanslist from '../icons/Deanslist';
 
 export const Slogan = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -146,6 +147,9 @@ export const Slogan = () => {
             </Link>
             <Link href={'https://www.metaplex.com/'} target="_blank">
               <Metaplex className="mx-6" />
+            </Link>
+            <Link href={'https://www.deanslist.services/'} target="_blank">
+              <Deanslist className="mx-6" />
             </Link>
           </Marquee>
         </div>
