@@ -16,6 +16,7 @@ import Marquee from 'react-fast-marquee';
 import Nucleo from '../icons/Nucleo';
 import PlayButton from '../icons/PlayButton';
 import Metaplex from '../icons/Metaplex';
+import Link from 'next/link';
 
 export const Slogan = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +30,7 @@ export const Slogan = () => {
   }
 
   return (
-    <div className="relative flex w-full flex-col items-center justify-center gap-12 overflow-hidden bg-slate-100 py-16 ss:pb-[120px] ss:pt-[80px]">
+    <div className="ss:pb-[120px] ss:pt-[80px] relative flex w-full flex-col items-center justify-center gap-12 overflow-hidden bg-slate-100 py-16">
       <Transition.Root show={isOpen} as={Fragment}>
         <Dialog
           onClose={closeModal}
@@ -81,7 +82,7 @@ export const Slogan = () => {
           transparent and collaborative platform! <br /> A new way of sharing
           Educational or Scientific knowledge. Join us now!
         </p>
-        <div className="mt-4 flex flex-row items-center justify-center gap-4 ss:flex-row ss:gap-12">
+        <div className="ss:flex-row ss:gap-12 mt-4 flex flex-row items-center justify-center gap-4">
           <Button
             variant="blue"
             className="ring-2 ring-dark-blue-60 ring-offset-2 hover:ring-offset-0"
@@ -128,12 +129,24 @@ export const Slogan = () => {
             loop={0}
             className=" overflow-hidden"
           >
-            <SolanaFoundation className="mx-6 h-[40px]" />
-            <Solana className="mx-6 h-[40px]" />
-            <UMinho className="mx-6" />
-            <McMasterUniversity className="mx-6 -mb-4 h-[40px]" />
-            <Nucleo className="mx-6" />
-            <Metaplex className="mx-6" />
+            <Link href={'https://solana.com/'} target="_blank">
+              <SolanaFoundation className="mx-6 h-[40px]" />
+            </Link>
+            <Link href={'https://www.solanau.org/'} target="_blank">
+              <Solana className="mx-6 h-[40px]" />
+            </Link>
+            <Link href={'https://www.uminho.pt/PT'} target="_blank">
+              <UMinho className="mx-6" />
+            </Link>
+            <Link href={'https://www.mcmaster.ca/'} target="_blank">
+              <McMasterUniversity className="mx-6 -mb-4 h-[40px]" />
+            </Link>
+            <Link href={'https://neeeicum.dei.uminho.pt/'} target="_blank">
+              <Nucleo className="mx-6" />
+            </Link>
+            <Link href={'https://www.metaplex.com/'} target="_blank">
+              <Metaplex className="mx-6" />
+            </Link>
           </Marquee>
         </div>
       </div>
