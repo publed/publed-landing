@@ -1,0 +1,50 @@
+import { ArticleLayout } from '../../components/ArticleLayout';
+
+export const article = {
+  author: {
+    name: 'Mohamed Hassan',
+    role: 'Co-Founder',
+    image: '/team/mohamed.png',
+    link: 'https://app.publed.io/profile/13',
+  },
+  date: '2024-07-08',
+  title: 'Access Barriers in the Modern Education System: The facts',
+  tags: ['Education'],
+  description:
+    "In this blog post, we delve into the various obstacles that hinder equitable access to education in today's world.",
+  imgPreview: '/assets/blog/access-barriers/access-barriers.png',
+  readingTime: '2 min',
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+  imgPreview: article.imgPreview,
+  date: article.date,
+};
+
+export default props => (
+  <ArticleLayout article={article} metadata={metadata} {...props}>
+
+    <h2>Textbooks: 1041% - the rise in textbooks prices since 1977</h2>
+
+    <p>According to a review of Bureau of Labor Statistics (BLS) data by NBC, textbook prices have risen over three times the rate of inflation from January 1977 to June 2015, a <strong>1,041 percent increase</strong> <a id="1" href="#1">[1]</a>. This increase is more than three times the rate of inflation over the same time period <a id="2" href="#2">[2]</a>. The rise in textbook prices has had a significant impact on students and education. According to a study, the vast majority of students perceive textbook costs as a barrier to their success. 65% of students said they did not purchase a required textbook because of cost and 77% delayed buying their textbooks due to cost. A majority of students, 55%, felt not being able to buy a textbook hurt their grade in a course <a id="3" href="#3">[3]</a>. The high cost of textbooks has also led to students taking fewer courses and earning poor grades <a id="4" href="#4">[4]</a>. The price of textbooks is a constant source of frustration for students, and the lack of competition in the textbook market has allowed publishers to raise prices without fear of losing customers <a id="5" href="#5">[5]</a>.</p>
+
+    <h2>High cost of university degrees</h2>
+
+    <p>Average 2021-2022 annual tuition for public, four-year colleges was $10,740 for state residents, and $27,560 for out-of-state residents, according to CollegeBoard <a id="6" href="#6">[6]</a> data <a id="7" href="#7">[7]</a>. According to the Federal Reserve, Americans owe an estimated $1.75 trillion in total student loan debt as of the third quarter of 2023 <a id="8" href="#8">[8]</a>. The average student loan debt per borrower is $28,950. The majority of student loan debt is from federal loans, which account for 92% of the total debt <a id="9" href="#9">[9]</a>. This places student loan debt as the second-largest type of consumer debt, surpassed only by mortgages. The implications are far-reaching, affecting not only the financial future of graduates but also their career choices and economic mobility.</p>
+
+    <h2>References</h2>
+
+    <p><a href="https://www.nbcnews.com/feature/freshman-year/college-textbook-prices-have-risen-812-percent-1978-n399926">1. College Textbook Prices Have Risen 1,041 Percent Since 1977 (nbcnews.com)</a></p>
+    <p><a href="https://www.thecollegefix.com/college-textbooks-costs-have-increased-over-1000-since-1977/">2. College textbooks: Costs have increased over 1,000% since 1977 | The College Fix</a></p>
+    <p><a href="https://aisel.aisnet.org/treos_amcis2021/11/">3. Impact of Textbook Costs on Student Success</a></p>
+    <p><a href="https://academicmatters.ca/why-do-college-textbooks-cost-so-much-7-questions-answered/">4. Why do college textbooks cost so much?</a></p>
+    <p><a href="https://macleans.ca/education/uniandcollege/why-textbooks-are-so-expensive/">5. Why textbooks are so expensive</a></p>
+    <p><a href="https://research.collegeboard.org/trends/student-aid">6. Trends in Student Aid</a></p>
+    <p><a href="https://www.businessinsider.com/personal-finance/average-college-tuition">7. Average Cost of College Tuition</a></p>
+    <p><a href="https://www.forbes.com/advisor/student-loans/average-student-loan-debt-statistics/">8. Average Student Loan Debt</a></p>
+    <p><a href="https://www.nbcnews.com/data-graphics/student-loan-debt-america-charts-rcna44439">9. Student loan debt in America</a></p>
+
+  </ArticleLayout>
+);
