@@ -110,8 +110,8 @@ export const Slogan = () => {
             height={1600}
           />
           <Image
-            src="/boxMobile.png"
-            className="z-10 my-3 block min-w-[336px] max-w-[400px] sm:hidden"
+            src="/homepage3-min.png"
+            className="z-10 my-3 block min-w-[336px] max-w-[400px] px-3 sm:hidden"
             alt="box"
             width={2000}
             height={1600}
